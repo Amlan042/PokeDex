@@ -1,0 +1,502 @@
+/* ================================== */
+/* EVOLUTION CHAIN STYLES             */
+/* Modern Flow Layout & Animations    */
+/* ================================== */
+
+.evolution-chain-modern {
+  padding: 1.5rem;
+}
+
+.evo-header {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  margin-bottom: 2rem;
+  padding-bottom: 1rem;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+.evo-header-icon {
+  font-size: 2rem;
+  width: 50px;
+  height: 50px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: linear-gradient(135deg, rgba(102, 126, 234, 0.3) 0%, rgba(118, 75, 162, 0.3) 100%);
+  border-radius: 15px;
+}
+
+.evo-header-info {
+  flex: 1;
+}
+
+.evo-header-title {
+  font-size: 1.2rem;
+  font-weight: 700;
+  color: white;
+  margin: 0 0 0.2rem;
+}
+
+.evo-header-subtitle {
+  font-size: 0.85rem;
+  color: rgba(255, 255, 255, 0.5);
+  margin: 0;
+}
+
+.evo-stage-indicators {
+  display: flex;
+  gap: 0.5rem;
+}
+
+.stage-dot {
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+  background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+}
+
+/* Evolution Chain Flow */
+.evo-chain-flow {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 1rem;
+  flex-wrap: wrap;
+}
+
+.evo-stage-column {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 0.8rem;
+}
+
+.stage-label {
+  font-size: 0.7rem;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  color: rgba(255, 255, 255, 0.4);
+  margin-bottom: 0.3rem;
+}
+
+.evo-stage-cards {
+  display: flex;
+  flex-direction: column;
+  gap: 0.8rem;
+}
+
+.evo-stage-column.branched .evo-stage-cards {
+  padding: 0.5rem;
+  background: rgba(255, 255, 255, 0.03);
+  border-radius: 20px;
+}
+
+/* Evolution Stage Card */
+.evo-stage-card {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 1rem;
+  background: rgba(255, 255, 255, 0.05);
+  border-radius: 20px;
+  border: 2px solid transparent;
+  text-decoration: none;
+  transition: all 0.3s cubic-bezier(0.34, 1.56, 0.64, 1);
+  animation: evoCardAppear 0.5s ease-out backwards;
+  min-width: 110px;
+}
+
+@keyframes evoCardAppear {
+  from {
+    opacity: 0;
+    transform: scale(0.8) translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: scale(1) translateY(0);
+  }
+}
+
+.evo-stage-card:hover {
+  transform: translateY(-5px) scale(1.05);
+  background: rgba(255, 255, 255, 0.1);
+  border-color: var(--evo-type-color);
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.3);
+}
+
+.evo-stage-card.current {
+  border-color: var(--evo-type-color);
+  background: linear-gradient(145deg, 
+    rgba(var(--evo-type-color), 0.2) 0%, 
+    rgba(255, 255, 255, 0.08) 100%);
+  box-shadow: 
+    0 0 20px rgba(var(--evo-type-color), 0.2),
+    inset 0 0 20px rgba(255, 255, 255, 0.05);
+}
+
+.current-badge {
+  position: absolute;
+  top: -8px;
+  left: 50%;
+  transform: translateX(-50%);
+  padding: 0.2rem 0.6rem;
+  background: linear-gradient(135deg, var(--evo-type-color) 0%, var(--evo-type-color-secondary) 100%);
+  color: white;
+  font-size: 0.6rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  border-radius: 10px;
+  white-space: nowrap;
+}
+
+.evo-stage-bg {
+  position: absolute;
+  inset: 0;
+  background: radial-gradient(circle at center, var(--evo-type-color) 0%, transparent 70%);
+  opacity: 0.1;
+  border-radius: 20px;
+}
+
+.evo-image-wrapper {
+  position: relative;
+  width: 80px;
+  height: 80px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.evo-image-glow {
+  position: absolute;
+  inset: 0;
+  background: radial-gradient(circle, var(--evo-type-color) 0%, transparent 70%);
+  opacity: 0.3;
+  filter: blur(10px);
+}
+
+.evo-pokemon-image {
+  width: 70px;
+  height: 70px;
+  object-fit: contain;
+  position: relative;
+  z-index: 1;
+  filter: drop-shadow(0 4px 10px rgba(0, 0, 0, 0.3));
+  transition: transform 0.3s ease;
+}
+
+.evo-stage-card:hover .evo-pokemon-image {
+  transform: scale(1.1);
+}
+
+.evo-placeholder {
+  width: 70px;
+  height: 70px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: rgba(255, 255, 255, 0.1);
+  border-radius: 50%;
+  font-size: 1.5rem;
+  color: rgba(255, 255, 255, 0.4);
+}
+
+.evo-pokemon-info {
+  text-align: center;
+  margin-top: 0.5rem;
+}
+
+.evo-pokemon-id {
+  font-size: 0.7rem;
+  color: rgba(255, 255, 255, 0.4);
+  font-weight: 600;
+}
+
+.evo-pokemon-name {
+  font-size: 0.85rem;
+  font-weight: 700;
+  color: white;
+  text-transform: capitalize;
+  margin: 0.2rem 0;
+}
+
+.evo-types {
+  display: flex;
+  gap: 0.3rem;
+  justify-content: center;
+}
+
+.evo-type-dot {
+  width: 12px;
+  height: 12px;
+  border-radius: 50%;
+  border: 2px solid rgba(255, 255, 255, 0.3);
+}
+
+/* Evolution Arrow */
+.evo-arrow-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 0.5rem;
+  padding: 0 0.5rem;
+  animation: arrowAppear 0.5s ease-out backwards;
+}
+
+@keyframes arrowAppear {
+  from {
+    opacity: 0;
+    transform: translateX(-10px);
+  }
+  to {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
+.evo-arrow-line {
+  width: 30px;
+  height: 3px;
+  background: linear-gradient(90deg, rgba(255, 255, 255, 0.1), rgba(255, 255, 255, 0.3));
+  border-radius: 2px;
+  position: relative;
+}
+
+.evo-arrow-glow {
+  position: absolute;
+  inset: -2px;
+  background: linear-gradient(90deg, transparent, rgba(102, 126, 234, 0.5), transparent);
+  border-radius: 2px;
+  animation: arrowPulse 2s ease-in-out infinite;
+}
+
+@keyframes arrowPulse {
+  0%, 100% { opacity: 0.3; }
+  50% { opacity: 1; }
+}
+
+.evo-method-badge {
+  display: flex;
+  align-items: center;
+  gap: 0.4rem;
+  padding: 0.4rem 0.8rem;
+  background: rgba(102, 126, 234, 0.2);
+  border-radius: 12px;
+  border: 1px solid rgba(102, 126, 234, 0.3);
+  white-space: nowrap;
+}
+
+.evo-method-icon {
+  font-size: 0.9rem;
+}
+
+.evo-method-text {
+  font-size: 0.7rem;
+  font-weight: 600;
+  color: rgba(255, 255, 255, 0.8);
+  text-transform: capitalize;
+}
+
+.evo-arrow-head {
+  width: 20px;
+  height: 20px;
+  color: rgba(255, 255, 255, 0.5);
+}
+
+.evo-arrow-head svg {
+  width: 100%;
+  height: 100%;
+}
+
+/* Evolution Empty State */
+.evo-empty-state {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 2rem;
+  text-align: center;
+}
+
+.evo-empty-icon {
+  font-size: 3rem;
+  margin-bottom: 1rem;
+  opacity: 0.5;
+}
+
+.evo-empty-text {
+  font-size: 1rem;
+  font-weight: 600;
+  color: rgba(255, 255, 255, 0.7);
+  margin: 0 0 0.3rem;
+}
+
+.evo-empty-hint {
+  font-size: 0.85rem;
+  color: rgba(255, 255, 255, 0.4);
+  margin: 0;
+}
+
+/* Responsive for Evolution Chain */
+@media (max-width: 600px) {
+  .evo-chain-flow {
+    flex-direction: column;
+    gap: 1.5rem;
+  }
+  
+  .evo-arrow-container {
+    transform: rotate(90deg);
+    padding: 0.5rem 0;
+  }
+  
+  .evo-stage-column.branched .evo-stage-cards {
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+}
+
+/* Legacy Evolution Chain Section */
+.evolution-chain-section {
+  background: var(--card-bg);
+  border-radius: 20px;
+  padding: 2rem;
+  margin-top: 2rem;
+  box-shadow: var(--shadow);
+}
+
+.evolution-chain-section h3 {
+  font-family: 'Press Start 2P', cursive;
+  font-size: 0.9rem;
+  color: var(--pokemon-blue);
+  text-align: center;
+  margin-bottom: 1.5rem;
+}
+
+.no-evolution {
+  text-align: center;
+  color: #888;
+}
+
+.evolution-chain {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 1rem;
+}
+
+.evolution-stage-group {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+.evolution-stage {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 1rem;
+  border-radius: 15px;
+  background: rgba(0, 0, 0, 0.03);
+  text-decoration: none;
+  transition: all 0.3s ease;
+  border: 3px solid transparent;
+}
+
+.evolution-stage:hover {
+  transform: translateY(-5px);
+  background: rgba(0, 0, 0, 0.06);
+  box-shadow: 0 5px 20px rgba(0, 0, 0, 0.1);
+}
+
+.evolution-stage.current {
+  border-color: var(--type-color, var(--pokemon-yellow));
+  background: rgba(255, 203, 5, 0.1);
+}
+
+.evolution-image-container {
+  width: 80px;
+  height: 80px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.evolution-image {
+  max-width: 100%;
+  max-height: 100%;
+  filter: drop-shadow(0 2px 5px rgba(0, 0, 0, 0.2));
+}
+
+.evolution-placeholder {
+  width: 60px;
+  height: 60px;
+  background: #ddd;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 1.5rem;
+  color: #999;
+}
+
+.evolution-name {
+  font-size: 0.9rem;
+  font-weight: 600;
+  color: var(--text-dark);
+  text-transform: capitalize;
+  margin-top: 0.5rem;
+}
+
+.evolution-id {
+  font-size: 0.75rem;
+  color: #888;
+}
+
+.evolution-types {
+  display: flex;
+  gap: 0.25rem;
+  margin-top: 0.5rem;
+}
+
+.pokemon-type.small {
+  padding: 0.2rem 0.6rem;
+  font-size: 0.65rem;
+}
+
+.evolution-arrow {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 0.3rem;
+  color: #888;
+}
+
+.evolution-arrow .arrow {
+  font-size: 1.5rem;
+}
+
+.evolution-method {
+  font-size: 0.7rem;
+  text-align: center;
+  max-width: 80px;
+  text-transform: capitalize;
+}
+
+/* Responsive - Evolution Chain */
+@media (max-width: 768px) {
+  .evolution-chain {
+    flex-direction: column;
+  }
+
+  .evolution-arrow {
+    transform: rotate(90deg);
+  }
+
+  .evolution-arrow .arrow {
+    font-size: 1.2rem;
+  }
+}

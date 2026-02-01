@@ -1,0 +1,45 @@
+/* ================================== */
+/* STYLES INDEX                       */
+/* Import all CSS modules             */
+/* ================================== */
+
+/*
+ * CSS Architecture:
+ * 
+ * This file imports all CSS modules for the Pokemon app.
+ * Each module contains styles for a specific feature/page.
+ * 
+ * Structure:
+ * - theme.css          → Theme system (dark/light/dynamic)
+ * - homepage.css       → Homepage showcase & discovery
+ * - search.css         → Search/Info page
+ * - type-effectiveness.css → Type matchup display
+ * - evolution-chain.css → Evolution flow display
+ * - favorites.css      → Favorites page & cards
+ * - team.css           → Team builder & analysis
+ * - game.css           → Quiz/Game modes
+ * - components.css     → Shared components (buttons, cards, notifications)
+ * - compare.css        → Pokemon comparison mode
+ * - moves.css          → Moves and abilities display
+ * - items.css          → Items and berries database
+ */
+
+/* Theme System - Load first for CSS variables */
+@import './theme.css';
+
+/* Page Styles */
+@import './homepage.css';
+@import './search.css';
+@import './favorites.css';
+@import './team.css';
+@import './game.css';
+
+/* Component Styles */
+@import './type-effectiveness.css';
+@import './evolution-chain.css';
+@import './components.css';
+@import './compare.css';
+@import './moves.css';
+@import './items.css';
+@import './pokedex.css';
+@import './build-editor.css';
