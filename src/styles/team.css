@@ -2374,10 +2374,6 @@
     font-size: 0.82rem;
   }
   
-  .search-results {
-    max-height: 35vh;
-  }
-  
   .result-pokemon {
     padding: 0.6rem;
     border-radius: 0.6rem;
@@ -2769,10 +2765,6 @@
     font-size: 0.78rem;
   }
   
-  .search-results {
-    max-height: 30vh;
-  }
-  
   .result-pokemon {
     padding: 0.5rem;
     flex-direction: column;
@@ -3127,10 +3119,6 @@
   .tab-btn {
     padding: 0.45rem 0.65rem;
     font-size: 0.72rem;
-  }
-  
-  .search-results {
-    max-height: 28vh;
   }
   
   .result-sprite {

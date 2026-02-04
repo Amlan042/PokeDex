@@ -9,6 +9,7 @@
   padding: 1rem;
   overflow-x: hidden;
   width: 100%;
+  box-sizing: border-box;
 }
 
 .search-header {
@@ -46,9 +47,11 @@
 .search-input-wrapper {
   flex: 1;
   min-width: 280px;
+  max-width: 100%;
   position: relative;
   display: flex;
   align-items: center;
+  overflow: visible;
 }
 
 .search-icon {
@@ -138,15 +141,24 @@
   display: flex;
   flex-direction: column;
   gap: 2rem;
+  width: 100%;
+  max-width: 100%;
+  box-sizing: border-box;
+  overflow-x: hidden;
 }
 
 /* Search Showcase Specific */
 .pokemon-showcase.search-showcase {
   padding: 2rem;
+  width: 100%;
+  box-sizing: border-box;
+  overflow: visible !important; /* Override base showcase hidden overflow */
+  height: auto; /* Allow content to determine height */
 }
 
 .pokemon-showcase.search-showcase .showcase-content {
   gap: 2rem;
+  height: auto; /* Allow content to determine height */
 }
 
 /* Special Badges */
@@ -426,6 +438,7 @@
 @media (min-width: 600px) and (max-width: 767px) {
   .info-page {
     padding: 0.875rem;
+    overflow-x: hidden;
   }
   
   .search-header {
@@ -444,10 +457,13 @@
   .search-box {
     max-width: 100%;
     margin-bottom: 1.5rem;
+    width: 100%;
+    box-sizing: border-box;
   }
   
   .search-input-wrapper {
     min-width: 100%;
+    width: 100%;
   }
   
   .search-input {
@@ -461,8 +477,57 @@
     padding: 0.9rem 1.5rem;
   }
   
+  .search-results {
+    width: 100%;
+    box-sizing: border-box;
+  }
+  
   .pokemon-showcase.search-showcase {
     padding: 1.5rem;
+    width: 100%;
+    box-sizing: border-box;
+    overflow: visible;
+  }
+  
+  .pokemon-showcase.search-showcase .showcase-content {
+    grid-template-columns: 1fr;
+    gap: 1.5rem;
+  }
+  
+  .pokemon-showcase.search-showcase .showcase-visual {
+    align-items: center;
+  }
+  
+  .pokemon-showcase.search-showcase .pokemon-header {
+    text-align: center;
+  }
+  
+  .pokemon-showcase.search-showcase .pokemon-types-row {
+    justify-content: center;
+  }
+  
+  .pokemon-showcase.search-showcase .physical-stats {
+    grid-template-columns: repeat(3, 1fr);
+    gap: 0.6rem;
+  }
+  
+  .pokemon-showcase.search-showcase .stats-rings {
+    grid-template-columns: repeat(3, 1fr);
+    gap: 0.6rem;
+    justify-items: center;
+  }
+  
+  .pokemon-showcase.search-showcase .stat-ring {
+    width: 65px;
+    height: 65px;
+  }
+  
+  .pokemon-showcase.search-showcase .section-label {
+    text-align: center;
+  }
+  
+  .pokemon-showcase.search-showcase .abilities-list {
+    justify-content: center;
   }
   
   .special-badge {
@@ -510,6 +575,7 @@
 @media (min-width: 480px) and (max-width: 599px) {
   .info-page {
     padding: 0.75rem;
+    overflow-x: hidden;
   }
   
   .search-header {
@@ -528,6 +594,14 @@
   .search-box {
     gap: 0.75rem;
     margin-bottom: 1.25rem;
+    width: 100%;
+    padding: 0 0.25rem;
+    box-sizing: border-box;
+  }
+  
+  .search-input-wrapper {
+    min-width: 100%;
+    width: 100%;
   }
   
   .search-icon {
@@ -544,15 +618,68 @@
     padding: 0.85rem 1.5rem;
     font-size: 0.9rem;
     gap: 0.4rem;
+    width: 100%;
+    justify-content: center;
   }
   
   .search-results {
     gap: 1.5rem;
+    padding: 0 0.25rem;
   }
   
   .pokemon-showcase.search-showcase {
     padding: 1.25rem;
     border-radius: 20px;
+    width: 100%;
+    box-sizing: border-box;
+    overflow: visible;
+  }
+  
+  .pokemon-showcase.search-showcase .showcase-content {
+    grid-template-columns: 1fr;
+    gap: 1.5rem;
+  }
+  
+  .pokemon-showcase.search-showcase .showcase-visual {
+    align-items: center;
+  }
+  
+  .pokemon-showcase.search-showcase .pokemon-header {
+    text-align: center;
+  }
+  
+  .pokemon-showcase.search-showcase .pokemon-types-row {
+    justify-content: center;
+  }
+  
+  .pokemon-showcase.search-showcase .physical-stats {
+    grid-template-columns: repeat(3, 1fr);
+    gap: 0.5rem;
+  }
+  
+  .pokemon-showcase.search-showcase .physical-stat {
+    flex-direction: column;
+    text-align: center;
+    padding: 0.6rem 0.4rem;
+  }
+  
+  .pokemon-showcase.search-showcase .stats-rings {
+    grid-template-columns: repeat(3, 1fr);
+    gap: 0.5rem;
+    justify-items: center;
+  }
+  
+  .pokemon-showcase.search-showcase .stat-ring {
+    width: 60px;
+    height: 60px;
+  }
+  
+  .pokemon-showcase.search-showcase .section-label {
+    text-align: center;
+  }
+  
+  .pokemon-showcase.search-showcase .abilities-list {
+    justify-content: center;
   }
   
   .special-badges {
@@ -622,6 +749,7 @@
 @media (min-width: 360px) and (max-width: 479px) {
   .info-page {
     padding: 0.5rem;
+    overflow-x: hidden;
   }
   
   .search-header {
@@ -631,6 +759,8 @@
   .search-page-title {
     font-size: 0.88rem;
     gap: 0.5rem;
+    flex-wrap: wrap;
+    justify-content: center;
   }
   
   .search-subtitle {
@@ -640,6 +770,14 @@
   .search-box {
     gap: 0.625rem;
     margin-bottom: 1rem;
+    width: 100%;
+    padding: 0 0.125rem;
+    box-sizing: border-box;
+  }
+  
+  .search-input-wrapper {
+    min-width: 100%;
+    width: 100%;
   }
   
   .search-icon {
@@ -657,15 +795,124 @@
     padding: 0.8rem 1.25rem;
     font-size: 0.85rem;
     border-radius: 40px;
+    width: 100%;
+    justify-content: center;
   }
   
   .search-results {
     gap: 1.25rem;
+    padding: 0 0.125rem;
+    width: 100%;
+    box-sizing: border-box;
   }
   
   .pokemon-showcase.search-showcase {
     padding: 1rem;
     border-radius: 16px;
+    width: 100%;
+    box-sizing: border-box;
+    overflow: visible;
+  }
+  
+  .pokemon-showcase.search-showcase .showcase-content {
+    grid-template-columns: 1fr;
+    gap: 1.25rem;
+  }
+  
+  .pokemon-showcase.search-showcase .showcase-visual {
+    align-items: center;
+    gap: 0.875rem;
+  }
+  
+  .pokemon-showcase.search-showcase .pokemon-image-showcase {
+    width: 150px;
+    height: 150px;
+  }
+  
+  .pokemon-showcase.search-showcase .pokemon-image-showcase img {
+    width: 135px;
+    height: 135px;
+  }
+  
+  .pokemon-showcase.search-showcase .pokemon-header {
+    text-align: center;
+  }
+  
+  .pokemon-showcase.search-showcase .pokemon-showcase-name {
+    font-size: 1.4rem;
+  }
+  
+  .pokemon-showcase.search-showcase .pokemon-types-row {
+    justify-content: center;
+    flex-wrap: wrap;
+  }
+  
+  .pokemon-showcase.search-showcase .type-pill {
+    padding: 0.3rem 0.8rem;
+    font-size: 0.7rem;
+  }
+  
+  .pokemon-showcase.search-showcase .physical-stats {
+    grid-template-columns: repeat(3, 1fr);
+    gap: 0.4rem;
+  }
+  
+  .pokemon-showcase.search-showcase .physical-stat {
+    flex-direction: column;
+    text-align: center;
+    padding: 0.5rem 0.3rem;
+    gap: 0.25rem;
+  }
+  
+  .pokemon-showcase.search-showcase .physical-icon {
+    font-size: 1rem;
+  }
+  
+  .pokemon-showcase.search-showcase .physical-value {
+    font-size: 0.85rem;
+  }
+  
+  .pokemon-showcase.search-showcase .physical-label {
+    font-size: 0.55rem;
+  }
+  
+  .pokemon-showcase.search-showcase .stats-rings {
+    grid-template-columns: repeat(3, 1fr);
+    gap: 0.4rem;
+    justify-items: center;
+  }
+  
+  .pokemon-showcase.search-showcase .stat-ring {
+    width: 55px;
+    height: 55px;
+  }
+  
+  .pokemon-showcase.search-showcase .stat-ring-value {
+    font-size: 0.75rem;
+  }
+  
+  .pokemon-showcase.search-showcase .stat-ring-name {
+    font-size: 0.45rem;
+  }
+  
+  .pokemon-showcase.search-showcase .section-label {
+    text-align: center;
+    font-size: 0.7rem;
+  }
+  
+  .pokemon-showcase.search-showcase .abilities-list {
+    justify-content: center;
+  }
+  
+  .pokemon-showcase.search-showcase .quick-actions {
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 0.5rem;
+  }
+  
+  .pokemon-showcase.search-showcase .action-btn {
+    padding: 0.5rem 0.75rem;
+    font-size: 0.7rem;
   }
   
   .special-badges {
@@ -757,6 +1004,7 @@
 @media (max-width: 359px) {
   .info-page {
     padding: 0.375rem;
+    overflow-x: hidden;
   }
   
   .search-header {
@@ -764,17 +1012,27 @@
   }
   
   .search-page-title {
-    font-size: 0.78rem;
-    gap: 0.4rem;
+    font-size: 0.72rem;
+    gap: 0.35rem;
+    flex-wrap: wrap;
+    justify-content: center;
   }
   
   .search-subtitle {
-    font-size: 0.7rem;
+    font-size: 0.68rem;
   }
   
   .search-box {
     gap: 0.5rem;
     margin-bottom: 0.875rem;
+    width: 100%;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  .search-input-wrapper {
+    min-width: 100%;
+    width: 100%;
   }
   
   .search-icon {
@@ -791,6 +1049,8 @@
     padding: 0.7rem 1rem;
     font-size: 0.8rem;
     gap: 0.35rem;
+    width: 100%;
+    justify-content: center;
   }
   
   .btn-spinner {
@@ -800,11 +1060,135 @@
   
   .search-results {
     gap: 1rem;
+    width: 100%;
+    box-sizing: border-box;
   }
   
   .pokemon-showcase.search-showcase {
-    padding: 0.875rem;
+    padding: 0.75rem;
     border-radius: 14px;
+    width: 100%;
+    box-sizing: border-box;
+    overflow: visible;
+  }
+  
+  .pokemon-showcase.search-showcase .showcase-content {
+    grid-template-columns: 1fr;
+    gap: 1rem;
+  }
+  
+  .pokemon-showcase.search-showcase .showcase-visual {
+    align-items: center;
+    gap: 0.75rem;
+  }
+  
+  .pokemon-showcase.search-showcase .pokemon-id-badge {
+    padding: 0.25rem 0.75rem;
+    font-size: 0.65rem;
+  }
+  
+  .pokemon-showcase.search-showcase .pokemon-image-showcase {
+    width: 130px;
+    height: 130px;
+  }
+  
+  .pokemon-showcase.search-showcase .pokemon-image-showcase img {
+    width: 115px;
+    height: 115px;
+  }
+  
+  .pokemon-showcase.search-showcase .pokemon-header {
+    text-align: center;
+  }
+  
+  .pokemon-showcase.search-showcase .pokemon-showcase-name {
+    font-size: 1.2rem;
+  }
+  
+  .pokemon-showcase.search-showcase .pokemon-types-row {
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 0.3rem;
+  }
+  
+  .pokemon-showcase.search-showcase .type-pill {
+    padding: 0.25rem 0.7rem;
+    font-size: 0.65rem;
+  }
+  
+  .pokemon-showcase.search-showcase .physical-stats {
+    grid-template-columns: repeat(3, 1fr);
+    gap: 0.3rem;
+  }
+  
+  .pokemon-showcase.search-showcase .physical-stat {
+    flex-direction: column;
+    text-align: center;
+    padding: 0.45rem 0.25rem;
+    gap: 0.2rem;
+    border-radius: 10px;
+  }
+  
+  .pokemon-showcase.search-showcase .physical-icon {
+    font-size: 0.9rem;
+  }
+  
+  .pokemon-showcase.search-showcase .physical-value {
+    font-size: 0.78rem;
+  }
+  
+  .pokemon-showcase.search-showcase .physical-label {
+    font-size: 0.5rem;
+  }
+  
+  .pokemon-showcase.search-showcase .stats-rings {
+    grid-template-columns: repeat(3, 1fr);
+    gap: 0.35rem;
+    justify-items: center;
+  }
+  
+  .pokemon-showcase.search-showcase .stat-ring {
+    width: 50px;
+    height: 50px;
+  }
+  
+  .pokemon-showcase.search-showcase .stat-ring-value {
+    font-size: 0.7rem;
+  }
+  
+  .pokemon-showcase.search-showcase .stat-ring-name {
+    font-size: 0.4rem;
+  }
+  
+  .pokemon-showcase.search-showcase .section-label {
+    text-align: center;
+    font-size: 0.65rem;
+  }
+  
+  .pokemon-showcase.search-showcase .abilities-list {
+    justify-content: center;
+    gap: 0.3rem;
+  }
+  
+  .pokemon-showcase.search-showcase .ability-tag {
+    padding: 0.3rem 0.6rem;
+    font-size: 0.65rem;
+  }
+  
+  .pokemon-showcase.search-showcase .quick-actions {
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 0.4rem;
+  }
+  
+  .pokemon-showcase.search-showcase .action-btn {
+    padding: 0.45rem 0.65rem;
+    font-size: 0.65rem;
+    gap: 0.3rem;
+  }
+  
+  .pokemon-showcase.search-showcase .action-icon {
+    font-size: 0.85rem;
   }
   
   .special-badge {
