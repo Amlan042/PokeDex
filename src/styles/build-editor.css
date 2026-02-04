@@ -715,3 +715,775 @@
     flex-direction: column;
   }
 }
+
+/* ================================== */
+/* BUILD EDITOR - EXTENDED RESPONSIVE */
+/* Super-responsive for all devices   */
+/* ================================== */
+
+/* Large Screens (1200px+) */
+@media (min-width: 1200px) {
+  .build-editor {
+    max-width: 950px;
+    border-radius: 1.25rem;
+  }
+  
+  .editor-header {
+    padding: 1.75rem 2rem;
+  }
+  
+  .editor-body {
+    padding: 0 2rem 2rem;
+  }
+  
+  .config-section {
+    padding: 1.5rem;
+    border-radius: 0.875rem;
+  }
+  
+  .section-title {
+    font-size: 1.15rem;
+    margin-bottom: 1.25rem;
+  }
+}
+
+/* Tablets (768px - 991px) */
+@media (min-width: 768px) and (max-width: 991px) {
+  .build-editor {
+    max-width: 720px;
+    border-radius: 0.875rem;
+    max-height: 88vh;
+  }
+  
+  .editor-header {
+    padding: 1.25rem 1.5rem;
+    gap: 0.75rem;
+  }
+  
+  .pokemon-header-info .pokemon-name {
+    font-size: 1.35rem;
+  }
+  
+  .header-sprite {
+    width: 85px;
+    height: 85px;
+  }
+  
+  .editor-body {
+    padding: 0 1.5rem 1.5rem;
+  }
+  
+  .config-section {
+    padding: 1.25rem;
+    border-radius: 0.75rem;
+    margin-bottom: 1rem;
+  }
+  
+  .section-title {
+    font-size: 1.05rem;
+    margin-bottom: 1rem;
+  }
+  
+  .config-grid {
+    gap: 1rem;
+  }
+  
+  .stats-grid {
+    gap: 0.75rem;
+  }
+  
+  .stat-card {
+    padding: 0.875rem;
+    border-radius: 0.625rem;
+  }
+  
+  .moves-grid {
+    gap: 0.75rem;
+  }
+  
+  .move-slot {
+    padding: 0.75rem;
+    border-radius: 0.625rem;
+  }
+  
+  .editor-footer {
+    padding: 1.25rem 1.5rem;
+    gap: 0.75rem;
+  }
+}
+
+/* Large Phones / Small Tablets (600px - 767px) */
+@media (min-width: 600px) and (max-width: 767px) {
+  .build-editor-overlay {
+    padding: 0.75rem;
+  }
+  
+  .build-editor {
+    border-radius: 0.875rem;
+    max-height: 90vh;
+  }
+  
+  .build-editor .close-btn {
+    top: 0.75rem;
+    right: 0.75rem;
+    width: 32px;
+    height: 32px;
+    font-size: 1rem;
+  }
+  
+  .editor-header {
+    padding: 1rem 1.25rem;
+    gap: 0.6rem;
+  }
+  
+  .header-sprite {
+    width: 75px;
+    height: 75px;
+  }
+  
+  .pokemon-header-info .pokemon-name {
+    font-size: 1.2rem;
+  }
+  
+  .pokemon-header-info .pokemon-id {
+    font-size: 0.8rem;
+  }
+  
+  .nickname-input {
+    padding: 0.55rem 0.875rem;
+    font-size: 0.9rem;
+  }
+  
+  .editor-body {
+    padding: 0 1.25rem 1.25rem;
+    gap: 1rem;
+  }
+  
+  .config-section {
+    padding: 1rem;
+    border-radius: 0.625rem;
+    margin-bottom: 0.875rem;
+  }
+  
+  .section-title {
+    font-size: 0.95rem;
+    gap: 0.4rem;
+    margin-bottom: 0.875rem;
+  }
+  
+  .config-grid {
+    grid-template-columns: 1fr;
+    gap: 0.875rem;
+  }
+  
+  .config-option label {
+    font-size: 0.82rem;
+    margin-bottom: 0.35rem;
+  }
+  
+  .config-select,
+  .config-input {
+    padding: 0.55rem 0.75rem;
+    font-size: 0.88rem;
+  }
+  
+  .stats-grid {
+    grid-template-columns: repeat(3, 1fr);
+    gap: 0.625rem;
+  }
+  
+  .stat-card {
+    padding: 0.75rem;
+    border-radius: 0.5rem;
+  }
+  
+  .stat-card .stat-label {
+    font-size: 0.75rem;
+    margin-bottom: 0.3rem;
+  }
+  
+  .stat-card .stat-value {
+    font-size: 0.95rem;
+  }
+  
+  .stat-inputs {
+    gap: 0.35rem;
+  }
+  
+  .stat-input {
+    padding: 0.35rem 0.5rem;
+    font-size: 0.82rem;
+  }
+  
+  .ev-bar {
+    height: 5px;
+    border-radius: 2.5px;
+  }
+  
+  .moves-grid {
+    grid-template-columns: 1fr;
+    gap: 0.625rem;
+  }
+  
+  .move-slot {
+    padding: 0.65rem;
+    border-radius: 0.5rem;
+    gap: 0.5rem;
+  }
+  
+  .move-slot .slot-number {
+    font-size: 0.72rem;
+    width: 22px;
+    height: 22px;
+  }
+  
+  .move-select {
+    padding: 0.5rem 0.65rem;
+    font-size: 0.85rem;
+  }
+  
+  .editor-footer {
+    padding: 1rem 1.25rem;
+    gap: 0.6rem;
+  }
+  
+  .editor-actions {
+    flex-direction: column;
+    gap: 0.5rem;
+  }
+  
+  .save-btn,
+  .cancel-btn {
+    padding: 0.65rem 1rem;
+    font-size: 0.88rem;
+  }
+  
+  .export-actions {
+    flex-direction: column;
+    gap: 0.4rem;
+  }
+  
+  .export-btn,
+  .showdown-link {
+    padding: 0.55rem 0.875rem;
+    font-size: 0.82rem;
+  }
+}
+
+/* Standard Phones (480px - 599px) */
+@media (min-width: 480px) and (max-width: 599px) {
+  .build-editor-overlay {
+    padding: 0.5rem;
+    align-items: flex-end;
+  }
+  
+  .build-editor {
+    border-radius: 0.875rem 0.875rem 0 0;
+    max-height: 92vh;
+  }
+  
+  .build-editor .close-btn {
+    top: 0.6rem;
+    right: 0.6rem;
+    width: 30px;
+    height: 30px;
+    font-size: 0.95rem;
+  }
+  
+  .editor-header {
+    padding: 0.875rem 1rem;
+    gap: 0.5rem;
+    flex-direction: column;
+    text-align: center;
+  }
+  
+  .header-sprite {
+    width: 70px;
+    height: 70px;
+  }
+  
+  .pokemon-header-info .pokemon-name {
+    font-size: 1.1rem;
+  }
+  
+  .pokemon-header-info .pokemon-id {
+    font-size: 0.75rem;
+  }
+  
+  .pokemon-header-info .pokemon-types {
+    justify-content: center;
+    gap: 0.3rem;
+  }
+  
+  .pokemon-header-info .type-badge {
+    padding: 0.15rem 0.5rem;
+    font-size: 0.68rem;
+  }
+  
+  .nickname-input {
+    max-width: 100%;
+    padding: 0.5rem 0.75rem;
+    font-size: 0.85rem;
+    text-align: center;
+  }
+  
+  .editor-body {
+    padding: 0 1rem 1rem;
+    gap: 0.875rem;
+  }
+  
+  .config-section {
+    padding: 0.875rem;
+    border-radius: 0.5rem;
+    margin-bottom: 0.75rem;
+  }
+  
+  .section-title {
+    font-size: 0.88rem;
+    gap: 0.35rem;
+    margin-bottom: 0.75rem;
+  }
+  
+  .config-grid {
+    gap: 0.75rem;
+  }
+  
+  .config-option label {
+    font-size: 0.78rem;
+    margin-bottom: 0.3rem;
+  }
+  
+  .config-select,
+  .config-input {
+    padding: 0.5rem 0.65rem;
+    font-size: 0.85rem;
+  }
+  
+  .stats-grid {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 0.5rem;
+  }
+  
+  .stat-card {
+    padding: 0.65rem;
+    border-radius: 0.45rem;
+  }
+  
+  .stat-card .stat-label {
+    font-size: 0.7rem;
+    margin-bottom: 0.25rem;
+  }
+  
+  .stat-card .stat-value {
+    font-size: 0.88rem;
+  }
+  
+  .stat-inputs {
+    gap: 0.3rem;
+    margin-top: 0.4rem;
+  }
+  
+  .stat-input-wrapper label {
+    font-size: 0.62rem;
+  }
+  
+  .stat-input {
+    padding: 0.3rem 0.4rem;
+    font-size: 0.78rem;
+  }
+  
+  .ev-bar {
+    height: 4px;
+  }
+  
+  .moves-grid {
+    gap: 0.5rem;
+  }
+  
+  .move-slot {
+    padding: 0.55rem;
+    border-radius: 0.45rem;
+    gap: 0.4rem;
+  }
+  
+  .move-slot .slot-number {
+    font-size: 0.65rem;
+    width: 20px;
+    height: 20px;
+  }
+  
+  .move-select {
+    padding: 0.45rem 0.55rem;
+    font-size: 0.8rem;
+  }
+  
+  .editor-footer {
+    padding: 0.875rem 1rem;
+    gap: 0.5rem;
+  }
+  
+  .editor-actions {
+    gap: 0.4rem;
+  }
+  
+  .save-btn,
+  .cancel-btn {
+    padding: 0.6rem 0.875rem;
+    font-size: 0.82rem;
+    flex: 1;
+  }
+  
+  .export-actions {
+    gap: 0.35rem;
+  }
+  
+  .export-btn,
+  .showdown-link {
+    padding: 0.5rem 0.75rem;
+    font-size: 0.78rem;
+    flex: 1;
+  }
+}
+
+/* Small Phones (360px - 479px) */
+@media (min-width: 360px) and (max-width: 479px) {
+  .build-editor-overlay {
+    padding: 0;
+    align-items: flex-end;
+  }
+  
+  .build-editor {
+    border-radius: 0.75rem 0.75rem 0 0;
+    max-height: 94vh;
+  }
+  
+  .build-editor .close-btn {
+    top: 0.5rem;
+    right: 0.5rem;
+    width: 28px;
+    height: 28px;
+    font-size: 0.88rem;
+  }
+  
+  .editor-header {
+    padding: 0.75rem 0.875rem;
+    gap: 0.4rem;
+  }
+  
+  .header-sprite {
+    width: 60px;
+    height: 60px;
+  }
+  
+  .pokemon-header-info .pokemon-name {
+    font-size: 1rem;
+  }
+  
+  .pokemon-header-info .pokemon-id {
+    font-size: 0.7rem;
+  }
+  
+  .pokemon-header-info .type-badge {
+    padding: 0.12rem 0.4rem;
+    font-size: 0.62rem;
+  }
+  
+  .nickname-input {
+    padding: 0.45rem 0.65rem;
+    font-size: 0.8rem;
+  }
+  
+  .editor-body {
+    padding: 0 0.875rem 0.875rem;
+    gap: 0.75rem;
+  }
+  
+  .config-section {
+    padding: 0.75rem;
+    border-radius: 0.45rem;
+    margin-bottom: 0.6rem;
+  }
+  
+  .section-title {
+    font-size: 0.82rem;
+    gap: 0.3rem;
+    margin-bottom: 0.6rem;
+  }
+  
+  .config-grid {
+    gap: 0.6rem;
+  }
+  
+  .config-option label {
+    font-size: 0.72rem;
+    margin-bottom: 0.25rem;
+  }
+  
+  .config-select,
+  .config-input {
+    padding: 0.45rem 0.55rem;
+    font-size: 0.8rem;
+  }
+  
+  .stats-grid {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 0.4rem;
+  }
+  
+  .stat-card {
+    padding: 0.55rem;
+    border-radius: 0.4rem;
+  }
+  
+  .stat-card .stat-label {
+    font-size: 0.65rem;
+  }
+  
+  .stat-card .stat-value {
+    font-size: 0.82rem;
+  }
+  
+  .stat-inputs {
+    gap: 0.25rem;
+    margin-top: 0.35rem;
+  }
+  
+  .stat-input-wrapper label {
+    font-size: 0.58rem;
+  }
+  
+  .stat-input {
+    padding: 0.25rem 0.35rem;
+    font-size: 0.72rem;
+  }
+  
+  .ev-bar {
+    height: 3px;
+  }
+  
+  .moves-grid {
+    gap: 0.4rem;
+  }
+  
+  .move-slot {
+    padding: 0.5rem;
+    border-radius: 0.4rem;
+    gap: 0.35rem;
+  }
+  
+  .move-slot .slot-number {
+    font-size: 0.6rem;
+    width: 18px;
+    height: 18px;
+  }
+  
+  .move-select {
+    padding: 0.4rem 0.5rem;
+    font-size: 0.75rem;
+  }
+  
+  .editor-footer {
+    padding: 0.75rem 0.875rem;
+    gap: 0.4rem;
+  }
+  
+  .save-btn,
+  .cancel-btn {
+    padding: 0.55rem 0.75rem;
+    font-size: 0.78rem;
+    gap: 0.3rem;
+  }
+  
+  .export-btn,
+  .showdown-link {
+    padding: 0.45rem 0.65rem;
+    font-size: 0.72rem;
+    gap: 0.25rem;
+  }
+}
+
+/* Extra Small Phones (below 360px) */
+@media (max-width: 359px) {
+  .build-editor {
+    border-radius: 0.625rem 0.625rem 0 0;
+    max-height: 95vh;
+  }
+  
+  .build-editor .close-btn {
+    top: 0.4rem;
+    right: 0.4rem;
+    width: 26px;
+    height: 26px;
+    font-size: 0.82rem;
+  }
+  
+  .editor-header {
+    padding: 0.6rem 0.75rem;
+    gap: 0.35rem;
+  }
+  
+  .header-sprite {
+    width: 52px;
+    height: 52px;
+  }
+  
+  .pokemon-header-info .pokemon-name {
+    font-size: 0.92rem;
+  }
+  
+  .pokemon-header-info .pokemon-id {
+    font-size: 0.65rem;
+  }
+  
+  .pokemon-header-info .type-badge {
+    padding: 0.1rem 0.35rem;
+    font-size: 0.58rem;
+  }
+  
+  .nickname-input {
+    padding: 0.4rem 0.55rem;
+    font-size: 0.75rem;
+  }
+  
+  .editor-body {
+    padding: 0 0.75rem 0.75rem;
+    gap: 0.6rem;
+  }
+  
+  .config-section {
+    padding: 0.6rem;
+    border-radius: 0.4rem;
+    margin-bottom: 0.5rem;
+  }
+  
+  .section-title {
+    font-size: 0.75rem;
+    gap: 0.25rem;
+    margin-bottom: 0.5rem;
+  }
+  
+  .config-grid {
+    gap: 0.5rem;
+  }
+  
+  .config-option label {
+    font-size: 0.68rem;
+  }
+  
+  .config-select,
+  .config-input {
+    padding: 0.4rem 0.5rem;
+    font-size: 0.75rem;
+  }
+  
+  .stats-grid {
+    gap: 0.35rem;
+  }
+  
+  .stat-card {
+    padding: 0.45rem;
+    border-radius: 0.35rem;
+  }
+  
+  .stat-card .stat-label {
+    font-size: 0.6rem;
+  }
+  
+  .stat-card .stat-value {
+    font-size: 0.75rem;
+  }
+  
+  .stat-input {
+    padding: 0.2rem 0.3rem;
+    font-size: 0.68rem;
+  }
+  
+  .moves-grid {
+    gap: 0.35rem;
+  }
+  
+  .move-slot {
+    padding: 0.4rem;
+    gap: 0.3rem;
+  }
+  
+  .move-slot .slot-number {
+    font-size: 0.55rem;
+    width: 16px;
+    height: 16px;
+  }
+  
+  .move-select {
+    padding: 0.35rem 0.45rem;
+    font-size: 0.7rem;
+  }
+  
+  .editor-footer {
+    padding: 0.6rem 0.75rem;
+    gap: 0.35rem;
+  }
+  
+  .save-btn,
+  .cancel-btn {
+    padding: 0.5rem 0.65rem;
+    font-size: 0.72rem;
+  }
+  
+  .export-btn,
+  .showdown-link {
+    padding: 0.4rem 0.55rem;
+    font-size: 0.68rem;
+  }
+}
+
+/* Touch Device Optimizations */
+@media (hover: none) and (pointer: coarse) {
+  .config-select:hover,
+  .config-input:hover,
+  .stat-input:hover,
+  .move-select:hover,
+  .save-btn:hover,
+  .cancel-btn:hover,
+  .export-btn:hover,
+  .showdown-link:hover {
+    transform: none;
+  }
+  
+  .save-btn:active,
+  .cancel-btn:active,
+  .export-btn:active,
+  .showdown-link:active {
+    transform: scale(0.97);
+  }
+  
+  .config-select,
+  .config-input,
+  .stat-input,
+  .move-select,
+  .save-btn,
+  .cancel-btn,
+  .export-btn,
+  .showdown-link {
+    min-height: 44px;
+  }
+}
+
+/* Reduced Motion */
+@media (prefers-reduced-motion: reduce) {
+  .build-editor-overlay {
+    animation: none;
+  }
+  
+  .build-editor {
+    animation: none;
+  }
+  
+  .config-select,
+  .config-input,
+  .stat-input,
+  .move-select,
+  .save-btn,
+  .cancel-btn {
+    transition: none;
+  }
+}

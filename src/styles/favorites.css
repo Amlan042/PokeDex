@@ -6,6 +6,8 @@
 .favorites-page {
   animation: fadeIn 0.5s ease-out;
   padding-bottom: 3rem;
+  overflow-x: hidden;
+  width: 100%;
 }
 
 /* ==================== */
@@ -871,5 +873,515 @@
   
   .tip {
     font-size: 0.85rem;
+  }
+}
+
+/* ================================== */
+/* FAVORITES PAGE - EXTENDED RESPONSIVE */
+/* Super-responsive for all devices   */
+/* ================================== */
+
+/* Large Screens (1200px+) */
+@media (min-width: 1200px) {
+  .favorites-hero {
+    padding: 2.5rem 2rem 3rem;
+  }
+  
+  .favorites-hero .page-title {
+    font-size: 2.8rem;
+  }
+  
+  .favorites-grid {
+    grid-template-columns: repeat(auto-fill, minmax(220px, 1fr));
+  }
+}
+
+/* Standard Phones (480px - 599px) */
+@media (min-width: 480px) and (max-width: 599px) {
+  .favorites-hero {
+    padding: 1.5rem 0.875rem 2rem;
+    border-radius: 20px;
+    margin-bottom: 1.5rem;
+  }
+  
+  .heart-pulse {
+    font-size: 2.8rem;
+  }
+  
+  .favorites-hero .page-title {
+    font-size: 2rem;
+  }
+  
+  .hero-subtitle {
+    font-size: 0.95rem;
+    margin-bottom: 1.25rem;
+  }
+  
+  .favorites-stats {
+    gap: 0.75rem;
+  }
+  
+  .stat-card {
+    padding: 0.875rem 1.25rem;
+    border-radius: 14px;
+    min-width: 85px;
+  }
+  
+  .stat-number {
+    font-size: 1.5rem;
+  }
+  
+  .stat-label {
+    font-size: 0.72rem;
+  }
+  
+  .favorites-controls {
+    padding: 0.875rem;
+    border-radius: 14px;
+    margin-bottom: 1.25rem;
+  }
+  
+  .favorites-search input {
+    padding: 0.65rem 2.25rem 0.65rem 2.25rem;
+    font-size: 0.85rem;
+    border-radius: 10px;
+  }
+  
+  .filter-dropdown select,
+  .type-filter {
+    padding: 0.65rem 0.875rem;
+    font-size: 0.85rem;
+    min-width: 115px;
+  }
+  
+  .sort-btn {
+    padding: 0.45rem 0.75rem;
+    font-size: 0.75rem;
+  }
+  
+  .favorites-grid {
+    gap: 0.875rem;
+  }
+}
+
+/* Small Phones (360px - 479px) */
+@media (min-width: 360px) and (max-width: 479px) {
+  .favorites-hero {
+    padding: 1.25rem 0.75rem 1.75rem;
+    border-radius: 18px;
+    margin-bottom: 1.25rem;
+  }
+  
+  .hero-icon {
+    margin-bottom: 0.75rem;
+  }
+  
+  .heart-pulse {
+    font-size: 2.5rem;
+  }
+  
+  .favorites-hero .page-title {
+    font-size: 1.75rem;
+  }
+  
+  .hero-subtitle {
+    font-size: 0.88rem;
+    margin-bottom: 1rem;
+  }
+  
+  .favorites-stats {
+    gap: 0.6rem;
+  }
+  
+  .stat-card {
+    padding: 0.75rem 1rem;
+    border-radius: 12px;
+    min-width: 80px;
+  }
+  
+  .stat-number {
+    font-size: 1.35rem;
+  }
+  
+  .stat-label {
+    font-size: 0.68rem;
+  }
+  
+  .top-types-label {
+    font-size: 0.78rem;
+  }
+  
+  .type-chip {
+    padding: 0.3rem 0.65rem;
+    font-size: 0.72rem;
+  }
+  
+  .favorites-controls {
+    padding: 0.75rem;
+    border-radius: 12px;
+    gap: 0.75rem;
+    margin-bottom: 1rem;
+  }
+  
+  .search-filter-group {
+    gap: 0.6rem;
+  }
+  
+  .favorites-search .search-icon {
+    left: 10px;
+    font-size: 0.9rem;
+  }
+  
+  .favorites-search input {
+    padding: 0.6rem 2rem 0.6rem 2rem;
+    font-size: 0.8rem;
+    border-radius: 9px;
+  }
+  
+  .clear-search {
+    width: 20px;
+    height: 20px;
+    font-size: 0.65rem;
+    right: 8px;
+  }
+  
+  .filter-dropdown select,
+  .type-filter {
+    padding: 0.6rem 0.75rem;
+    font-size: 0.8rem;
+    min-width: 100px;
+    border-radius: 9px;
+  }
+  
+  .sort-label {
+    font-size: 0.78rem;
+  }
+  
+  .sort-btn {
+    padding: 0.4rem 0.65rem;
+    font-size: 0.72rem;
+    border-radius: 8px;
+  }
+  
+  .filter-results {
+    padding: 0.6rem 0.875rem;
+    font-size: 0.78rem;
+    border-radius: 8px;
+    margin-bottom: 1rem;
+  }
+  
+  .favorites-grid {
+    gap: 0.65rem;
+  }
+}
+
+/* Extra Small Phones (below 360px) */
+@media (max-width: 359px) {
+  .favorites-hero {
+    padding: 1rem 0.625rem 1.5rem;
+    border-radius: 16px;
+    margin-bottom: 1rem;
+  }
+  
+  .hero-icon {
+    margin-bottom: 0.6rem;
+  }
+  
+  .heart-pulse {
+    font-size: 2.2rem;
+  }
+  
+  .favorites-hero .page-title {
+    font-size: 1.5rem;
+  }
+  
+  .hero-subtitle {
+    font-size: 0.82rem;
+    margin-bottom: 0.875rem;
+  }
+  
+  .favorites-stats {
+    gap: 0.5rem;
+  }
+  
+  .stat-card {
+    padding: 0.6rem 0.875rem;
+    border-radius: 10px;
+    min-width: 70px;
+  }
+  
+  .stat-number {
+    font-size: 1.2rem;
+  }
+  
+  .stat-label {
+    font-size: 0.62rem;
+  }
+  
+  .top-types-label {
+    font-size: 0.72rem;
+  }
+  
+  .type-chip {
+    padding: 0.25rem 0.55rem;
+    font-size: 0.68rem;
+  }
+  
+  .favorites-controls {
+    padding: 0.625rem;
+    border-radius: 10px;
+    gap: 0.6rem;
+    margin-bottom: 0.875rem;
+  }
+  
+  .favorites-search .search-icon {
+    left: 8px;
+    font-size: 0.85rem;
+  }
+  
+  .favorites-search input {
+    padding: 0.55rem 1.75rem 0.55rem 1.85rem;
+    font-size: 0.75rem;
+    border-radius: 8px;
+  }
+  
+  .clear-search {
+    width: 18px;
+    height: 18px;
+    font-size: 0.6rem;
+    right: 6px;
+  }
+  
+  .filter-dropdown select,
+  .type-filter {
+    padding: 0.55rem 0.65rem;
+    font-size: 0.75rem;
+    min-width: 90px;
+    border-radius: 8px;
+  }
+  
+  .sort-label {
+    font-size: 0.72rem;
+  }
+  
+  .sort-btn {
+    padding: 0.35rem 0.55rem;
+    font-size: 0.68rem;
+    border-radius: 7px;
+  }
+  
+  .filter-results {
+    padding: 0.5rem 0.75rem;
+    font-size: 0.72rem;
+    border-radius: 7px;
+    margin-bottom: 0.875rem;
+  }
+  
+  .favorites-grid {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 0.5rem;
+  }
+}
+
+/* Landscape Mode */
+@media (max-height: 500px) and (orientation: landscape) {
+  .favorites-hero {
+    padding: 1rem 1.5rem;
+    margin-bottom: 1rem;
+  }
+  
+  .hero-icon {
+    display: none;
+  }
+  
+  .favorites-hero .page-title {
+    font-size: 1.5rem;
+    margin-bottom: 0.25rem;
+  }
+  
+  .hero-subtitle {
+    display: none;
+  }
+  
+  .favorites-stats {
+    margin-bottom: 0.75rem;
+  }
+  
+  .favorites-controls {
+    margin-bottom: 0.75rem;
+  }
+  
+  .favorites-grid {
+    grid-template-columns: repeat(auto-fill, minmax(150px, 1fr));
+    gap: 0.75rem;
+  }
+}
+
+/* Medium Landscape Mode - for tablets and small laptops */
+@media (max-height: 700px) and (min-width: 900px) and (orientation: landscape) {
+  .favorites-page {
+    padding: 0.5rem;
+  }
+  
+  .favorites-hero {
+    padding: 1rem 1.5rem;
+    margin-bottom: 0.75rem;
+  }
+  
+  .hero-icon {
+    font-size: 2rem;
+  }
+  
+  .favorites-hero .page-title {
+    font-size: 1.75rem;
+    margin-bottom: 0.25rem;
+  }
+  
+  .hero-subtitle {
+    font-size: 0.9rem;
+    display: none;
+  }
+  
+  .favorites-stats {
+    gap: 0.75rem;
+    margin-bottom: 0.75rem;
+  }
+  
+  .stat-card {
+    padding: 0.75rem 1rem;
+    min-width: 100px;
+  }
+  
+  .stat-icon {
+    font-size: 1.25rem;
+    margin-bottom: 0.25rem;
+  }
+  
+  .stat-value {
+    font-size: 1.25rem;
+  }
+  
+  .stat-label {
+    font-size: 0.7rem;
+  }
+  
+  .favorites-controls {
+    gap: 0.75rem;
+    margin-bottom: 0.75rem;
+    padding: 0.75rem;
+  }
+  
+  .favorites-search input {
+    padding: 0.5rem 0.75rem;
+    font-size: 0.9rem;
+    height: 36px;
+  }
+  
+  .filter-dropdown select {
+    padding: 0.5rem 0.75rem;
+    font-size: 0.85rem;
+    height: 36px;
+  }
+  
+  .type-filter {
+    padding: 0.4rem 0.75rem;
+    font-size: 0.8rem;
+  }
+  
+  .sort-btn {
+    padding: 0.5rem 0.75rem;
+    font-size: 0.85rem;
+    height: 36px;
+  }
+  
+  .favorites-grid {
+    grid-template-columns: repeat(auto-fill, minmax(180px, 1fr));
+    gap: 0.75rem;
+    padding: 0.5rem;
+  }
+  
+  .favorite-card {
+    padding: 0.75rem;
+  }
+  
+  .favorite-card .pokemon-image {
+    width: 80px;
+    height: 80px;
+  }
+  
+  .favorite-card .pokemon-name {
+    font-size: 0.9rem;
+  }
+  
+  .favorite-card .pokemon-id {
+    font-size: 0.75rem;
+  }
+  
+  .favorite-actions {
+    gap: 0.4rem;
+  }
+  
+  .favorite-actions button {
+    padding: 0.4rem 0.6rem;
+    font-size: 0.75rem;
+  }
+  
+  .favorites-empty {
+    padding: 2rem;
+  }
+  
+  .favorites-empty .empty-icon {
+    font-size: 3rem;
+    margin-bottom: 0.75rem;
+  }
+  
+  .favorites-empty .empty-message {
+    font-size: 1.1rem;
+    margin-bottom: 0.25rem;
+  }
+  
+  .favorites-empty .empty-suggestion {
+    font-size: 0.85rem;
+  }
+}
+
+/* Touch Device Optimizations */
+@media (hover: none) and (pointer: coarse) {
+  .stat-card:hover,
+  .favorite-card:hover {
+    transform: none;
+  }
+  
+  .stat-card:active,
+  .favorite-card:active {
+    transform: scale(0.98);
+  }
+  
+  .sort-btn:hover,
+  .filter-dropdown select:hover,
+  .type-filter:hover {
+    transform: none;
+  }
+  
+  .favorites-search input,
+  .filter-dropdown select,
+  .type-filter,
+  .sort-btn {
+    min-height: 44px;
+  }
+}
+
+/* Reduced Motion */
+@media (prefers-reduced-motion: reduce) {
+  .favorites-page,
+  .heart-pulse,
+  .favorite-card {
+    animation: none;
+  }
+  
+  .stat-card,
+  .favorite-card,
+  .sort-btn {
+    transition: none;
   }
 }

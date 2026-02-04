@@ -500,3 +500,587 @@
     font-size: 1.2rem;
   }
 }
+
+/* ================================== */
+/* EVOLUTION CHAIN - EXTENDED RESPONSIVE */
+/* Super-responsive for all devices   */
+/* ================================== */
+
+/* Large Screens (1200px+) */
+@media (min-width: 1200px) {
+  .evolution-chain-modern {
+    padding: 2rem;
+  }
+  
+  .evo-header {
+    margin-bottom: 2.5rem;
+  }
+  
+  .evo-header-icon {
+    font-size: 2.25rem;
+    width: 55px;
+    height: 55px;
+  }
+  
+  .evo-header-title {
+    font-size: 1.35rem;
+  }
+  
+  .evo-stage-card {
+    padding: 1.25rem;
+    border-radius: 1rem;
+  }
+  
+  .evo-sprite-container {
+    width: 110px;
+    height: 110px;
+  }
+}
+
+/* Tablets (768px - 991px) */
+@media (min-width: 768px) and (max-width: 991px) {
+  .evolution-chain-modern {
+    padding: 1.25rem;
+  }
+  
+  .evo-header {
+    gap: 0.875rem;
+    margin-bottom: 1.75rem;
+    padding-bottom: 0.875rem;
+  }
+  
+  .evo-header-icon {
+    font-size: 1.75rem;
+    width: 45px;
+    height: 45px;
+    border-radius: 12px;
+  }
+  
+  .evo-header-title {
+    font-size: 1.1rem;
+  }
+  
+  .evo-header-subtitle {
+    font-size: 0.8rem;
+  }
+  
+  .evo-chain-flow {
+    gap: 1.5rem;
+  }
+  
+  .evo-stage-card {
+    padding: 0.875rem;
+    border-radius: 0.875rem;
+    min-width: 130px;
+  }
+  
+  .evo-sprite-container {
+    width: 90px;
+    height: 90px;
+  }
+  
+  .evo-pokemon-name {
+    font-size: 0.88rem;
+  }
+  
+  .evo-arrow-line {
+    width: 35px;
+    height: 2px;
+  }
+  
+  .evo-method-badge {
+    padding: 0.35rem 0.6rem;
+    font-size: 0.72rem;
+  }
+}
+
+/* Large Phones / Small Tablets (600px - 767px) */
+@media (min-width: 600px) and (max-width: 767px) {
+  .evolution-chain-modern {
+    padding: 1rem;
+  }
+  
+  .evo-header {
+    gap: 0.75rem;
+    margin-bottom: 1.5rem;
+    padding-bottom: 0.75rem;
+  }
+  
+  .evo-header-icon {
+    font-size: 1.5rem;
+    width: 42px;
+    height: 42px;
+    border-radius: 10px;
+  }
+  
+  .evo-header-title {
+    font-size: 1rem;
+  }
+  
+  .evo-header-subtitle {
+    font-size: 0.75rem;
+  }
+  
+  .stage-dot {
+    width: 8px;
+    height: 8px;
+  }
+  
+  .evo-chain-flow {
+    gap: 1rem;
+  }
+  
+  .evo-stage-card {
+    padding: 0.75rem;
+    border-radius: 0.75rem;
+    min-width: 115px;
+  }
+  
+  .evo-sprite-container {
+    width: 80px;
+    height: 80px;
+    margin-bottom: 0.5rem;
+  }
+  
+  .evo-pokemon-name {
+    font-size: 0.82rem;
+  }
+  
+  .evo-pokemon-id {
+    font-size: 0.68rem;
+  }
+  
+  .evo-pokemon-types {
+    gap: 0.25rem;
+    margin-top: 0.35rem;
+  }
+  
+  .evo-type-badge {
+    font-size: 0.55rem;
+    padding: 0.1rem 0.35rem;
+  }
+  
+  .evo-arrow-container {
+    padding: 0 0.5rem;
+  }
+  
+  .evo-arrow-line {
+    width: 30px;
+    height: 2px;
+  }
+  
+  .evo-method-badge {
+    padding: 0.3rem 0.5rem;
+    font-size: 0.68rem;
+    max-width: 80px;
+  }
+  
+  /* Legacy styles */
+  .evolution-chain-section {
+    padding: 1.5rem 1rem;
+    border-radius: 1rem;
+    margin-top: 1.5rem;
+  }
+  
+  .evolution-chain-section h3 {
+    font-size: 0.78rem;
+    margin-bottom: 1.25rem;
+  }
+  
+  .evolution-stage {
+    padding: 0.75rem;
+    border-radius: 12px;
+  }
+  
+  .evolution-stage img {
+    width: 70px;
+    height: 70px;
+  }
+  
+  .evolution-method {
+    font-size: 0.65rem;
+    max-width: 70px;
+  }
+}
+
+/* Standard Phones (480px - 599px) */
+@media (min-width: 480px) and (max-width: 599px) {
+  .evolution-chain-modern {
+    padding: 0.875rem;
+  }
+  
+  .evo-header {
+    gap: 0.6rem;
+    margin-bottom: 1.25rem;
+    padding-bottom: 0.6rem;
+  }
+  
+  .evo-header-icon {
+    font-size: 1.35rem;
+    width: 38px;
+    height: 38px;
+    border-radius: 9px;
+  }
+  
+  .evo-header-title {
+    font-size: 0.92rem;
+  }
+  
+  .evo-header-subtitle {
+    font-size: 0.7rem;
+  }
+  
+  .stage-dot {
+    width: 7px;
+    height: 7px;
+  }
+  
+  .evo-chain-flow {
+    flex-direction: column;
+    gap: 1.25rem;
+  }
+  
+  .evo-stage-card {
+    padding: 0.65rem;
+    border-radius: 0.625rem;
+    min-width: 100px;
+  }
+  
+  .evo-sprite-container {
+    width: 70px;
+    height: 70px;
+    margin-bottom: 0.4rem;
+  }
+  
+  .evo-pokemon-name {
+    font-size: 0.78rem;
+  }
+  
+  .evo-pokemon-id {
+    font-size: 0.62rem;
+  }
+  
+  .evo-pokemon-types {
+    gap: 0.2rem;
+    margin-top: 0.3rem;
+  }
+  
+  .evo-type-badge {
+    font-size: 0.52rem;
+    padding: 0.08rem 0.3rem;
+  }
+  
+  .evo-arrow-container {
+    transform: rotate(90deg);
+    padding: 0.35rem 0;
+  }
+  
+  .evo-arrow-line {
+    width: 25px;
+    height: 2px;
+  }
+  
+  .evo-method-badge {
+    padding: 0.25rem 0.45rem;
+    font-size: 0.62rem;
+    max-width: 70px;
+  }
+  
+  .evo-stage-column.branched .evo-stage-cards {
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 0.6rem;
+  }
+  
+  /* Legacy styles */
+  .evolution-chain-section {
+    padding: 1.25rem 0.875rem;
+    border-radius: 0.875rem;
+    margin-top: 1.25rem;
+  }
+  
+  .evolution-chain-section h3 {
+    font-size: 0.72rem;
+    margin-bottom: 1rem;
+  }
+  
+  .evolution-chain {
+    gap: 0.75rem;
+  }
+  
+  .evolution-stage {
+    padding: 0.65rem;
+    border-radius: 10px;
+  }
+  
+  .evolution-stage img {
+    width: 60px;
+    height: 60px;
+  }
+  
+  .evolution-method {
+    font-size: 0.6rem;
+    max-width: 60px;
+  }
+  
+  .evolution-arrow .arrow {
+    font-size: 1rem;
+  }
+}
+
+/* Small Phones (360px - 479px) */
+@media (min-width: 360px) and (max-width: 479px) {
+  .evolution-chain-modern {
+    padding: 0.75rem;
+  }
+  
+  .evo-header {
+    gap: 0.5rem;
+    margin-bottom: 1rem;
+    padding-bottom: 0.5rem;
+  }
+  
+  .evo-header-icon {
+    font-size: 1.2rem;
+    width: 34px;
+    height: 34px;
+    border-radius: 8px;
+  }
+  
+  .evo-header-title {
+    font-size: 0.85rem;
+  }
+  
+  .evo-header-subtitle {
+    font-size: 0.65rem;
+  }
+  
+  .stage-dot {
+    width: 6px;
+    height: 6px;
+  }
+  
+  .evo-chain-flow {
+    gap: 1rem;
+  }
+  
+  .evo-stage-card {
+    padding: 0.55rem;
+    border-radius: 0.5rem;
+    min-width: 90px;
+  }
+  
+  .evo-sprite-container {
+    width: 60px;
+    height: 60px;
+    margin-bottom: 0.35rem;
+  }
+  
+  .evo-pokemon-name {
+    font-size: 0.72rem;
+  }
+  
+  .evo-pokemon-id {
+    font-size: 0.58rem;
+  }
+  
+  .evo-type-badge {
+    font-size: 0.48rem;
+    padding: 0.06rem 0.25rem;
+  }
+  
+  .evo-arrow-line {
+    width: 20px;
+    height: 2px;
+  }
+  
+  .evo-method-badge {
+    padding: 0.2rem 0.4rem;
+    font-size: 0.58rem;
+    max-width: 62px;
+  }
+  
+  .evo-stage-column.branched .evo-stage-cards {
+    gap: 0.5rem;
+  }
+  
+  /* Legacy styles */
+  .evolution-chain-section {
+    padding: 1rem 0.75rem;
+    border-radius: 0.75rem;
+    margin-top: 1rem;
+  }
+  
+  .evolution-chain-section h3 {
+    font-size: 0.68rem;
+    margin-bottom: 0.875rem;
+  }
+  
+  .evolution-chain {
+    gap: 0.6rem;
+  }
+  
+  .evolution-stage {
+    padding: 0.55rem;
+    border-radius: 9px;
+  }
+  
+  .evolution-stage img {
+    width: 52px;
+    height: 52px;
+  }
+  
+  .evolution-method {
+    font-size: 0.55rem;
+    max-width: 52px;
+  }
+  
+  .evolution-arrow .arrow {
+    font-size: 0.9rem;
+  }
+}
+
+/* Extra Small Phones (below 360px) */
+@media (max-width: 359px) {
+  .evolution-chain-modern {
+    padding: 0.6rem;
+  }
+  
+  .evo-header {
+    gap: 0.4rem;
+    margin-bottom: 0.875rem;
+    padding-bottom: 0.4rem;
+  }
+  
+  .evo-header-icon {
+    font-size: 1.1rem;
+    width: 30px;
+    height: 30px;
+    border-radius: 7px;
+  }
+  
+  .evo-header-title {
+    font-size: 0.78rem;
+  }
+  
+  .evo-header-subtitle {
+    font-size: 0.6rem;
+  }
+  
+  .stage-dot {
+    width: 5px;
+    height: 5px;
+  }
+  
+  .evo-chain-flow {
+    gap: 0.875rem;
+  }
+  
+  .evo-stage-card {
+    padding: 0.45rem;
+    border-radius: 0.45rem;
+    min-width: 80px;
+  }
+  
+  .evo-sprite-container {
+    width: 52px;
+    height: 52px;
+    margin-bottom: 0.3rem;
+  }
+  
+  .evo-pokemon-name {
+    font-size: 0.68rem;
+  }
+  
+  .evo-pokemon-id {
+    font-size: 0.52rem;
+  }
+  
+  .evo-type-badge {
+    font-size: 0.45rem;
+    padding: 0.05rem 0.2rem;
+  }
+  
+  .evo-arrow-line {
+    width: 18px;
+    height: 1.5px;
+  }
+  
+  .evo-method-badge {
+    padding: 0.15rem 0.35rem;
+    font-size: 0.52rem;
+    max-width: 55px;
+  }
+  
+  /* Legacy styles */
+  .evolution-chain-section {
+    padding: 0.875rem 0.6rem;
+    border-radius: 0.625rem;
+    margin-top: 0.875rem;
+  }
+  
+  .evolution-chain-section h3 {
+    font-size: 0.62rem;
+    margin-bottom: 0.75rem;
+  }
+  
+  .evolution-chain {
+    gap: 0.5rem;
+  }
+  
+  .evolution-stage {
+    padding: 0.45rem;
+    border-radius: 8px;
+  }
+  
+  .evolution-stage img {
+    width: 45px;
+    height: 45px;
+  }
+  
+  .evolution-method {
+    font-size: 0.5rem;
+    max-width: 45px;
+  }
+  
+  .evolution-arrow .arrow {
+    font-size: 0.8rem;
+  }
+}
+
+/* Touch Device Optimizations */
+@media (hover: none) and (pointer: coarse) {
+  .evo-stage-card:hover {
+    transform: none;
+  }
+  
+  .evo-stage-card:active {
+    transform: scale(0.98);
+  }
+  
+  .evolution-stage:hover {
+    transform: none;
+  }
+  
+  .evolution-stage:active {
+    transform: scale(0.97);
+  }
+  
+  .evo-stage-card {
+    min-height: 44px;
+  }
+}
+
+/* Reduced Motion */
+@media (prefers-reduced-motion: reduce) {
+  .evo-stage-card,
+  .evolution-stage {
+    transition: none;
+  }
+  
+  .evo-arrow-line,
+  .evo-sprite-container {
+    animation: none;
+  }
+}

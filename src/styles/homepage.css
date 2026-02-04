@@ -7,6 +7,8 @@
   max-width: 1000px;
   margin: 0 auto;
   padding: 1rem;
+  overflow-x: hidden;
+  width: 100%;
 }
 
 .homepage-header {
@@ -137,7 +139,8 @@
   z-index: 1;
 }
 
-@media (max-width: 768px) {
+/* Switch to single column at 900px for better readability */
+@media (max-width: 900px) {
   .showcase-content {
     grid-template-columns: 1fr;
     gap: 2rem;
@@ -571,4 +574,1135 @@
 .error-icon {
   font-size: 3rem;
   margin-bottom: 1rem;
+}
+
+/* ================================== */
+/* HOMEPAGE RESPONSIVE STYLES         */
+/* Super-responsive for all devices   */
+/* ================================== */
+
+/* Large Screens (1200px+) */
+@media (min-width: 1200px) {
+  .homepage {
+    max-width: 1100px;
+    padding: 1.5rem 2rem;
+  }
+  
+  .pokemon-showcase {
+    padding: 3rem;
+  }
+  
+  .pokemon-showcase-name {
+    font-size: 2.8rem;
+  }
+}
+
+/* Medium Large Screens (992px - 1199px) */
+@media (min-width: 992px) and (max-width: 1199px) {
+  .homepage {
+    padding: 1rem 1.5rem;
+  }
+  
+  .pokemon-showcase {
+    padding: 2.25rem;
+  }
+  
+  .showcase-content {
+    gap: 2rem;
+  }
+  
+  .pokemon-showcase-name {
+    font-size: 2.3rem;
+  }
+  
+  .pokemon-image-showcase {
+    width: 220px;
+    height: 220px;
+  }
+  
+  .pokemon-image-showcase img {
+    width: 200px;
+    height: 200px;
+  }
+  
+  .stats-rings {
+    grid-template-columns: repeat(6, 1fr);
+    gap: 0.6rem;
+  }
+  
+  .stat-ring {
+    width: 68px;
+    height: 68px;
+  }
+  
+  .stat-ring-value {
+    font-size: 0.95rem;
+  }
+  
+  .stat-ring-name {
+    font-size: 0.55rem;
+  }
+}
+
+/* Tablets and Medium screens (768px - 991px) */
+@media (min-width: 768px) and (max-width: 991px) {
+  .homepage {
+    padding: 1rem;
+  }
+  
+  .homepage-title {
+    font-size: 1.25rem;
+    gap: 0.75rem;
+  }
+  
+  .title-icon {
+    font-size: 1.5rem;
+  }
+  
+  .homepage-subtitle {
+    font-size: 0.9rem;
+  }
+  
+  .pokemon-showcase {
+    padding: 2rem;
+    border-radius: 24px;
+  }
+  
+  .showcase-content {
+    grid-template-columns: 1fr;
+    gap: 1.75rem;
+  }
+  
+  .showcase-visual {
+    align-items: center;
+  }
+  
+  .pokemon-image-showcase {
+    width: 220px;
+    height: 220px;
+  }
+  
+  .pokemon-image-showcase img {
+    width: 200px;
+    height: 200px;
+  }
+  
+  .pokemon-showcase-name {
+    font-size: 2rem;
+    text-align: center;
+  }
+  
+  .pokemon-header {
+    text-align: center;
+  }
+  
+  .pokemon-types-row {
+    justify-content: center;
+  }
+  
+  .physical-stats {
+    gap: 0.75rem;
+  }
+  
+  .section-label {
+    text-align: center;
+  }
+  
+  .abilities-list {
+    justify-content: center;
+  }
+  
+  .stats-rings {
+    grid-template-columns: repeat(6, 1fr);
+    gap: 0.5rem;
+    justify-items: center;
+  }
+  
+  .stat-ring {
+    width: 65px;
+    height: 65px;
+  }
+  
+  .stat-ring-value {
+    font-size: 0.9rem;
+  }
+  
+  .stat-ring-name {
+    font-size: 0.52rem;
+  }
+}
+
+/* Large Phones / Small Tablets (600px - 767px) */
+@media (min-width: 600px) and (max-width: 767px) {
+  .homepage {
+    padding: 0.875rem;
+  }
+  
+  .homepage-header {
+    margin-bottom: 1.5rem;
+  }
+  
+  .homepage-title {
+    font-size: 1.15rem;
+    gap: 0.6rem;
+  }
+  
+  .title-icon {
+    font-size: 1.4rem;
+  }
+  
+  .homepage-subtitle {
+    font-size: 0.85rem;
+  }
+  
+  .pokemon-showcase {
+    padding: 1.75rem;
+    border-radius: 20px;
+  }
+  
+  .showcase-content {
+    grid-template-columns: 1fr;
+    gap: 1.75rem;
+  }
+  
+  .showcase-visual {
+    gap: 1.25rem;
+  }
+  
+  .pokemon-id-badge {
+    padding: 0.4rem 1.25rem;
+    font-size: 0.8rem;
+  }
+  
+  .pokemon-image-showcase {
+    width: 200px;
+    height: 200px;
+  }
+  
+  .pokemon-image-showcase img {
+    width: 180px;
+    height: 180px;
+  }
+  
+  .quick-actions {
+    gap: 0.75rem;
+  }
+  
+  .action-btn {
+    padding: 0.7rem 1rem;
+    font-size: 0.8rem;
+  }
+  
+  .pokemon-showcase-name {
+    font-size: 1.8rem;
+  }
+  
+  .pokemon-types-row {
+    gap: 0.5rem;
+  }
+  
+  .type-pill {
+    padding: 0.4rem 1rem;
+    font-size: 0.8rem;
+  }
+  
+  .physical-stats {
+    grid-template-columns: repeat(3, 1fr);
+    gap: 0.6rem;
+  }
+  
+  .physical-stat {
+    padding: 0.8rem;
+    gap: 0.6rem;
+  }
+  
+  .physical-icon {
+    font-size: 1.25rem;
+  }
+  
+  .physical-value {
+    font-size: 1rem;
+  }
+  
+  .physical-label {
+    font-size: 0.68rem;
+  }
+  
+  .stats-rings {
+    grid-template-columns: repeat(3, 1fr);
+    gap: 0.6rem;
+  }
+  
+  .stat-ring {
+    width: 65px;
+    height: 65px;
+  }
+  
+  .stat-ring-value {
+    font-size: 0.9rem;
+  }
+  
+  .stat-ring-name {
+    font-size: 0.55rem;
+  }
+  
+  .discover-btn {
+    padding: 0.875rem 2rem;
+    font-size: 0.95rem;
+  }
+}
+
+/* Standard Phones (480px - 599px) */
+@media (min-width: 480px) and (max-width: 599px) {
+  .homepage {
+    padding: 0.75rem;
+  }
+  
+  .homepage-header {
+    margin-bottom: 1.25rem;
+  }
+  
+  .homepage-title {
+    font-size: 1rem;
+    gap: 0.5rem;
+  }
+  
+  .title-icon {
+    font-size: 1.25rem;
+  }
+  
+  .homepage-subtitle {
+    font-size: 0.8rem;
+  }
+  
+  .pokemon-showcase {
+    padding: 1.5rem;
+    border-radius: 18px;
+  }
+  
+  .bg-circle.circle-1 {
+    width: 200px;
+    height: 200px;
+    top: -80px;
+    right: -40px;
+  }
+  
+  .bg-circle.circle-2 {
+    width: 150px;
+    height: 150px;
+    bottom: -40px;
+    left: -40px;
+  }
+  
+  .pokeball-watermark {
+    width: 250px;
+    height: 250px;
+    right: -80px;
+    bottom: -80px;
+  }
+  
+  .showcase-content {
+    grid-template-columns: 1fr;
+    gap: 1.5rem;
+  }
+  
+  .showcase-visual {
+    gap: 1rem;
+  }
+  
+  .pokemon-id-badge {
+    padding: 0.35rem 1rem;
+    font-size: 0.75rem;
+  }
+  
+  .pokemon-image-showcase {
+    width: 180px;
+    height: 180px;
+  }
+  
+  .pokemon-image-showcase img {
+    width: 160px;
+    height: 160px;
+  }
+  
+  .quick-actions {
+    gap: 0.6rem;
+  }
+  
+  .action-btn {
+    padding: 0.6rem 0.9rem;
+    font-size: 0.75rem;
+    border-radius: 12px;
+  }
+  
+  .action-icon {
+    font-size: 1rem;
+  }
+  
+  .pokemon-header {
+    padding-bottom: 0.75rem;
+  }
+  
+  .pokemon-showcase-name {
+    font-size: 1.6rem;
+    margin-bottom: 0.6rem;
+  }
+  
+  .pokemon-types-row {
+    gap: 0.4rem;
+  }
+  
+  .type-pill {
+    padding: 0.35rem 0.9rem;
+    font-size: 0.75rem;
+  }
+  
+  .physical-stats {
+    grid-template-columns: repeat(3, 1fr);
+    gap: 0.5rem;
+  }
+  
+  .physical-stat {
+    padding: 0.7rem 0.5rem;
+    gap: 0.5rem;
+    flex-direction: column;
+    text-align: center;
+  }
+  
+  .physical-icon {
+    font-size: 1.15rem;
+  }
+  
+  .physical-value {
+    font-size: 0.95rem;
+  }
+  
+  .physical-label {
+    font-size: 0.6rem;
+  }
+  
+  .section-label {
+    font-size: 0.75rem;
+    letter-spacing: 1.5px;
+    margin-bottom: 0.6rem;
+  }
+  
+  .abilities-list {
+    gap: 0.4rem;
+  }
+  
+  .ability-tag {
+    padding: 0.4rem 0.8rem;
+    font-size: 0.75rem;
+  }
+  
+  .stats-rings {
+    grid-template-columns: repeat(3, 1fr);
+    gap: 0.5rem;
+  }
+  
+  .stat-ring {
+    width: 60px;
+    height: 60px;
+  }
+  
+  .stat-ring-value {
+    font-size: 0.85rem;
+  }
+  
+  .stat-ring-name {
+    font-size: 0.5rem;
+  }
+  
+  .discover-btn {
+    padding: 0.8rem 1.75rem;
+    font-size: 0.9rem;
+    margin-top: 1.5rem;
+  }
+  
+  .btn-icon {
+    font-size: 1.1rem;
+  }
+  
+  .loading-showcase {
+    padding: 3rem 1.5rem;
+  }
+  
+  .pokeball-loader {
+    width: 60px;
+    height: 60px;
+  }
+  
+  .loading-text {
+    font-size: 0.9rem;
+  }
+  
+  .error-container {
+    padding: 2rem;
+  }
+  
+  .error-icon {
+    font-size: 2.5rem;
+  }
+}
+
+/* Small Phones (360px - 479px) */
+@media (min-width: 360px) and (max-width: 479px) {
+  .homepage {
+    padding: 0.5rem;
+  }
+  
+  .homepage-header {
+    margin-bottom: 1rem;
+  }
+  
+  .homepage-title {
+    font-size: 0.85rem;
+    gap: 0.4rem;
+  }
+  
+  .title-icon {
+    font-size: 1.1rem;
+  }
+  
+  .homepage-subtitle {
+    font-size: 0.75rem;
+  }
+  
+  .pokemon-showcase {
+    padding: 1.25rem;
+    border-radius: 16px;
+  }
+  
+  .bg-circle.circle-1 {
+    width: 150px;
+    height: 150px;
+    top: -60px;
+    right: -30px;
+  }
+  
+  .bg-circle.circle-2 {
+    width: 120px;
+    height: 120px;
+    bottom: -30px;
+    left: -30px;
+  }
+  
+  .pokeball-watermark {
+    width: 200px;
+    height: 200px;
+    right: -60px;
+    bottom: -60px;
+  }
+  
+  .showcase-content {
+    gap: 1.25rem;
+  }
+  
+  .showcase-visual {
+    gap: 0.875rem;
+  }
+  
+  .pokemon-id-badge {
+    padding: 0.3rem 0.875rem;
+    font-size: 0.7rem;
+  }
+  
+  .pokemon-image-showcase {
+    width: 150px;
+    height: 150px;
+  }
+  
+  .pokemon-image-showcase img {
+    width: 135px;
+    height: 135px;
+  }
+  
+  .quick-actions {
+    gap: 0.5rem;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+  
+  .action-btn {
+    padding: 0.55rem 0.8rem;
+    font-size: 0.7rem;
+    border-radius: 10px;
+    gap: 0.4rem;
+  }
+  
+  .action-icon {
+    font-size: 0.95rem;
+  }
+  
+  .showcase-info {
+    gap: 1rem;
+  }
+  
+  .pokemon-header {
+    padding-bottom: 0.6rem;
+  }
+  
+  .pokemon-showcase-name {
+    font-size: 1.4rem;
+    margin-bottom: 0.5rem;
+  }
+  
+  .pokemon-types-row {
+    gap: 0.35rem;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+  
+  .type-pill {
+    padding: 0.3rem 0.8rem;
+    font-size: 0.7rem;
+  }
+  
+  .physical-stats {
+    grid-template-columns: repeat(3, 1fr);
+    gap: 0.4rem;
+  }
+  
+  .physical-stat {
+    padding: 0.6rem 0.4rem;
+    gap: 0.25rem;
+    flex-direction: column;
+    text-align: center;
+    border-radius: 12px;
+  }
+  
+  .physical-icon {
+    font-size: 1rem;
+  }
+  
+  .physical-value {
+    font-size: 0.85rem;
+  }
+  
+  .physical-label {
+    font-size: 0.55rem;
+    letter-spacing: 0.5px;
+  }
+  
+  .section-label {
+    font-size: 0.7rem;
+    letter-spacing: 1px;
+    margin-bottom: 0.5rem;
+  }
+  
+  .abilities-list {
+    gap: 0.35rem;
+    justify-content: center;
+  }
+  
+  .ability-tag {
+    padding: 0.35rem 0.7rem;
+    font-size: 0.7rem;
+  }
+  
+  .stats-rings {
+    grid-template-columns: repeat(3, 1fr);
+    gap: 0.4rem;
+    justify-items: center;
+  }
+  
+  .stat-ring {
+    width: 55px;
+    height: 55px;
+  }
+  
+  .stat-ring svg {
+    stroke-width: 5;
+  }
+  
+  .stat-ring-value {
+    font-size: 0.75rem;
+  }
+  
+  .stat-ring-name {
+    font-size: 0.45rem;
+  }
+  
+  .discover-btn {
+    padding: 0.75rem 1.5rem;
+    font-size: 0.85rem;
+    margin-top: 1.25rem;
+    gap: 0.6rem;
+  }
+  
+  .btn-icon {
+    font-size: 1rem;
+  }
+  
+  .loading-showcase {
+    padding: 2.5rem 1rem;
+    gap: 1rem;
+  }
+  
+  .pokeball-loader {
+    width: 50px;
+    height: 50px;
+  }
+  
+  .pokeball-center {
+    width: 18px;
+    height: 18px;
+  }
+  
+  .pokeball-center::after {
+    width: 8px;
+    height: 8px;
+  }
+  
+  .loading-text {
+    font-size: 0.85rem;
+  }
+  
+  .error-container {
+    padding: 1.5rem;
+    border-radius: 16px;
+  }
+  
+  .error-icon {
+    font-size: 2rem;
+  }
+}
+
+/* Extra Small Phones (below 360px) */
+@media (max-width: 359px) {
+  .homepage {
+    padding: 0.375rem;
+  }
+  
+  .homepage-header {
+    margin-bottom: 0.875rem;
+  }
+  
+  .homepage-title {
+    font-size: 0.75rem;
+    gap: 0.35rem;
+  }
+  
+  .title-icon {
+    font-size: 1rem;
+  }
+  
+  .homepage-subtitle {
+    font-size: 0.7rem;
+  }
+  
+  .pokemon-showcase {
+    padding: 1rem;
+    border-radius: 14px;
+  }
+  
+  .bg-circle.circle-1,
+  .bg-circle.circle-2 {
+    display: none;
+  }
+  
+  .pokeball-watermark {
+    width: 150px;
+    height: 150px;
+    right: -50px;
+    bottom: -50px;
+  }
+  
+  .showcase-content {
+    gap: 1rem;
+  }
+  
+  .showcase-visual {
+    gap: 0.75rem;
+  }
+  
+  .pokemon-id-badge {
+    padding: 0.25rem 0.75rem;
+    font-size: 0.65rem;
+  }
+  
+  .pokemon-image-showcase {
+    width: 130px;
+    height: 130px;
+  }
+  
+  .pokemon-image-showcase img {
+    width: 115px;
+    height: 115px;
+  }
+  
+  .quick-actions {
+    gap: 0.4rem;
+  }
+  
+  .action-btn {
+    padding: 0.5rem 0.7rem;
+    font-size: 0.65rem;
+    border-radius: 8px;
+    gap: 0.35rem;
+  }
+  
+  .action-icon {
+    font-size: 0.85rem;
+  }
+  
+  .showcase-info {
+    gap: 0.875rem;
+  }
+  
+  .pokemon-header {
+    padding-bottom: 0.5rem;
+  }
+  
+  .pokemon-showcase-name {
+    font-size: 1.25rem;
+    margin-bottom: 0.4rem;
+  }
+  
+  .type-pill {
+    padding: 0.25rem 0.7rem;
+    font-size: 0.65rem;
+  }
+  
+  .physical-stats {
+    gap: 0.35rem;
+  }
+  
+  .physical-stat {
+    padding: 0.5rem 0.35rem;
+    border-radius: 10px;
+  }
+  
+  .physical-icon {
+    font-size: 0.9rem;
+  }
+  
+  .physical-value {
+    font-size: 0.78rem;
+  }
+  
+  .physical-label {
+    font-size: 0.5rem;
+  }
+  
+  .section-label {
+    font-size: 0.65rem;
+  }
+  
+  .ability-tag {
+    padding: 0.3rem 0.6rem;
+    font-size: 0.65rem;
+  }
+  
+  .stats-rings {
+    gap: 0.35rem;
+  }
+  
+  .stat-ring {
+    width: 48px;
+    height: 48px;
+  }
+  
+  .stat-ring-value {
+    font-size: 0.68rem;
+  }
+  
+  .stat-ring-name {
+    font-size: 0.4rem;
+  }
+  
+  .discover-btn {
+    padding: 0.65rem 1.25rem;
+    font-size: 0.78rem;
+    margin-top: 1rem;
+  }
+  
+  .btn-icon {
+    font-size: 0.9rem;
+  }
+  
+  .loading-showcase {
+    padding: 2rem 0.75rem;
+  }
+  
+  .pokeball-loader {
+    width: 45px;
+    height: 45px;
+  }
+  
+  .loading-text {
+    font-size: 0.8rem;
+  }
+  
+  .error-container {
+    padding: 1.25rem;
+    border-radius: 14px;
+  }
+  
+  .error-icon {
+    font-size: 1.75rem;
+  }
+}
+
+/* Landscape Mode - Short height */
+@media (max-height: 500px) and (orientation: landscape) {
+  .homepage {
+    padding: 0.5rem 1rem;
+  }
+  
+  .homepage-header {
+    margin-bottom: 0.75rem;
+  }
+  
+  .homepage-title {
+    font-size: 1rem;
+    margin-bottom: 0.25rem;
+  }
+  
+  .homepage-subtitle {
+    display: none;
+  }
+  
+  .pokemon-showcase {
+    padding: 1rem 1.5rem;
+  }
+  
+  .showcase-content {
+    grid-template-columns: auto 1fr;
+    gap: 1.5rem;
+  }
+  
+  .showcase-visual {
+    gap: 0.75rem;
+  }
+  
+  .pokemon-image-showcase {
+    width: 120px;
+    height: 120px;
+  }
+  
+  .pokemon-image-showcase img {
+    width: 110px;
+    height: 110px;
+  }
+  
+  .quick-actions {
+    flex-direction: column;
+    gap: 0.5rem;
+  }
+  
+  .showcase-info {
+    gap: 0.75rem;
+  }
+  
+  .pokemon-showcase-name {
+    font-size: 1.4rem;
+  }
+  
+  .physical-stats {
+    gap: 0.5rem;
+  }
+  
+  .stats-rings {
+    grid-template-columns: repeat(6, 1fr);
+  }
+  
+  .stat-ring {
+    width: 50px;
+    height: 50px;
+  }
+  
+  .discover-btn {
+    margin-top: 0.75rem;
+    padding: 0.6rem 1.5rem;
+  }
+}
+
+/* Medium Landscape Mode - For tablets/medium screens with limited height */
+@media (max-height: 700px) and (min-width: 900px) and (orientation: landscape) {
+  .homepage {
+    padding: 0.75rem 1.25rem;
+  }
+  
+  .homepage-header {
+    margin-bottom: 1rem;
+  }
+  
+  .homepage-title {
+    font-size: 1.15rem;
+    margin-bottom: 0.35rem;
+  }
+  
+  .homepage-subtitle {
+    font-size: 0.85rem;
+  }
+  
+  .pokemon-showcase {
+    padding: 1.25rem 1.75rem;
+  }
+  
+  .showcase-content {
+    grid-template-columns: auto 1fr;
+    gap: 1.75rem;
+  }
+  
+  .showcase-visual {
+    gap: 1rem;
+    align-items: center;
+  }
+  
+  .pokemon-id-badge {
+    padding: 0.35rem 1rem;
+    font-size: 0.75rem;
+  }
+  
+  .pokemon-image-showcase {
+    width: 150px;
+    height: 150px;
+  }
+  
+  .pokemon-image-showcase img {
+    width: 140px;
+    height: 140px;
+  }
+  
+  .quick-actions {
+    gap: 0.6rem;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+  
+  .action-btn {
+    padding: 0.55rem 0.9rem;
+    font-size: 0.75rem;
+  }
+  
+  .showcase-info {
+    gap: 0.875rem;
+  }
+  
+  .pokemon-header {
+    padding-bottom: 0.6rem;
+  }
+  
+  .pokemon-showcase-name {
+    font-size: 1.6rem;
+    margin-bottom: 0.5rem;
+  }
+  
+  .pokemon-types-row {
+    gap: 0.4rem;
+  }
+  
+  .type-pill {
+    padding: 0.35rem 0.85rem;
+    font-size: 0.75rem;
+  }
+  
+  .physical-stats {
+    gap: 0.6rem;
+  }
+  
+  .physical-stat {
+    padding: 0.65rem 0.5rem;
+    border-radius: 12px;
+  }
+  
+  .physical-icon {
+    font-size: 1.1rem;
+  }
+  
+  .physical-value {
+    font-size: 0.9rem;
+  }
+  
+  .physical-label {
+    font-size: 0.58rem;
+  }
+  
+  .section-label {
+    font-size: 0.72rem;
+    margin-bottom: 0.5rem;
+  }
+  
+  .abilities-list {
+    gap: 0.35rem;
+  }
+  
+  .ability-tag {
+    padding: 0.35rem 0.75rem;
+    font-size: 0.72rem;
+  }
+  
+  .stats-rings {
+    grid-template-columns: repeat(6, 1fr);
+    gap: 0.5rem;
+  }
+  
+  .stat-ring {
+    width: 55px;
+    height: 55px;
+  }
+  
+  .stat-ring-value {
+    font-size: 0.8rem;
+  }
+  
+  .stat-ring-name {
+    font-size: 0.48rem;
+  }
+  
+  .discover-btn {
+    margin-top: 1rem;
+    padding: 0.7rem 1.75rem;
+    font-size: 0.88rem;
+  }
+}
+
+/* Touch Device Optimizations */
+@media (hover: none) and (pointer: coarse) {
+  .action-btn:hover:not(:disabled) {
+    transform: none;
+  }
+  
+  .action-btn:active:not(:disabled) {
+    transform: scale(0.97);
+  }
+  
+  .discover-btn:hover {
+    transform: none;
+  }
+  
+  .discover-btn:active {
+    transform: scale(0.98);
+  }
+  
+  .action-btn,
+  .discover-btn {
+    min-height: 44px;
+  }
+}
+
+/* Reduced Motion */
+@media (prefers-reduced-motion: reduce) {
+  .pokemon-showcase {
+    animation: none;
+  }
+  
+  .title-icon,
+  .stat-ring,
+  .pokeball-loader,
+  .pokeball-watermark,
+  .heart-pulse,
+  .loading-text,
+  .image-glow,
+  .pokemon-image-showcase img {
+    animation: none;
+  }
+  
+  .btn-icon,
+  .btn-shine {
+    transition: none;
+  }
 }

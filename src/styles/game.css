@@ -8,6 +8,8 @@
   margin: 0 auto;
   animation: fadeIn 0.5s ease-out;
   padding-bottom: 3rem;
+  overflow-x: hidden;
+  width: 100%;
 }
 
 /* ==================== */
@@ -78,6 +80,18 @@
 
 .game-menu {
   padding: 0 0.5rem;
+}
+
+/* Game Type Section */
+.game-type-section {
+  margin-bottom: 1.5rem;
+}
+
+.game-type-section h3 {
+  text-align: center;
+  margin-bottom: 1rem;
+  font-size: 1.1rem;
+  color: var(--text-primary, #fff);
 }
 
 /* Stats Showcase */
@@ -1666,4 +1680,1639 @@
 .text-input-form .suggestion-item:hover,
 .text-input-form .suggestion-item.selected {
   background: rgba(102, 126, 234, 0.15);
+}
+
+/* ================================== */
+/* GAME PAGE - EXTENDED RESPONSIVE    */
+/* Super-responsive for all devices   */
+/* ================================== */
+
+/* Large Screens (1200px+) */
+@media (min-width: 1200px) {
+  .game-page {
+    max-width: 750px;
+  }
+  
+  .game-hero {
+    padding: 2.5rem 1.5rem 3rem;
+    margin-bottom: 2.5rem;
+  }
+  
+  .game-hero .page-title {
+    font-size: 2.5rem;
+  }
+  
+  .game-icon-pulse {
+    font-size: 4rem;
+  }
+  
+  .game-section {
+    padding: 2rem 2.5rem;
+  }
+  
+  .silhouette-image {
+    width: 280px;
+    height: 280px;
+  }
+}
+
+/* Medium Large Screens (992px - 1199px) */
+@media (min-width: 992px) and (max-width: 1199px) {
+  .game-page {
+    max-width: 680px;
+  }
+  
+  .game-hero {
+    padding: 2rem 1.25rem 2.5rem;
+  }
+  
+  .silhouette-image {
+    width: 250px;
+    height: 250px;
+  }
+}
+
+/* Tablets (768px - 991px) - Extending existing styles */
+@media (min-width: 768px) and (max-width: 991px) {
+  .game-page {
+    max-width: 620px;
+  }
+  
+  .game-hero {
+    padding: 1.75rem 1rem 2.25rem;
+    margin-bottom: 1.75rem;
+    border-radius: 1.25rem;
+  }
+  
+  .game-hero .page-title {
+    font-size: 2rem;
+  }
+  
+  .game-hero .hero-subtitle {
+    font-size: 1rem;
+  }
+  
+  .game-icon-pulse {
+    font-size: 2.75rem;
+  }
+  
+  .stats-showcase {
+    gap: 0.875rem;
+  }
+  
+  .stat-card {
+    padding: 0.875rem;
+    border-radius: 0.875rem;
+  }
+  
+  .stat-card .stat-value {
+    font-size: 1.3rem;
+  }
+  
+  .game-section {
+    padding: 1.5rem 1.25rem;
+    border-radius: 1rem;
+    margin-bottom: 1.5rem;
+  }
+  
+  .section-title {
+    font-size: 1.3rem;
+    margin-bottom: 1rem;
+  }
+  
+  .mode-buttons {
+    gap: 0.75rem;
+  }
+  
+  .mode-btn {
+    padding: 1rem;
+    border-radius: 0.875rem;
+  }
+  
+  .silhouette-image {
+    width: 200px;
+    height: 200px;
+  }
+  
+  .game-hud {
+    padding: 0.75rem 1rem;
+    border-radius: 0.875rem;
+  }
+  
+  .options-grid {
+    gap: 0.625rem;
+  }
+  
+  .option-btn {
+    padding: 1rem;
+    font-size: 0.95rem;
+  }
+}
+
+/* Large Phones / Small Tablets (600px - 767px) */
+@media (min-width: 600px) and (max-width: 767px) {
+  .game-page {
+    padding: 0 1rem 2.5rem;
+    max-width: 100%;
+  }
+  
+  .game-hero {
+    padding: 1.5rem 1rem 2rem;
+    margin-bottom: 1.5rem;
+    border-radius: 1rem;
+  }
+  
+  .game-hero .hero-icon {
+    margin-bottom: 0.75rem;
+  }
+  
+  .game-hero .page-title {
+    font-size: 1.65rem;
+    margin-bottom: 0.4rem;
+  }
+  
+  .game-hero .hero-subtitle {
+    font-size: 0.92rem;
+    margin-bottom: 1.25rem;
+  }
+  
+  .game-icon-pulse {
+    font-size: 2.5rem;
+  }
+  
+  .stats-showcase {
+    grid-template-columns: 1fr 1fr;
+    gap: 0.75rem;
+    margin-bottom: 1.25rem;
+  }
+  
+  .stat-card {
+    padding: 0.75rem;
+    border-radius: 0.75rem;
+  }
+  
+  .stat-card.featured {
+    grid-column: span 2;
+  }
+  
+  .stat-card .stat-icon {
+    font-size: 1.1rem;
+    margin-bottom: 0.35rem;
+  }
+  
+  .stat-card .stat-value {
+    font-size: 1.2rem;
+    margin-bottom: 0.15rem;
+  }
+  
+  .stat-card .stat-label {
+    font-size: 0.7rem;
+  }
+  
+  .game-section {
+    padding: 1.25rem 1rem;
+    border-radius: 0.875rem;
+    margin-bottom: 1.25rem;
+  }
+  
+  .section-title {
+    font-size: 1.15rem;
+    gap: 0.5rem;
+    margin-bottom: 0.875rem;
+  }
+  
+  .section-title .icon {
+    font-size: 1.1rem;
+  }
+  
+  .mode-buttons {
+    grid-template-columns: 1fr;
+    gap: 0.625rem;
+  }
+  
+  .mode-btn {
+    padding: 0.875rem;
+    border-radius: 0.75rem;
+    gap: 0.75rem;
+  }
+  
+  .mode-btn .mode-icon {
+    font-size: 1.75rem;
+  }
+  
+  .mode-btn .mode-name {
+    font-size: 1rem;
+  }
+  
+  .mode-btn .mode-desc {
+    font-size: 0.78rem;
+  }
+  
+  .difficulty-buttons {
+    grid-template-columns: 1fr;
+    gap: 0.5rem;
+  }
+  
+  .difficulty-btn {
+    padding: 0.75rem;
+    border-radius: 0.625rem;
+  }
+  
+  .game-type-buttons {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 0.6rem;
+  }
+  
+  .game-type-btn {
+    padding: 1rem 0.75rem;
+    border-radius: 0.875rem;
+  }
+  
+  .game-type-btn .type-icon {
+    font-size: 1.75rem;
+  }
+  
+  .game-type-btn .type-name {
+    font-size: 0.88rem;
+  }
+  
+  .silhouette-container {
+    padding: 1.5rem;
+    border-radius: 1rem;
+    margin-bottom: 1.25rem;
+  }
+  
+  .silhouette-image {
+    width: 180px;
+    height: 180px;
+  }
+  
+  .play-cry-btn {
+    width: 130px;
+    height: 130px;
+  }
+  
+  .cry-icon {
+    font-size: 2.75rem;
+  }
+  
+  .blur-image {
+    width: 180px;
+    height: 180px;
+  }
+  
+  .game-hud {
+    gap: 0.875rem;
+    padding: 0.65rem 0.875rem;
+    border-radius: 0.75rem;
+    margin-bottom: 1.25rem;
+  }
+  
+  .hud-item {
+    gap: 0.35rem;
+  }
+  
+  .hud-icon {
+    font-size: 0.95rem;
+  }
+  
+  .hud-value {
+    font-size: 1.2rem;
+  }
+  
+  .hud-label {
+    font-size: 0.68rem;
+  }
+  
+  .options-grid {
+    grid-template-columns: 1fr;
+    gap: 0.5rem;
+    margin-bottom: 1rem;
+  }
+  
+  .option-btn {
+    padding: 0.875rem;
+    font-size: 0.92rem;
+    border-radius: 0.625rem;
+    gap: 0.5rem;
+  }
+  
+  .option-sprite {
+    width: 50px;
+    height: 50px;
+  }
+  
+  .text-input-form {
+    flex-direction: column;
+    align-items: center;
+    gap: 0.75rem;
+  }
+  
+  .input-wrapper,
+  .text-input-form .pokemon-search-wrapper {
+    width: 100%;
+    max-width: none;
+  }
+  
+  .input-wrapper input,
+  .text-input-form .pokemon-search-wrapper input {
+    padding: 0.875rem 1.25rem;
+    font-size: 0.95rem;
+  }
+  
+  .submit-btn {
+    width: 100%;
+    padding: 0.875rem;
+    font-size: 0.95rem;
+  }
+  
+  .hint-btn {
+    padding: 0.6rem 1rem;
+    font-size: 0.85rem;
+  }
+  
+  .progress-bar-container {
+    height: 10px;
+    border-radius: 5px;
+  }
+  
+  .progress-dots {
+    gap: 0.4rem;
+  }
+  
+  .progress-dot {
+    width: 28px;
+    height: 28px;
+    font-size: 0.7rem;
+  }
+  
+  .result-section {
+    padding: 1.25rem;
+    border-radius: 0.875rem;
+    margin: 1.25rem 0;
+  }
+  
+  .result-content h3 {
+    font-size: 1.25rem;
+  }
+  
+  .result-sprite {
+    width: 110px;
+    height: 110px;
+  }
+  
+  .score-ring {
+    width: 120px;
+    height: 120px;
+  }
+  
+  .score-content .score-number {
+    font-size: 2rem;
+  }
+  
+  .score-content .score-label {
+    font-size: 0.7rem;
+  }
+  
+  .game-over-section {
+    padding: 1.5rem 1.25rem;
+    border-radius: 1rem;
+  }
+  
+  .game-over-title {
+    font-size: 1.65rem;
+  }
+  
+  .game-over-subtitle {
+    font-size: 0.9rem;
+  }
+  
+  .game-over-buttons {
+    gap: 0.6rem;
+  }
+  
+  .play-again-btn,
+  .menu-btn {
+    padding: 0.75rem 1.25rem;
+    font-size: 0.92rem;
+  }
+}
+
+/* Standard Phones (480px - 599px) */
+@media (min-width: 480px) and (max-width: 599px) {
+  .game-page {
+    padding: 0 0.875rem 2rem;
+    max-width: 100%;
+  }
+  
+  .game-hero {
+    padding: 1.25rem 0.875rem 1.75rem;
+    margin-bottom: 1.25rem;
+    border-radius: 0.875rem;
+  }
+  
+  .game-hero .hero-icon {
+    margin-bottom: 0.6rem;
+  }
+  
+  .game-hero .page-title {
+    font-size: 1.45rem;
+    margin-bottom: 0.35rem;
+  }
+  
+  .game-hero .hero-subtitle {
+    font-size: 0.85rem;
+    margin-bottom: 1rem;
+  }
+  
+  .game-icon-pulse {
+    font-size: 2.25rem;
+  }
+  
+  .stats-showcase {
+    grid-template-columns: 1fr 1fr;
+    gap: 0.6rem;
+    margin-bottom: 1rem;
+  }
+  
+  .stat-card {
+    padding: 0.65rem;
+    border-radius: 0.625rem;
+  }
+  
+  .stat-card.featured {
+    grid-column: span 2;
+  }
+  
+  .stat-card .stat-icon {
+    font-size: 1rem;
+    margin-bottom: 0.3rem;
+  }
+  
+  .stat-card .stat-value {
+    font-size: 1.1rem;
+  }
+  
+  .stat-card .stat-label {
+    font-size: 0.65rem;
+  }
+  
+  .game-section {
+    padding: 1rem 0.875rem;
+    border-radius: 0.75rem;
+    margin-bottom: 1rem;
+  }
+  
+  .section-title {
+    font-size: 1.05rem;
+    gap: 0.45rem;
+    margin-bottom: 0.75rem;
+  }
+  
+  .mode-buttons {
+    gap: 0.5rem;
+  }
+  
+  .mode-btn {
+    padding: 0.75rem;
+    border-radius: 0.625rem;
+    gap: 0.625rem;
+  }
+  
+  .mode-btn .mode-icon {
+    font-size: 1.5rem;
+  }
+  
+  .mode-btn .mode-name {
+    font-size: 0.92rem;
+  }
+  
+  .mode-btn .mode-desc {
+    font-size: 0.72rem;
+  }
+  
+  .difficulty-buttons {
+    gap: 0.4rem;
+  }
+  
+  .difficulty-btn {
+    padding: 0.65rem;
+    border-radius: 0.5rem;
+    font-size: 0.85rem;
+  }
+  
+  .game-type-buttons {
+    grid-template-columns: 1fr;
+    gap: 0.5rem;
+  }
+  
+  .game-type-btn {
+    padding: 0.875rem;
+    border-radius: 0.75rem;
+    flex-direction: row;
+    justify-content: flex-start;
+    gap: 0.75rem;
+  }
+  
+  .game-type-btn .type-icon {
+    font-size: 1.5rem;
+  }
+  
+  .game-type-btn .type-name {
+    font-size: 0.85rem;
+  }
+  
+  .silhouette-container {
+    padding: 1.25rem;
+    border-radius: 0.875rem;
+    margin-bottom: 1rem;
+  }
+  
+  .silhouette-image {
+    width: 160px;
+    height: 160px;
+  }
+  
+  .play-cry-btn {
+    width: 115px;
+    height: 115px;
+  }
+  
+  .cry-icon {
+    font-size: 2.5rem;
+  }
+  
+  .blur-image {
+    width: 160px;
+    height: 160px;
+  }
+  
+  .game-hud {
+    gap: 0.75rem;
+    padding: 0.55rem 0.75rem;
+    border-radius: 0.625rem;
+    margin-bottom: 1rem;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+  
+  .hud-item {
+    gap: 0.3rem;
+    min-width: 70px;
+  }
+  
+  .hud-icon {
+    font-size: 0.88rem;
+  }
+  
+  .hud-value {
+    font-size: 1.1rem;
+  }
+  
+  .hud-label {
+    font-size: 0.62rem;
+  }
+  
+  .options-grid {
+    gap: 0.4rem;
+    margin-bottom: 0.875rem;
+  }
+  
+  .option-btn {
+    padding: 0.75rem;
+    font-size: 0.85rem;
+    border-radius: 0.5rem;
+    gap: 0.4rem;
+  }
+  
+  .option-sprite {
+    width: 45px;
+    height: 45px;
+  }
+  
+  .text-input-form {
+    gap: 0.6rem;
+  }
+  
+  .input-wrapper input,
+  .text-input-form .pokemon-search-wrapper input {
+    padding: 0.75rem 1rem;
+    font-size: 0.9rem;
+  }
+  
+  .submit-btn {
+    padding: 0.75rem;
+    font-size: 0.9rem;
+  }
+  
+  .hint-btn {
+    padding: 0.55rem 0.875rem;
+    font-size: 0.8rem;
+  }
+  
+  .progress-bar-container {
+    height: 8px;
+    border-radius: 4px;
+  }
+  
+  .progress-dots {
+    gap: 0.35rem;
+  }
+  
+  .progress-dot {
+    width: 26px;
+    height: 26px;
+    font-size: 0.65rem;
+  }
+  
+  .result-section {
+    padding: 1rem;
+    border-radius: 0.75rem;
+    margin: 1rem 0;
+  }
+  
+  .result-content h3 {
+    font-size: 1.15rem;
+  }
+  
+  .result-sprite {
+    width: 100px;
+    height: 100px;
+  }
+  
+  .score-ring {
+    width: 110px;
+    height: 110px;
+  }
+  
+  .score-content .score-number {
+    font-size: 1.85rem;
+  }
+  
+  .score-content .score-label {
+    font-size: 0.65rem;
+  }
+  
+  .game-over-section {
+    padding: 1.25rem 1rem;
+    border-radius: 0.875rem;
+  }
+  
+  .game-over-title {
+    font-size: 1.5rem;
+    margin-bottom: 0.35rem;
+  }
+  
+  .game-over-subtitle {
+    font-size: 0.85rem;
+  }
+  
+  .game-over-buttons {
+    flex-direction: column;
+    gap: 0.5rem;
+    margin-top: 1.25rem;
+  }
+  
+  .play-again-btn,
+  .menu-btn {
+    width: 100%;
+    justify-content: center;
+    padding: 0.7rem 1rem;
+    font-size: 0.88rem;
+  }
+}
+
+/* Small Phones (360px - 479px) */
+@media (min-width: 360px) and (max-width: 479px) {
+  .game-page {
+    padding: 0 0.625rem 1.75rem;
+  }
+  
+  .game-hero {
+    padding: 1rem 0.75rem 1.5rem;
+    margin-bottom: 1rem;
+    border-radius: 0.75rem;
+  }
+  
+  .game-hero .hero-icon {
+    margin-bottom: 0.5rem;
+  }
+  
+  .game-hero .page-title {
+    font-size: 1.25rem;
+    margin-bottom: 0.3rem;
+  }
+  
+  .game-hero .hero-subtitle {
+    font-size: 0.78rem;
+    margin-bottom: 0.875rem;
+  }
+  
+  .game-icon-pulse {
+    font-size: 2rem;
+  }
+  
+  .stats-showcase {
+    grid-template-columns: 1fr 1fr;
+    gap: 0.5rem;
+    margin-bottom: 0.875rem;
+  }
+  
+  .stat-card {
+    padding: 0.55rem;
+    border-radius: 0.5rem;
+  }
+  
+  .stat-card.featured {
+    grid-column: span 2;
+  }
+  
+  .stat-card .stat-icon {
+    font-size: 0.9rem;
+    margin-bottom: 0.25rem;
+  }
+  
+  .stat-card .stat-value {
+    font-size: 1rem;
+  }
+  
+  .stat-card .stat-label {
+    font-size: 0.6rem;
+  }
+  
+  .game-section {
+    padding: 0.875rem 0.75rem;
+    border-radius: 0.625rem;
+    margin-bottom: 0.875rem;
+  }
+  
+  .section-title {
+    font-size: 0.95rem;
+    gap: 0.4rem;
+    margin-bottom: 0.6rem;
+  }
+  
+  .mode-buttons {
+    gap: 0.4rem;
+  }
+  
+  .mode-btn {
+    padding: 0.65rem;
+    border-radius: 0.5rem;
+    gap: 0.5rem;
+  }
+  
+  .mode-btn .mode-icon {
+    font-size: 1.35rem;
+  }
+  
+  .mode-btn .mode-name {
+    font-size: 0.85rem;
+  }
+  
+  .mode-btn .mode-desc {
+    font-size: 0.68rem;
+  }
+  
+  .difficulty-buttons {
+    gap: 0.35rem;
+  }
+  
+  .difficulty-btn {
+    padding: 0.55rem;
+    border-radius: 0.4rem;
+    font-size: 0.78rem;
+  }
+  
+  .game-type-buttons {
+    gap: 0.4rem;
+  }
+  
+  .game-type-btn {
+    padding: 0.75rem;
+    border-radius: 0.625rem;
+    gap: 0.6rem;
+  }
+  
+  .game-type-btn .type-icon {
+    font-size: 1.35rem;
+  }
+  
+  .game-type-btn .type-name {
+    font-size: 0.78rem;
+  }
+  
+  .silhouette-container {
+    padding: 1rem;
+    border-radius: 0.75rem;
+    margin-bottom: 0.875rem;
+  }
+  
+  .silhouette-image {
+    width: 140px;
+    height: 140px;
+  }
+  
+  .play-cry-btn {
+    width: 100px;
+    height: 100px;
+  }
+  
+  .cry-icon {
+    font-size: 2.25rem;
+  }
+  
+  .blur-image {
+    width: 140px;
+    height: 140px;
+  }
+  
+  .game-hud {
+    gap: 0.6rem;
+    padding: 0.5rem 0.6rem;
+    border-radius: 0.5rem;
+    margin-bottom: 0.875rem;
+  }
+  
+  .hud-item {
+    gap: 0.25rem;
+    min-width: 60px;
+  }
+  
+  .hud-icon {
+    font-size: 0.82rem;
+  }
+  
+  .hud-value {
+    font-size: 1rem;
+  }
+  
+  .hud-label {
+    font-size: 0.58rem;
+  }
+  
+  .options-grid {
+    gap: 0.35rem;
+    margin-bottom: 0.75rem;
+  }
+  
+  .option-btn {
+    padding: 0.65rem;
+    font-size: 0.8rem;
+    border-radius: 0.4rem;
+    gap: 0.35rem;
+  }
+  
+  .option-sprite {
+    width: 40px;
+    height: 40px;
+  }
+  
+  .text-input-form {
+    gap: 0.5rem;
+  }
+  
+  .input-wrapper input,
+  .text-input-form .pokemon-search-wrapper input {
+    padding: 0.65rem 0.875rem;
+    font-size: 0.85rem;
+  }
+  
+  .submit-btn {
+    padding: 0.65rem;
+    font-size: 0.85rem;
+  }
+  
+  .hint-btn {
+    padding: 0.5rem 0.75rem;
+    font-size: 0.75rem;
+  }
+  
+  .progress-bar-container {
+    height: 7px;
+    border-radius: 3.5px;
+  }
+  
+  .progress-dots {
+    gap: 0.3rem;
+  }
+  
+  .progress-dot {
+    width: 24px;
+    height: 24px;
+    font-size: 0.6rem;
+  }
+  
+  .result-section {
+    padding: 0.875rem;
+    border-radius: 0.625rem;
+    margin: 0.875rem 0;
+  }
+  
+  .result-content h3 {
+    font-size: 1.05rem;
+  }
+  
+  .result-sprite {
+    width: 90px;
+    height: 90px;
+  }
+  
+  .score-ring {
+    width: 100px;
+    height: 100px;
+  }
+  
+  .score-content .score-number {
+    font-size: 1.7rem;
+  }
+  
+  .score-content .score-label {
+    font-size: 0.6rem;
+  }
+  
+  .game-over-section {
+    padding: 1rem 0.875rem;
+    border-radius: 0.75rem;
+  }
+  
+  .game-over-title {
+    font-size: 1.35rem;
+    margin-bottom: 0.3rem;
+  }
+  
+  .game-over-subtitle {
+    font-size: 0.78rem;
+  }
+  
+  .game-over-buttons {
+    gap: 0.4rem;
+    margin-top: 1rem;
+  }
+  
+  .play-again-btn,
+  .menu-btn {
+    padding: 0.6rem 0.875rem;
+    font-size: 0.82rem;
+    gap: 0.4rem;
+  }
+}
+
+/* Extra Small Phones (below 360px) */
+@media (max-width: 359px) {
+  .game-page {
+    padding: 0 0.4rem 1.5rem;
+  }
+  
+  .game-hero {
+    padding: 0.875rem 0.6rem 1.25rem;
+    margin-bottom: 0.875rem;
+    border-radius: 0.625rem;
+  }
+  
+  .game-hero .hero-icon {
+    margin-bottom: 0.4rem;
+  }
+  
+  .game-hero .page-title {
+    font-size: 1.1rem;
+    margin-bottom: 0.25rem;
+  }
+  
+  .game-hero .hero-subtitle {
+    font-size: 0.72rem;
+    margin-bottom: 0.75rem;
+  }
+  
+  .game-icon-pulse {
+    font-size: 1.75rem;
+  }
+  
+  .stats-showcase {
+    grid-template-columns: 1fr 1fr;
+    gap: 0.4rem;
+    margin-bottom: 0.75rem;
+  }
+  
+  .stat-card {
+    padding: 0.45rem;
+    border-radius: 0.4rem;
+  }
+  
+  .stat-card.featured {
+    grid-column: span 2;
+  }
+  
+  .stat-card .stat-icon {
+    font-size: 0.8rem;
+    margin-bottom: 0.2rem;
+  }
+  
+  .stat-card .stat-value {
+    font-size: 0.9rem;
+  }
+  
+  .stat-card .stat-label {
+    font-size: 0.55rem;
+  }
+  
+  .game-section {
+    padding: 0.75rem 0.6rem;
+    border-radius: 0.5rem;
+    margin-bottom: 0.75rem;
+  }
+  
+  .section-title {
+    font-size: 0.88rem;
+    gap: 0.35rem;
+    margin-bottom: 0.5rem;
+  }
+  
+  .mode-buttons {
+    gap: 0.35rem;
+  }
+  
+  .mode-btn {
+    padding: 0.55rem;
+    border-radius: 0.4rem;
+    gap: 0.4rem;
+  }
+  
+  .mode-btn .mode-icon {
+    font-size: 1.2rem;
+  }
+  
+  .mode-btn .mode-name {
+    font-size: 0.78rem;
+  }
+  
+  .mode-btn .mode-desc {
+    font-size: 0.62rem;
+  }
+  
+  .difficulty-buttons {
+    gap: 0.3rem;
+  }
+  
+  .difficulty-btn {
+    padding: 0.5rem;
+    font-size: 0.72rem;
+  }
+  
+  .game-type-buttons {
+    gap: 0.35rem;
+  }
+  
+  .game-type-btn {
+    padding: 0.6rem;
+    border-radius: 0.5rem;
+    gap: 0.5rem;
+  }
+  
+  .game-type-btn .type-icon {
+    font-size: 1.2rem;
+  }
+  
+  .game-type-btn .type-name {
+    font-size: 0.72rem;
+  }
+  
+  .silhouette-container {
+    padding: 0.75rem;
+    border-radius: 0.625rem;
+    margin-bottom: 0.75rem;
+  }
+  
+  .silhouette-image {
+    width: 120px;
+    height: 120px;
+  }
+  
+  .play-cry-btn {
+    width: 90px;
+    height: 90px;
+  }
+  
+  .cry-icon {
+    font-size: 2rem;
+  }
+  
+  .blur-image {
+    width: 120px;
+    height: 120px;
+  }
+  
+  .game-hud {
+    gap: 0.5rem;
+    padding: 0.4rem 0.5rem;
+    border-radius: 0.4rem;
+    margin-bottom: 0.75rem;
+  }
+  
+  .hud-item {
+    gap: 0.2rem;
+    min-width: 52px;
+  }
+  
+  .hud-icon {
+    font-size: 0.75rem;
+  }
+  
+  .hud-value {
+    font-size: 0.9rem;
+  }
+  
+  .hud-label {
+    font-size: 0.52rem;
+  }
+  
+  .options-grid {
+    gap: 0.3rem;
+    margin-bottom: 0.6rem;
+  }
+  
+  .option-btn {
+    padding: 0.55rem;
+    font-size: 0.75rem;
+    border-radius: 0.35rem;
+    gap: 0.3rem;
+  }
+  
+  .option-sprite {
+    width: 35px;
+    height: 35px;
+  }
+  
+  .text-input-form {
+    gap: 0.4rem;
+  }
+  
+  .input-wrapper input,
+  .text-input-form .pokemon-search-wrapper input {
+    padding: 0.55rem 0.75rem;
+    font-size: 0.8rem;
+  }
+  
+  .submit-btn {
+    padding: 0.55rem;
+    font-size: 0.8rem;
+  }
+  
+  .hint-btn {
+    padding: 0.4rem 0.6rem;
+    font-size: 0.7rem;
+  }
+  
+  .progress-bar-container {
+    height: 6px;
+    border-radius: 3px;
+  }
+  
+  .progress-dots {
+    gap: 0.25rem;
+  }
+  
+  .progress-dot {
+    width: 20px;
+    height: 20px;
+    font-size: 0.55rem;
+  }
+  
+  .result-section {
+    padding: 0.75rem;
+    border-radius: 0.5rem;
+    margin: 0.75rem 0;
+  }
+  
+  .result-content h3 {
+    font-size: 0.95rem;
+  }
+  
+  .result-sprite {
+    width: 80px;
+    height: 80px;
+  }
+  
+  .score-ring {
+    width: 90px;
+    height: 90px;
+  }
+  
+  .score-content .score-number {
+    font-size: 1.5rem;
+  }
+  
+  .score-content .score-label {
+    font-size: 0.55rem;
+  }
+  
+  .game-over-section {
+    padding: 0.875rem 0.75rem;
+    border-radius: 0.625rem;
+  }
+  
+  .game-over-title {
+    font-size: 1.2rem;
+    margin-bottom: 0.25rem;
+  }
+  
+  .game-over-subtitle {
+    font-size: 0.72rem;
+  }
+  
+  .game-over-buttons {
+    gap: 0.35rem;
+    margin-top: 0.875rem;
+  }
+  
+  .play-again-btn,
+  .menu-btn {
+    padding: 0.55rem 0.75rem;
+    font-size: 0.78rem;
+    gap: 0.35rem;
+  }
+}
+
+/* Landscape Mode */
+@media (max-height: 500px) and (orientation: landscape) {
+  .game-page {
+    padding: 0 1rem 1.5rem;
+    max-width: 100%;
+  }
+  
+  .game-hero {
+    padding: 0.75rem 1rem;
+    margin-bottom: 0.75rem;
+  }
+  
+  .game-hero .hero-icon {
+    display: none;
+  }
+  
+  .game-hero .hero-subtitle {
+    display: none;
+  }
+  
+  .game-hero .page-title {
+    font-size: 1.35rem;
+    margin-bottom: 0;
+  }
+  
+  .stats-showcase {
+    grid-template-columns: repeat(4, 1fr);
+    gap: 0.5rem;
+  }
+  
+  .stat-card.featured {
+    grid-column: span 1;
+  }
+  
+  .game-section {
+    padding: 0.75rem;
+    margin-bottom: 0.5rem;
+  }
+  
+  .mode-buttons {
+    grid-template-columns: repeat(2, 1fr);
+  }
+  
+  .silhouette-container {
+    padding: 0.75rem;
+    margin-bottom: 0.5rem;
+  }
+  
+  .silhouette-image {
+    width: 100px;
+    height: 100px;
+  }
+  
+  .play-cry-btn {
+    width: 80px;
+    height: 80px;
+  }
+  
+  .blur-image {
+    width: 100px;
+    height: 100px;
+  }
+  
+  .game-hud {
+    padding: 0.4rem 0.75rem;
+    margin-bottom: 0.5rem;
+  }
+  
+  .options-grid {
+    grid-template-columns: repeat(2, 1fr);
+    margin-bottom: 0.5rem;
+  }
+  
+  .result-section {
+    padding: 0.75rem;
+    margin: 0.5rem 0;
+  }
+  
+  .score-ring {
+    width: 80px;
+    height: 80px;
+  }
+  
+  .game-over-section {
+    padding: 0.75rem;
+  }
+  
+  .game-over-buttons {
+    flex-direction: row;
+    gap: 0.5rem;
+  }
+}
+
+/* Medium Landscape Mode - For tablets/medium screens with limited height */
+@media (max-height: 700px) and (min-width: 900px) and (orientation: landscape) {
+  .game-page {
+    padding: 0 1.5rem 1.5rem;
+    max-width: 850px;
+  }
+  
+  .game-hero {
+    padding: 1rem 1.25rem;
+    margin-bottom: 1rem;
+  }
+  
+  .game-hero .hero-icon {
+    margin-bottom: 0.5rem;
+  }
+  
+  .game-icon-pulse {
+    font-size: 2.5rem;
+  }
+  
+  .game-hero .page-title {
+    font-size: 1.6rem;
+    margin-bottom: 0.35rem;
+  }
+  
+  .game-hero .hero-subtitle {
+    font-size: 0.9rem;
+  }
+  
+  .stats-showcase {
+    grid-template-columns: repeat(4, 1fr);
+    gap: 0.75rem;
+    margin-bottom: 1rem;
+  }
+  
+  .stat-card {
+    padding: 0.875rem;
+    border-radius: 12px;
+  }
+  
+  .stat-card.featured {
+    grid-column: span 1;
+    padding: 0.875rem;
+  }
+  
+  .stat-icon {
+    font-size: 1.35rem;
+  }
+  
+  .stat-value {
+    font-size: 1.25rem;
+  }
+  
+  .stat-label {
+    font-size: 0.65rem;
+  }
+  
+  .game-section {
+    padding: 1rem;
+    margin-bottom: 0.75rem;
+    border-radius: 0.875rem;
+  }
+  
+  .section-header h2 {
+    font-size: 1rem;
+  }
+  
+  .mode-buttons {
+    gap: 0.6rem;
+  }
+  
+  .mode-btn {
+    padding: 0.875rem;
+    border-radius: 0.75rem;
+  }
+  
+  .mode-icon {
+    font-size: 1.5rem;
+  }
+  
+  .mode-label {
+    font-size: 0.85rem;
+  }
+  
+  .difficulty-buttons {
+    gap: 0.5rem;
+  }
+  
+  .difficulty-btn {
+    padding: 0.6rem 1rem;
+    font-size: 0.82rem;
+  }
+  
+  .silhouette-container {
+    padding: 1rem;
+    margin-bottom: 0.75rem;
+    border-radius: 0.875rem;
+  }
+  
+  .silhouette-image {
+    width: 140px;
+    height: 140px;
+  }
+  
+  .play-cry-btn {
+    width: 120px;
+    height: 120px;
+  }
+  
+  .blur-image {
+    width: 140px;
+    height: 140px;
+  }
+  
+  .game-hud {
+    padding: 0.5rem 1rem;
+    margin-bottom: 0.6rem;
+    border-radius: 0.75rem;
+  }
+  
+  .hud-item span {
+    font-size: 1rem;
+  }
+  
+  .hud-item .hud-value {
+    font-size: 0.88rem;
+  }
+  
+  .progress-dots {
+    gap: 0.4rem;
+  }
+  
+  .progress-dot {
+    width: 26px;
+    height: 26px;
+    font-size: 0.68rem;
+  }
+  
+  .options-grid {
+    gap: 0.6rem;
+    margin-bottom: 0.75rem;
+  }
+  
+  .option-btn {
+    padding: 0.75rem;
+    border-radius: 0.75rem;
+    font-size: 0.9rem;
+  }
+  
+  .option-sprite {
+    width: 45px;
+    height: 45px;
+  }
+  
+  .text-input-form {
+    gap: 0.6rem;
+    margin-bottom: 0.75rem;
+  }
+  
+  .input-wrapper input,
+  .text-input-form .pokemon-search-wrapper input {
+    padding: 0.75rem 1rem;
+    font-size: 0.92rem;
+  }
+  
+  .submit-btn {
+    padding: 0.75rem 1.5rem;
+    font-size: 0.9rem;
+  }
+  
+  .result-section {
+    padding: 1rem;
+    margin: 0.75rem 0;
+    border-radius: 0.875rem;
+  }
+  
+  .result-sprite {
+    width: 80px;
+    height: 80px;
+  }
+  
+  .result-name {
+    font-size: 1.15rem;
+  }
+  
+  .score-ring {
+    width: 100px;
+    height: 100px;
+  }
+  
+  .score-value {
+    font-size: 1.8rem;
+  }
+  
+  .game-over-section {
+    padding: 1rem;
+    border-radius: 0.875rem;
+  }
+  
+  .game-over-title {
+    font-size: 1.3rem;
+  }
+  
+  .final-score {
+    font-size: 2rem;
+  }
+  
+  .game-over-buttons {
+    gap: 0.6rem;
+  }
+  
+  .play-again-btn,
+  .menu-btn {
+    padding: 0.75rem 1.5rem;
+    font-size: 0.92rem;
+  }
+}
+
+/* Touch Device Optimizations */
+@media (hover: none) and (pointer: coarse) {
+  .mode-btn:hover,
+  .difficulty-btn:hover,
+  .game-type-btn:hover,
+  .option-btn:hover,
+  .submit-btn:hover,
+  .hint-btn:hover,
+  .play-again-btn:hover,
+  .menu-btn:hover {
+    transform: none;
+  }
+  
+  .mode-btn:active,
+  .difficulty-btn:active,
+  .game-type-btn:active,
+  .option-btn:active,
+  .submit-btn:active,
+  .hint-btn:active,
+  .play-again-btn:active,
+  .menu-btn:active {
+    transform: scale(0.98);
+  }
+  
+  .mode-btn,
+  .difficulty-btn,
+  .game-type-btn,
+  .option-btn,
+  .submit-btn,
+  .hint-btn,
+  .play-again-btn,
+  .menu-btn {
+    min-height: 44px;
+  }
+  
+  .input-wrapper input,
+  .text-input-form .pokemon-search-wrapper input {
+    min-height: 44px;
+  }
+  
+  .progress-dot {
+    min-width: 28px;
+    min-height: 28px;
+  }
+}
+
+/* Reduced Motion */
+@media (prefers-reduced-motion: reduce) {
+  .game-page,
+  .game-hero,
+  .game-section {
+    animation: none;
+  }
+  
+  .game-icon-pulse {
+    animation: none;
+  }
+  
+  .mode-btn,
+  .difficulty-btn,
+  .game-type-btn,
+  .option-btn,
+  .silhouette-image,
+  .play-cry-btn {
+    transition: none;
+  }
+  
+  .progress-bar-fill,
+  .score-ring-progress {
+    transition: none;
+  }
 }

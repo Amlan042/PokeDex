@@ -214,3 +214,727 @@
   border-radius: 8px;
   font-size: 0.7rem;
 }
+/* ================================== */
+/* TYPE EFFECTIVENESS - EXTENDED RESPONSIVE */
+/* Super-responsive for all devices   */
+/* ================================== */
+
+/* Large Screens (1200px+) */
+@media (min-width: 1200px) {
+  .type-effectiveness-modern {
+    margin-top: 2rem;
+  }
+  
+  .effectiveness-header {
+    gap: 1.25rem;
+    margin-bottom: 2rem;
+  }
+  
+  .effectiveness-icon {
+    font-size: 2.25rem;
+    width: 55px;
+    height: 55px;
+  }
+  
+  .effectiveness-title {
+    font-size: 1.35rem;
+  }
+  
+  .effectiveness-subtitle {
+    font-size: 0.9rem;
+  }
+  
+  .effectiveness-category {
+    padding: 1.4rem;
+    border-radius: 18px;
+  }
+  
+  .category-icon {
+    font-size: 1.4rem;
+    width: 40px;
+    height: 40px;
+  }
+  
+  .category-title {
+    font-size: 1.1rem;
+  }
+  
+  .type-eff-badge {
+    padding: 0.55rem 0.9rem;
+    font-size: 0.85rem;
+  }
+}
+
+/* Medium Large Screens (992px - 1199px) */
+@media (min-width: 992px) and (max-width: 1199px) {
+  .type-effectiveness-modern {
+    margin-top: 1.75rem;
+  }
+  
+  .effectiveness-header {
+    gap: 1rem;
+    margin-bottom: 1.75rem;
+  }
+  
+  .effectiveness-icon {
+    font-size: 2rem;
+    width: 48px;
+    height: 48px;
+    border-radius: 13px;
+  }
+  
+  .effectiveness-title {
+    font-size: 1.15rem;
+  }
+  
+  .effectiveness-subtitle {
+    font-size: 0.82rem;
+  }
+  
+  .effectiveness-category {
+    padding: 1.1rem;
+    border-radius: 14px;
+  }
+  
+  .category-icon {
+    font-size: 1.2rem;
+    width: 34px;
+    height: 34px;
+  }
+}
+
+/* Tablets (768px - 991px) */
+@media (min-width: 768px) and (max-width: 991px) {
+  .type-effectiveness-modern {
+    margin-top: 1.25rem;
+  }
+  
+  .effectiveness-header {
+    gap: 0.875rem;
+    margin-bottom: 1.25rem;
+  }
+  
+  .effectiveness-icon {
+    font-size: 1.75rem;
+    width: 44px;
+    height: 44px;
+    border-radius: 12px;
+  }
+  
+  .effectiveness-title {
+    font-size: 1.05rem;
+  }
+  
+  .effectiveness-subtitle {
+    font-size: 0.78rem;
+  }
+  
+  .effectiveness-grid {
+    gap: 0.875rem;
+  }
+  
+  .effectiveness-category {
+    padding: 1rem;
+    border-radius: 13px;
+  }
+  
+  .category-header {
+    gap: 0.7rem;
+    margin-bottom: 0.875rem;
+  }
+  
+  .category-icon {
+    font-size: 1.15rem;
+    width: 32px;
+    height: 32px;
+    border-radius: 8px;
+  }
+  
+  .category-title {
+    font-size: 0.92rem;
+  }
+  
+  .category-description {
+    font-size: 0.7rem;
+  }
+  
+  .category-count {
+    font-size: 0.78rem;
+    padding: 0.25rem 0.65rem;
+  }
+  
+  .category-badges {
+    gap: 0.4rem;
+  }
+  
+  .type-eff-badge {
+    padding: 0.45rem 0.7rem;
+    font-size: 0.75rem;
+    border-radius: 9px;
+  }
+  
+  .badge-multiplier {
+    font-size: 0.65rem;
+    padding: 0.12rem 0.35rem;
+  }
+  
+  /* Legacy styles */
+  .type-effectiveness-section {
+    padding: 1.5rem;
+    margin-top: 1.5rem;
+    border-radius: 16px;
+  }
+  
+  .type-effectiveness-section h3 {
+    font-size: 0.82rem;
+  }
+}
+
+/* Large Phones / Small Tablets (600px - 767px) */
+@media (min-width: 600px) and (max-width: 767px) {
+  .type-effectiveness-modern {
+    margin-top: 1rem;
+  }
+  
+  .effectiveness-header {
+    gap: 0.75rem;
+    margin-bottom: 1rem;
+  }
+  
+  .effectiveness-icon {
+    font-size: 1.5rem;
+    width: 40px;
+    height: 40px;
+    border-radius: 10px;
+  }
+  
+  .effectiveness-title {
+    font-size: 0.98rem;
+  }
+  
+  .effectiveness-subtitle {
+    font-size: 0.72rem;
+  }
+  
+  .effectiveness-grid {
+    gap: 0.75rem;
+  }
+  
+  .effectiveness-category {
+    padding: 0.875rem;
+    border-radius: 12px;
+    border-left-width: 3px;
+  }
+  
+  .category-header {
+    gap: 0.6rem;
+    margin-bottom: 0.75rem;
+  }
+  
+  .category-icon {
+    font-size: 1.1rem;
+    width: 30px;
+    height: 30px;
+    border-radius: 8px;
+  }
+  
+  .category-title {
+    font-size: 0.88rem;
+  }
+  
+  .category-description {
+    font-size: 0.65rem;
+  }
+  
+  .category-count {
+    font-size: 0.72rem;
+    padding: 0.2rem 0.55rem;
+    border-radius: 15px;
+  }
+  
+  .category-badges {
+    gap: 0.35rem;
+  }
+  
+  .type-eff-badge {
+    padding: 0.4rem 0.6rem;
+    font-size: 0.7rem;
+    border-radius: 8px;
+    gap: 0.3rem;
+  }
+  
+  .badge-multiplier {
+    font-size: 0.6rem;
+    padding: 0.1rem 0.3rem;
+    border-radius: 5px;
+  }
+  
+  /* Legacy styles */
+  .type-effectiveness-section {
+    padding: 1.25rem;
+    margin-top: 1.25rem;
+    border-radius: 14px;
+  }
+  
+  .type-effectiveness-section h3 {
+    font-size: 0.75rem;
+    margin-bottom: 1rem;
+  }
+  
+  .effectiveness-group {
+    margin-bottom: 1rem;
+  }
+  
+  .effectiveness-group h4 {
+    font-size: 0.9rem;
+  }
+  
+  .effectiveness-hint {
+    font-size: 0.72rem;
+  }
+  
+  .type-badges {
+    gap: 0.4rem;
+  }
+  
+  .type-effectiveness-badge {
+    padding: 0.35rem 0.7rem;
+    font-size: 0.72rem;
+    border-radius: 12px;
+  }
+  
+  .type-effectiveness-badge .multiplier {
+    font-size: 0.62rem;
+    padding: 0.08rem 0.35rem;
+  }
+}
+
+/* Standard Phones (480px - 599px) */
+@media (min-width: 480px) and (max-width: 599px) {
+  .type-effectiveness-modern {
+    margin-top: 0.875rem;
+  }
+  
+  .effectiveness-header {
+    gap: 0.6rem;
+    margin-bottom: 0.875rem;
+  }
+  
+  .effectiveness-icon {
+    font-size: 1.35rem;
+    width: 36px;
+    height: 36px;
+    border-radius: 9px;
+  }
+  
+  .effectiveness-title {
+    font-size: 0.9rem;
+  }
+  
+  .effectiveness-subtitle {
+    font-size: 0.68rem;
+  }
+  
+  .effectiveness-grid {
+    gap: 0.625rem;
+  }
+  
+  .effectiveness-category {
+    padding: 0.75rem;
+    border-radius: 10px;
+    border-left-width: 3px;
+  }
+  
+  .category-header {
+    gap: 0.5rem;
+    margin-bottom: 0.6rem;
+    flex-wrap: wrap;
+  }
+  
+  .category-icon {
+    font-size: 1rem;
+    width: 28px;
+    height: 28px;
+    border-radius: 7px;
+  }
+  
+  .category-title {
+    font-size: 0.82rem;
+  }
+  
+  .category-description {
+    font-size: 0.6rem;
+  }
+  
+  .category-count {
+    font-size: 0.68rem;
+    padding: 0.18rem 0.5rem;
+    border-radius: 12px;
+  }
+  
+  .category-badges {
+    gap: 0.3rem;
+  }
+  
+  .type-eff-badge {
+    padding: 0.35rem 0.5rem;
+    font-size: 0.65rem;
+    border-radius: 7px;
+    gap: 0.25rem;
+  }
+  
+  .badge-multiplier {
+    font-size: 0.55rem;
+    padding: 0.08rem 0.25rem;
+    border-radius: 4px;
+  }
+  
+  /* Legacy styles */
+  .type-effectiveness-section {
+    padding: 1rem;
+    margin-top: 1rem;
+    border-radius: 12px;
+  }
+  
+  .type-effectiveness-section h3 {
+    font-size: 0.7rem;
+    margin-bottom: 0.875rem;
+  }
+  
+  .effectiveness-group {
+    margin-bottom: 0.875rem;
+  }
+  
+  .effectiveness-group h4 {
+    font-size: 0.85rem;
+    margin-bottom: 0.4rem;
+  }
+  
+  .effectiveness-hint {
+    font-size: 0.68rem;
+    margin-bottom: 0.4rem;
+  }
+  
+  .type-badges {
+    gap: 0.35rem;
+  }
+  
+  .type-effectiveness-badge {
+    padding: 0.3rem 0.6rem;
+    font-size: 0.68rem;
+    border-radius: 10px;
+    gap: 0.25rem;
+  }
+  
+  .type-effectiveness-badge .multiplier {
+    font-size: 0.58rem;
+    padding: 0.06rem 0.3rem;
+  }
+}
+
+/* Small Phones (360px - 479px) */
+@media (min-width: 360px) and (max-width: 479px) {
+  .type-effectiveness-modern {
+    margin-top: 0.75rem;
+  }
+  
+  .effectiveness-header {
+    gap: 0.5rem;
+    margin-bottom: 0.75rem;
+  }
+  
+  .effectiveness-icon {
+    font-size: 1.2rem;
+    width: 32px;
+    height: 32px;
+    border-radius: 8px;
+  }
+  
+  .effectiveness-title {
+    font-size: 0.82rem;
+  }
+  
+  .effectiveness-subtitle {
+    font-size: 0.62rem;
+  }
+  
+  .effectiveness-grid {
+    gap: 0.5rem;
+  }
+  
+  .effectiveness-category {
+    padding: 0.625rem;
+    border-radius: 9px;
+    border-left-width: 3px;
+  }
+  
+  .category-header {
+    gap: 0.4rem;
+    margin-bottom: 0.5rem;
+    flex-wrap: wrap;
+  }
+  
+  .category-icon {
+    font-size: 0.9rem;
+    width: 26px;
+    height: 26px;
+    border-radius: 6px;
+  }
+  
+  .category-info {
+    min-width: 0;
+    flex: 1;
+  }
+  
+  .category-title {
+    font-size: 0.75rem;
+  }
+  
+  .category-description {
+    font-size: 0.55rem;
+  }
+  
+  .category-count {
+    font-size: 0.62rem;
+    padding: 0.15rem 0.4rem;
+    border-radius: 10px;
+  }
+  
+  .category-badges {
+    gap: 0.25rem;
+  }
+  
+  .type-eff-badge {
+    padding: 0.3rem 0.45rem;
+    font-size: 0.6rem;
+    border-radius: 6px;
+    gap: 0.2rem;
+  }
+  
+  .badge-multiplier {
+    font-size: 0.5rem;
+    padding: 0.06rem 0.2rem;
+    border-radius: 4px;
+  }
+  
+  /* Legacy styles */
+  .type-effectiveness-section {
+    padding: 0.875rem;
+    margin-top: 0.875rem;
+    border-radius: 10px;
+  }
+  
+  .type-effectiveness-section h3 {
+    font-size: 0.65rem;
+    margin-bottom: 0.75rem;
+  }
+  
+  .effectiveness-group {
+    margin-bottom: 0.75rem;
+  }
+  
+  .effectiveness-group h4 {
+    font-size: 0.78rem;
+    margin-bottom: 0.35rem;
+  }
+  
+  .effectiveness-hint {
+    font-size: 0.62rem;
+    margin-bottom: 0.35rem;
+  }
+  
+  .type-badges {
+    gap: 0.28rem;
+  }
+  
+  .type-effectiveness-badge {
+    padding: 0.25rem 0.5rem;
+    font-size: 0.62rem;
+    border-radius: 9px;
+    gap: 0.2rem;
+  }
+  
+  .type-effectiveness-badge .multiplier {
+    font-size: 0.52rem;
+    padding: 0.05rem 0.25rem;
+  }
+}
+
+/* Extra Small Phones (below 360px) */
+@media (max-width: 359px) {
+  .type-effectiveness-modern {
+    margin-top: 0.6rem;
+  }
+  
+  .effectiveness-header {
+    gap: 0.4rem;
+    margin-bottom: 0.6rem;
+  }
+  
+  .effectiveness-icon {
+    font-size: 1.1rem;
+    width: 28px;
+    height: 28px;
+    border-radius: 7px;
+  }
+  
+  .effectiveness-title {
+    font-size: 0.75rem;
+  }
+  
+  .effectiveness-subtitle {
+    font-size: 0.55rem;
+  }
+  
+  .effectiveness-grid {
+    gap: 0.4rem;
+  }
+  
+  .effectiveness-category {
+    padding: 0.5rem;
+    border-radius: 8px;
+    border-left-width: 2px;
+  }
+  
+  .category-header {
+    gap: 0.35rem;
+    margin-bottom: 0.4rem;
+  }
+  
+  .category-icon {
+    font-size: 0.85rem;
+    width: 24px;
+    height: 24px;
+    border-radius: 6px;
+  }
+  
+  .category-title {
+    font-size: 0.68rem;
+  }
+  
+  .category-description {
+    font-size: 0.5rem;
+  }
+  
+  .category-count {
+    font-size: 0.55rem;
+    padding: 0.12rem 0.35rem;
+    border-radius: 8px;
+  }
+  
+  .category-badges {
+    gap: 0.2rem;
+  }
+  
+  .type-eff-badge {
+    padding: 0.25rem 0.38rem;
+    font-size: 0.55rem;
+    border-radius: 5px;
+    gap: 0.15rem;
+  }
+  
+  .badge-multiplier {
+    font-size: 0.45rem;
+    padding: 0.05rem 0.18rem;
+    border-radius: 3px;
+  }
+  
+  /* Legacy styles */
+  .type-effectiveness-section {
+    padding: 0.75rem;
+    margin-top: 0.75rem;
+    border-radius: 9px;
+  }
+  
+  .type-effectiveness-section h3 {
+    font-size: 0.58rem;
+    margin-bottom: 0.6rem;
+  }
+  
+  .effectiveness-group {
+    margin-bottom: 0.6rem;
+  }
+  
+  .effectiveness-group h4 {
+    font-size: 0.72rem;
+    margin-bottom: 0.3rem;
+  }
+  
+  .effectiveness-hint {
+    font-size: 0.55rem;
+    margin-bottom: 0.3rem;
+  }
+  
+  .type-badges {
+    gap: 0.2rem;
+  }
+  
+  .type-effectiveness-badge {
+    padding: 0.2rem 0.4rem;
+    font-size: 0.55rem;
+    border-radius: 8px;
+    gap: 0.15rem;
+  }
+  
+  .type-effectiveness-badge .multiplier {
+    font-size: 0.48rem;
+    padding: 0.04rem 0.2rem;
+  }
+}
+
+/* Touch Device Optimizations */
+@media (hover: none) and (pointer: coarse) {
+  .type-eff-badge:hover {
+    transform: none;
+    box-shadow: none;
+  }
+  
+  .type-eff-badge:active {
+    transform: scale(0.97);
+  }
+  
+  .type-eff-badge,
+  .type-effectiveness-badge {
+    min-height: 44px;
+    display: flex;
+    align-items: center;
+  }
+  
+  .category-header {
+    min-height: 44px;
+  }
+}
+
+/* Reduced Motion */
+@media (prefers-reduced-motion: reduce) {
+  .type-eff-badge {
+    animation: none;
+    transition: none;
+  }
+  
+  .type-effectiveness-badge {
+    transition: none;
+  }
+}
+
+/* Print Styles */
+@media print {
+  .type-effectiveness-modern,
+  .type-effectiveness-section {
+    break-inside: avoid;
+    page-break-inside: avoid;
+  }
+  
+  .effectiveness-category {
+    border-left-color: currentColor !important;
+    background: white !important;
+    -webkit-print-color-adjust: exact;
+    print-color-adjust: exact;
+  }
+  
+  .type-eff-badge,
+  .type-effectiveness-badge {
+    -webkit-print-color-adjust: exact;
+    print-color-adjust: exact;
+  }
+}

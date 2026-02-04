@@ -7,6 +7,8 @@
   min-height: 100vh;
   padding: 2rem 1.5rem;
   background: var(--bg-primary, #0f0f1a);
+  overflow-x: hidden;
+  width: 100%;
 }
 
 /* Header */
@@ -328,6 +330,9 @@
   flex-direction: column;
   gap: 1rem;
   padding: 0.5rem 0;
+  max-width: 700px;
+  margin: 0 auto;
+  width: 100%;
 }
 
 .stat-compare-row {
@@ -709,4 +714,1304 @@
 .pokemon-selector .pokemon-suggestions {
   max-height: 300px;
   border-radius: 0.75rem;
+}
+
+/* ================================== */
+/* COMPARE PAGE - EXTENDED RESPONSIVE */
+/* Super-responsive for all devices   */
+/* ================================== */
+
+/* Large Screens (1200px+) */
+@media (min-width: 1200px) {
+  .compare-page {
+    padding: 2.5rem 2rem;
+  }
+  
+  .compare-header .page-title {
+    font-size: 2.25rem;
+    gap: 0.875rem;
+  }
+  
+  .selectors-container {
+    max-width: 1300px;
+    gap: 2rem;
+  }
+  
+  .pokemon-selector {
+    padding: 1.75rem;
+  }
+  
+  .stat-compare-row {
+    padding: 0.625rem 0;
+  }
+  
+  .comparison-results {
+    padding: 2rem 2.5rem;
+  }
+}
+
+/* Medium Large Screens (992px - 1199px) */
+@media (min-width: 992px) and (max-width: 1199px) {
+  .compare-page {
+    padding: 1.75rem 1.5rem;
+  }
+  
+  .selectors-container {
+    gap: 1.25rem;
+  }
+  
+  .pokemon-selector {
+    padding: 1.25rem;
+  }
+  
+  .stat-compare-row {
+    gap: 1rem;
+  }
+}
+
+/* Tablets Extended (768px - 899px) */
+@media (min-width: 768px) and (max-width: 899px) {
+  .compare-page {
+    padding: 1.5rem 1.25rem;
+  }
+  
+  .compare-header {
+    margin-bottom: 1.5rem;
+  }
+  
+  .compare-header .page-title {
+    font-size: 1.65rem;
+    gap: 0.6rem;
+  }
+  
+  .compare-header .page-subtitle {
+    font-size: 0.9rem;
+  }
+  
+  .selectors-container {
+    grid-template-columns: 1fr;
+    gap: 0.75rem;
+  }
+  
+  .pokemon-selector {
+    padding: 1.25rem;
+    border-radius: 1rem;
+  }
+  
+  .selector-header .selector-title {
+    font-size: 0.95rem;
+  }
+  
+  .selected-pokemon-display {
+    padding: 0.875rem;
+  }
+  
+  .selected-sprite {
+    width: 100px;
+    height: 100px;
+  }
+  
+  .vs-divider {
+    padding: 0.75rem 0;
+  }
+  
+  .vs-badge {
+    width: 50px;
+    height: 50px;
+    font-size: 1.1rem;
+  }
+  
+  .comparison-results {
+    padding: 1.5rem 1.25rem;
+    border-radius: 1rem;
+    margin-top: 1.5rem;
+  }
+  
+  .results-header .results-title {
+    font-size: 1.3rem;
+    gap: 0.5rem;
+  }
+  
+  .matchup-display {
+    grid-template-columns: 1fr;
+    gap: 1rem;
+  }
+  
+  .matchup-pokemon {
+    padding: 1rem;
+  }
+  
+  .matchup-sprite {
+    width: 90px;
+    height: 90px;
+  }
+  
+  .stat-compare-row {
+    grid-template-columns: 55px 1fr 55px;
+    gap: 0.6rem;
+    padding: 0.45rem 0;
+  }
+  
+  .stat-value {
+    font-size: 0.92rem;
+  }
+  
+  .stat-name {
+    font-size: 0.68rem;
+    min-width: 42px;
+  }
+  
+  .stat-bar-container {
+    height: 10px;
+  }
+  
+  .type-matchup-section {
+    padding: 1.25rem;
+    border-radius: 0.875rem;
+    margin-top: 1.5rem;
+  }
+  
+  .suggestions-section {
+    padding: 1.25rem;
+    border-radius: 0.875rem;
+    margin-top: 1.5rem;
+  }
+  
+  .suggestion-btn {
+    padding: 0.65rem 1rem;
+    font-size: 0.85rem;
+  }
+}
+
+/* Large Phones / Small Tablets (600px - 767px) */
+@media (min-width: 600px) and (max-width: 767px) {
+  .compare-page {
+    padding: 1.25rem 1rem;
+  }
+  
+  .compare-header {
+    margin-bottom: 1.25rem;
+  }
+  
+  .compare-header .page-title {
+    font-size: 1.5rem;
+    gap: 0.55rem;
+  }
+  
+  .compare-header .page-subtitle {
+    font-size: 0.85rem;
+  }
+  
+  .selectors-container {
+    grid-template-columns: 1fr;
+    gap: 0.625rem;
+    margin-bottom: 1.5rem;
+  }
+  
+  .pokemon-selector {
+    padding: 1rem;
+    border-radius: 0.875rem;
+  }
+  
+  .selector-header {
+    margin-bottom: 0.875rem;
+  }
+  
+  .selector-header .selector-title {
+    font-size: 0.9rem;
+    gap: 0.4rem;
+  }
+  
+  .search-wrapper input {
+    padding: 0.65rem 0.875rem;
+    font-size: 0.9rem;
+  }
+  
+  .selected-pokemon-display {
+    padding: 0.75rem;
+    border-radius: 0.75rem;
+    gap: 0.875rem;
+  }
+  
+  .selected-sprite {
+    width: 90px;
+    height: 90px;
+  }
+  
+  .selected-info .pokemon-name {
+    font-size: 1.1rem;
+  }
+  
+  .selected-info .pokemon-id {
+    font-size: 0.78rem;
+  }
+  
+  .selected-info .type-badge {
+    padding: 0.2rem 0.5rem;
+    font-size: 0.68rem;
+  }
+  
+  .clear-btn {
+    width: 30px;
+    height: 30px;
+    font-size: 0.9rem;
+  }
+  
+  .vs-divider {
+    padding: 0.625rem 0;
+  }
+  
+  .vs-badge {
+    width: 45px;
+    height: 45px;
+    font-size: 1rem;
+  }
+  
+  .empty-selector {
+    padding: 2rem 1rem;
+    border-radius: 0.75rem;
+  }
+  
+  .empty-selector .empty-icon {
+    font-size: 2.5rem;
+    margin-bottom: 0.5rem;
+  }
+  
+  .empty-selector .empty-text {
+    font-size: 0.85rem;
+  }
+  
+  .comparison-results {
+    padding: 1.25rem 1rem;
+    border-radius: 0.875rem;
+    margin-top: 1.25rem;
+  }
+  
+  .results-header {
+    margin-bottom: 1.25rem;
+  }
+  
+  .results-header .results-title {
+    font-size: 1.2rem;
+    gap: 0.45rem;
+  }
+  
+  .matchup-display {
+    grid-template-columns: 1fr;
+    gap: 0.875rem;
+    margin-bottom: 1.25rem;
+  }
+  
+  .matchup-pokemon {
+    padding: 0.875rem;
+    border-radius: 0.75rem;
+  }
+  
+  .matchup-sprite {
+    width: 80px;
+    height: 80px;
+  }
+  
+  .matchup-name {
+    font-size: 0.95rem;
+  }
+  
+  .stat-compare-section {
+    margin-bottom: 1.25rem;
+  }
+  
+  .section-subtitle {
+    font-size: 0.95rem;
+    margin-bottom: 0.875rem;
+  }
+  
+  .stat-compare-row {
+    grid-template-columns: 50px 1fr 50px;
+    gap: 0.5rem;
+    padding: 0.4rem 0;
+  }
+  
+  .stat-value {
+    font-size: 0.88rem;
+  }
+  
+  .stat-bars {
+    gap: 0.4rem;
+  }
+  
+  .stat-bar-container {
+    height: 9px;
+    border-radius: 0.25rem;
+  }
+  
+  .stat-name {
+    font-size: 0.65rem;
+    min-width: 40px;
+  }
+  
+  .total-row {
+    padding: 0.6rem;
+    margin-top: 0.75rem;
+    border-radius: 0.5rem;
+  }
+  
+  .total-label {
+    font-size: 0.82rem;
+  }
+  
+  .total-value {
+    font-size: 1rem;
+  }
+  
+  .type-matchup-section {
+    padding: 1rem;
+    border-radius: 0.75rem;
+    margin-top: 1.25rem;
+  }
+  
+  .matchup-grid {
+    gap: 0.875rem;
+  }
+  
+  .matchup-group h4 {
+    font-size: 0.88rem;
+    margin-bottom: 0.5rem;
+  }
+  
+  .effectiveness-badge {
+    padding: 0.2rem 0.5rem;
+    font-size: 0.68rem;
+  }
+  
+  .suggestions-section {
+    padding: 1rem;
+    border-radius: 0.75rem;
+    margin-top: 1.25rem;
+  }
+  
+  .suggestions-section h3 {
+    font-size: 1.05rem;
+    margin-bottom: 0.875rem;
+  }
+  
+  .suggestions-grid {
+    gap: 0.5rem;
+  }
+  
+  .suggestion-btn {
+    padding: 0.6rem 0.875rem;
+    font-size: 0.82rem;
+    border-radius: 0.5rem;
+    gap: 0.35rem;
+  }
+  
+  .suggestion-sprite {
+    width: 32px;
+    height: 32px;
+  }
+}
+
+/* Standard Phones (480px - 599px) */
+@media (min-width: 480px) and (max-width: 599px) {
+  .compare-page {
+    padding: 1rem 0.875rem;
+  }
+  
+  .compare-header {
+    margin-bottom: 1rem;
+  }
+  
+  .compare-header .page-title {
+    font-size: 1.35rem;
+    gap: 0.5rem;
+  }
+  
+  .compare-header .page-subtitle {
+    font-size: 0.8rem;
+  }
+  
+  .selectors-container {
+    grid-template-columns: 1fr;
+    gap: 0.5rem;
+    margin-bottom: 1.25rem;
+  }
+  
+  .pokemon-selector {
+    padding: 0.875rem;
+    border-radius: 0.75rem;
+  }
+  
+  .selector-header {
+    margin-bottom: 0.75rem;
+  }
+  
+  .selector-header .selector-title {
+    font-size: 0.85rem;
+    gap: 0.35rem;
+  }
+  
+  .search-wrapper input {
+    padding: 0.6rem 0.75rem;
+    font-size: 0.85rem;
+    border-radius: 0.5rem;
+  }
+  
+  .selected-pokemon-display {
+    padding: 0.65rem;
+    border-radius: 0.625rem;
+    gap: 0.75rem;
+  }
+  
+  .selected-sprite {
+    width: 80px;
+    height: 80px;
+  }
+  
+  .selected-info .pokemon-name {
+    font-size: 1rem;
+  }
+  
+  .selected-info .pokemon-id {
+    font-size: 0.72rem;
+  }
+  
+  .selected-info .pokemon-types {
+    gap: 0.25rem;
+  }
+  
+  .selected-info .type-badge {
+    padding: 0.15rem 0.45rem;
+    font-size: 0.62rem;
+  }
+  
+  .clear-btn {
+    width: 28px;
+    height: 28px;
+    font-size: 0.85rem;
+  }
+  
+  .vs-divider {
+    padding: 0.5rem 0;
+  }
+  
+  .vs-badge {
+    width: 40px;
+    height: 40px;
+    font-size: 0.9rem;
+  }
+  
+  .empty-selector {
+    padding: 1.75rem 0.875rem;
+  }
+  
+  .empty-selector .empty-icon {
+    font-size: 2.25rem;
+    margin-bottom: 0.4rem;
+  }
+  
+  .empty-selector .empty-text {
+    font-size: 0.8rem;
+  }
+  
+  .comparison-results {
+    padding: 1rem 0.875rem;
+    border-radius: 0.75rem;
+    margin-top: 1rem;
+  }
+  
+  .results-header {
+    margin-bottom: 1rem;
+  }
+  
+  .results-header .results-title {
+    font-size: 1.1rem;
+    gap: 0.4rem;
+  }
+  
+  .matchup-display {
+    gap: 0.75rem;
+    margin-bottom: 1rem;
+  }
+  
+  .matchup-pokemon {
+    padding: 0.75rem;
+    border-radius: 0.625rem;
+  }
+  
+  .matchup-sprite {
+    width: 70px;
+    height: 70px;
+    margin-bottom: 0.35rem;
+  }
+  
+  .matchup-name {
+    font-size: 0.88rem;
+  }
+  
+  .matchup-types .type-badge {
+    padding: 0.12rem 0.4rem;
+    font-size: 0.58rem;
+  }
+  
+  .stat-compare-section {
+    margin-bottom: 1rem;
+  }
+  
+  .section-subtitle {
+    font-size: 0.9rem;
+    margin-bottom: 0.75rem;
+    gap: 0.35rem;
+  }
+  
+  .stat-compare-row {
+    grid-template-columns: 45px 1fr 45px;
+    gap: 0.4rem;
+    padding: 0.35rem 0;
+  }
+  
+  .stat-value {
+    font-size: 0.82rem;
+  }
+  
+  .stat-bars {
+    gap: 0.35rem;
+  }
+  
+  .stat-bar-container {
+    height: 8px;
+    border-radius: 0.2rem;
+  }
+  
+  .stat-name {
+    font-size: 0.6rem;
+    min-width: 36px;
+  }
+  
+  .total-row {
+    padding: 0.55rem;
+    margin-top: 0.6rem;
+  }
+  
+  .total-label {
+    font-size: 0.78rem;
+  }
+  
+  .total-value {
+    font-size: 0.95rem;
+  }
+  
+  .type-matchup-section {
+    padding: 0.875rem;
+    border-radius: 0.625rem;
+    margin-top: 1rem;
+  }
+  
+  .matchup-grid {
+    gap: 0.75rem;
+    grid-template-columns: 1fr;
+  }
+  
+  .matchup-group {
+    padding: 0.625rem;
+    border-radius: 0.5rem;
+  }
+  
+  .matchup-group h4 {
+    font-size: 0.82rem;
+    margin-bottom: 0.4rem;
+    gap: 0.3rem;
+  }
+  
+  .effectiveness-list {
+    gap: 0.3rem;
+  }
+  
+  .effectiveness-badge {
+    padding: 0.15rem 0.4rem;
+    font-size: 0.62rem;
+  }
+  
+  .suggestions-section {
+    padding: 0.875rem;
+    border-radius: 0.625rem;
+    margin-top: 1rem;
+  }
+  
+  .suggestions-section h3 {
+    font-size: 0.95rem;
+    margin-bottom: 0.75rem;
+  }
+  
+  .suggestions-grid {
+    gap: 0.4rem;
+  }
+  
+  .suggestion-btn {
+    padding: 0.55rem 0.75rem;
+    font-size: 0.78rem;
+    border-radius: 0.4rem;
+    gap: 0.3rem;
+  }
+  
+  .suggestion-sprite {
+    width: 28px;
+    height: 28px;
+  }
+  
+  .suggestion-btn .vs {
+    font-size: 0.7rem;
+  }
+}
+
+/* Small Phones (360px - 479px) */
+@media (min-width: 360px) and (max-width: 479px) {
+  .compare-page {
+    padding: 0.875rem 0.625rem;
+  }
+  
+  .compare-header {
+    margin-bottom: 0.875rem;
+  }
+  
+  .compare-header .page-title {
+    font-size: 1.2rem;
+    gap: 0.45rem;
+  }
+  
+  .compare-header .page-subtitle {
+    font-size: 0.75rem;
+  }
+  
+  .selectors-container {
+    gap: 0.4rem;
+    margin-bottom: 1rem;
+  }
+  
+  .pokemon-selector {
+    padding: 0.75rem;
+    border-radius: 0.625rem;
+  }
+  
+  .selector-header {
+    margin-bottom: 0.6rem;
+  }
+  
+  .selector-header .selector-title {
+    font-size: 0.8rem;
+    gap: 0.3rem;
+  }
+  
+  .search-wrapper input {
+    padding: 0.55rem 0.65rem;
+    font-size: 0.8rem;
+  }
+  
+  .selected-pokemon-display {
+    padding: 0.55rem;
+    border-radius: 0.5rem;
+    gap: 0.6rem;
+  }
+  
+  .selected-sprite {
+    width: 70px;
+    height: 70px;
+  }
+  
+  .selected-info .pokemon-name {
+    font-size: 0.92rem;
+  }
+  
+  .selected-info .pokemon-id {
+    font-size: 0.68rem;
+  }
+  
+  .selected-info .type-badge {
+    padding: 0.12rem 0.4rem;
+    font-size: 0.58rem;
+  }
+  
+  .clear-btn {
+    width: 26px;
+    height: 26px;
+    font-size: 0.8rem;
+  }
+  
+  .vs-divider {
+    padding: 0.4rem 0;
+  }
+  
+  .vs-badge {
+    width: 36px;
+    height: 36px;
+    font-size: 0.82rem;
+  }
+  
+  .empty-selector {
+    padding: 1.5rem 0.75rem;
+  }
+  
+  .empty-selector .empty-icon {
+    font-size: 2rem;
+    margin-bottom: 0.35rem;
+  }
+  
+  .empty-selector .empty-text {
+    font-size: 0.75rem;
+  }
+  
+  .comparison-results {
+    padding: 0.875rem 0.75rem;
+    border-radius: 0.625rem;
+    margin-top: 0.875rem;
+  }
+  
+  .results-header {
+    margin-bottom: 0.875rem;
+  }
+  
+  .results-header .results-title {
+    font-size: 1rem;
+    gap: 0.35rem;
+  }
+  
+  .matchup-display {
+    gap: 0.6rem;
+    margin-bottom: 0.875rem;
+  }
+  
+  .matchup-pokemon {
+    padding: 0.65rem;
+    border-radius: 0.5rem;
+  }
+  
+  .matchup-sprite {
+    width: 60px;
+    height: 60px;
+    margin-bottom: 0.3rem;
+  }
+  
+  .matchup-name {
+    font-size: 0.82rem;
+  }
+  
+  .matchup-types {
+    gap: 0.2rem;
+  }
+  
+  .matchup-types .type-badge {
+    padding: 0.1rem 0.35rem;
+    font-size: 0.55rem;
+  }
+  
+  .stat-compare-section {
+    margin-bottom: 0.875rem;
+  }
+  
+  .section-subtitle {
+    font-size: 0.85rem;
+    margin-bottom: 0.6rem;
+    gap: 0.3rem;
+  }
+  
+  .stat-compare-row {
+    grid-template-columns: 40px 1fr 40px;
+    gap: 0.35rem;
+    padding: 0.3rem 0;
+  }
+  
+  .stat-value {
+    font-size: 0.78rem;
+  }
+  
+  .stat-bars {
+    gap: 0.3rem;
+  }
+  
+  .stat-bar-container {
+    height: 7px;
+    border-radius: 0.175rem;
+  }
+  
+  .stat-name {
+    font-size: 0.55rem;
+    min-width: 32px;
+  }
+  
+  .total-row {
+    padding: 0.5rem;
+    margin-top: 0.5rem;
+  }
+  
+  .total-label {
+    font-size: 0.72rem;
+  }
+  
+  .total-value {
+    font-size: 0.88rem;
+  }
+  
+  .type-matchup-section {
+    padding: 0.75rem;
+    border-radius: 0.5rem;
+    margin-top: 0.875rem;
+  }
+  
+  .matchup-group h4 {
+    font-size: 0.78rem;
+    margin-bottom: 0.35rem;
+  }
+  
+  .effectiveness-list {
+    gap: 0.25rem;
+  }
+  
+  .effectiveness-badge {
+    padding: 0.12rem 0.35rem;
+    font-size: 0.58rem;
+  }
+  
+  .suggestions-section {
+    padding: 0.75rem;
+    border-radius: 0.5rem;
+    margin-top: 0.875rem;
+  }
+  
+  .suggestions-section h3 {
+    font-size: 0.88rem;
+    margin-bottom: 0.6rem;
+  }
+  
+  .suggestions-grid {
+    gap: 0.35rem;
+  }
+  
+  .suggestion-btn {
+    padding: 0.5rem 0.65rem;
+    font-size: 0.72rem;
+    gap: 0.25rem;
+  }
+  
+  .suggestion-sprite {
+    width: 24px;
+    height: 24px;
+  }
+  
+  .suggestion-btn .vs {
+    font-size: 0.65rem;
+  }
+}
+
+/* Extra Small Phones (below 360px) */
+@media (max-width: 359px) {
+  .compare-page {
+    padding: 0.75rem 0.4rem;
+  }
+  
+  .compare-header {
+    margin-bottom: 0.75rem;
+  }
+  
+  .compare-header .page-title {
+    font-size: 1.05rem;
+    gap: 0.4rem;
+  }
+  
+  .compare-header .page-subtitle {
+    font-size: 0.7rem;
+  }
+  
+  .selectors-container {
+    gap: 0.35rem;
+    margin-bottom: 0.875rem;
+  }
+  
+  .pokemon-selector {
+    padding: 0.6rem;
+    border-radius: 0.5rem;
+  }
+  
+  .selector-header {
+    margin-bottom: 0.5rem;
+  }
+  
+  .selector-header .selector-title {
+    font-size: 0.75rem;
+  }
+  
+  .search-wrapper input {
+    padding: 0.5rem 0.55rem;
+    font-size: 0.75rem;
+  }
+  
+  .selected-pokemon-display {
+    padding: 0.45rem;
+    gap: 0.5rem;
+    flex-direction: column;
+    text-align: center;
+  }
+  
+  .selected-sprite {
+    width: 60px;
+    height: 60px;
+  }
+  
+  .selected-info .pokemon-name {
+    font-size: 0.85rem;
+  }
+  
+  .selected-info .pokemon-id {
+    font-size: 0.62rem;
+  }
+  
+  .selected-info .type-badge {
+    padding: 0.1rem 0.35rem;
+    font-size: 0.55rem;
+  }
+  
+  .clear-btn {
+    width: 24px;
+    height: 24px;
+    font-size: 0.75rem;
+    position: absolute;
+    top: 0.3rem;
+    right: 0.3rem;
+  }
+  
+  .vs-badge {
+    width: 32px;
+    height: 32px;
+    font-size: 0.75rem;
+  }
+  
+  .empty-selector {
+    padding: 1.25rem 0.6rem;
+  }
+  
+  .empty-selector .empty-icon {
+    font-size: 1.75rem;
+  }
+  
+  .empty-selector .empty-text {
+    font-size: 0.7rem;
+  }
+  
+  .comparison-results {
+    padding: 0.75rem 0.6rem;
+    border-radius: 0.5rem;
+    margin-top: 0.75rem;
+  }
+  
+  .results-header .results-title {
+    font-size: 0.92rem;
+  }
+  
+  .matchup-display {
+    gap: 0.5rem;
+    margin-bottom: 0.75rem;
+  }
+  
+  .matchup-pokemon {
+    padding: 0.55rem;
+  }
+  
+  .matchup-sprite {
+    width: 52px;
+    height: 52px;
+  }
+  
+  .matchup-name {
+    font-size: 0.75rem;
+  }
+  
+  .matchup-types .type-badge {
+    font-size: 0.5rem;
+    padding: 0.08rem 0.3rem;
+  }
+  
+  .stat-compare-row {
+    grid-template-columns: 36px 1fr 36px;
+    gap: 0.3rem;
+    padding: 0.25rem 0;
+  }
+  
+  .stat-value {
+    font-size: 0.72rem;
+  }
+  
+  .stat-bar-container {
+    height: 6px;
+  }
+  
+  .stat-name {
+    font-size: 0.5rem;
+    min-width: 28px;
+  }
+  
+  .total-row {
+    padding: 0.4rem;
+  }
+  
+  .total-label {
+    font-size: 0.68rem;
+  }
+  
+  .total-value {
+    font-size: 0.82rem;
+  }
+  
+  .type-matchup-section {
+    padding: 0.6rem;
+    margin-top: 0.75rem;
+  }
+  
+  .matchup-group h4 {
+    font-size: 0.72rem;
+  }
+  
+  .effectiveness-badge {
+    padding: 0.1rem 0.3rem;
+    font-size: 0.55rem;
+  }
+  
+  .suggestions-section {
+    padding: 0.6rem;
+    margin-top: 0.75rem;
+  }
+  
+  .suggestions-section h3 {
+    font-size: 0.82rem;
+    margin-bottom: 0.5rem;
+  }
+  
+  .suggestion-btn {
+    padding: 0.4rem 0.5rem;
+    font-size: 0.68rem;
+  }
+  
+  .suggestion-sprite {
+    width: 22px;
+    height: 22px;
+  }
+}
+
+/* Landscape Mode */
+@media (max-height: 500px) and (orientation: landscape) {
+  .compare-page {
+    padding: 0.5rem 1rem;
+  }
+  
+  .compare-header {
+    margin-bottom: 0.75rem;
+  }
+  
+  .compare-header .page-subtitle {
+    display: none;
+  }
+  
+  .selectors-container {
+    grid-template-columns: 1fr auto 1fr;
+    gap: 0.75rem;
+    margin-bottom: 0.75rem;
+  }
+  
+  .pokemon-selector {
+    padding: 0.75rem;
+  }
+  
+  .vs-divider {
+    padding-top: 2rem;
+  }
+  
+  .vs-badge {
+    width: 35px;
+    height: 35px;
+    font-size: 0.8rem;
+  }
+  
+  .comparison-results {
+    padding: 0.75rem;
+    margin-top: 0.5rem;
+  }
+  
+  .matchup-display {
+    grid-template-columns: 1fr 1fr;
+    gap: 0.75rem;
+  }
+  
+  .matchup-sprite {
+    width: 50px;
+    height: 50px;
+  }
+  
+  .stat-compare-row {
+    padding: 0.2rem 0;
+  }
+  
+  .type-matchup-section,
+  .suggestions-section {
+    margin-top: 0.5rem;
+    padding: 0.6rem;
+  }
+}
+
+/* Medium Landscape Mode - For tablets/medium screens with limited height */
+@media (max-height: 700px) and (min-width: 900px) and (orientation: landscape) {
+  .compare-page {
+    padding: 0.75rem 1.25rem;
+  }
+  
+  .compare-header {
+    margin-bottom: 1rem;
+  }
+  
+  .compare-header .page-title {
+    font-size: 1.65rem;
+    gap: 0.6rem;
+  }
+  
+  .compare-header .page-subtitle {
+    font-size: 0.85rem;
+  }
+  
+  .selectors-container {
+    grid-template-columns: 1fr auto 1fr;
+    gap: 1rem;
+    margin-bottom: 1rem;
+  }
+  
+  .pokemon-selector {
+    padding: 1rem;
+    border-radius: 0.875rem;
+  }
+  
+  .selector-header .selector-title {
+    font-size: 0.9rem;
+  }
+  
+  .selected-pokemon-display {
+    padding: 0.75rem;
+  }
+  
+  .selected-sprite {
+    width: 85px;
+    height: 85px;
+  }
+  
+  .selected-name {
+    font-size: 1.05rem;
+  }
+  
+  .vs-divider {
+    padding-top: 3rem;
+  }
+  
+  .vs-badge {
+    width: 45px;
+    height: 45px;
+    font-size: 1rem;
+  }
+  
+  .comparison-results {
+    padding: 1rem 1.25rem;
+    margin-top: 0.75rem;
+    border-radius: 0.875rem;
+  }
+  
+  .results-header .results-title {
+    font-size: 1.2rem;
+  }
+  
+  .matchup-display {
+    grid-template-columns: 1fr 1fr;
+    gap: 1rem;
+  }
+  
+  .matchup-pokemon {
+    padding: 0.875rem;
+    border-radius: 0.75rem;
+  }
+  
+  .matchup-sprite {
+    width: 75px;
+    height: 75px;
+  }
+  
+  .matchup-name {
+    font-size: 1rem;
+    margin-bottom: 0.35rem;
+  }
+  
+  .stat-compare-row {
+    padding: 0.35rem 0;
+    grid-template-columns: 60px 1fr 60px;
+    gap: 0.7rem;
+  }
+  
+  .stat-value {
+    font-size: 0.9rem;
+  }
+  
+  .stat-name {
+    font-size: 0.65rem;
+    min-width: 45px;
+  }
+  
+  .stat-bar-container {
+    height: 10px;
+  }
+  
+  .type-matchup-section,
+  .suggestions-section {
+    margin-top: 0.75rem;
+    padding: 0.875rem;
+    border-radius: 0.75rem;
+  }
+  
+  .section-title {
+    font-size: 0.95rem;
+    margin-bottom: 0.6rem;
+  }
+  
+  .suggestion-btn {
+    padding: 0.55rem 0.9rem;
+    font-size: 0.82rem;
+  }
+}
+
+/* Touch Device Optimizations */
+@media (hover: none) and (pointer: coarse) {
+  .pokemon-selector:hover,
+  .suggestion-btn:hover,
+  .clear-btn:hover {
+    transform: none;
+  }
+  
+  .pokemon-selector:active,
+  .suggestion-btn:active,
+  .clear-btn:active {
+    transform: scale(0.98);
+  }
+  
+  .search-wrapper input,
+  .clear-btn,
+  .suggestion-btn {
+    min-height: 44px;
+  }
+}
+
+/* Reduced Motion */
+@media (prefers-reduced-motion: reduce) {
+  .vs-badge,
+  .pokemon-selector,
+  .comparison-results,
+  .stat-bar-fill {
+    animation: none;
+    transition: none;
+  }
+  
+  .suggestion-btn,
+  .clear-btn,
+  .matchup-pokemon {
+    transition: none;
+  }
 }

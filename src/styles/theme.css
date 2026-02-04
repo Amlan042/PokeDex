@@ -189,10 +189,24 @@ body {
 /* Theme-specific overrides */
 
 /* Light theme adjustments */
+.theme-light {
+  background-image: linear-gradient(135deg, #f0f4f8 0%, #e2e8f0 100%);
+}
+
 .theme-light .pokemon-showcase,
 .theme-light .team-member-card,
-.theme-light .favorite-card {
-  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.08);
+.theme-light .favorite-card,
+.theme-light .pokedex-card,
+.theme-light .game-card,
+.theme-light .stat-card,
+.theme-light .comparison-section {
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+  background: linear-gradient(145deg, #ffffff 0%, #f7fafc 100%);
+}
+
+.theme-light .modern-header {
+  background: linear-gradient(180deg, rgba(255, 255, 255, 0.98) 0%, rgba(240, 244, 248, 0.95) 100%);
+  border-bottom: 1px solid rgba(0, 0, 0, 0.08);
 }
 
 .theme-light .search-input,
@@ -200,37 +214,1255 @@ body {
   background: var(--input-bg);
   border-color: var(--input-border);
   color: var(--text-primary);
+  box-shadow: inset 0 2px 4px rgba(0, 0, 0, 0.06);
+}
+
+.theme-light .page-title {
+  background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+  -webkit-background-clip: text;
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.theme-light .type-badge {
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.15);
+}
+
+/* Light theme - Fix text visibility */
+.theme-light .card-name,
+.theme-light .pokemon-name,
+.theme-light .card-id,
+.theme-light .stat-value,
+.theme-light .stat-label,
+.theme-light .section-title,
+.theme-light .hero-title,
+.theme-light .game-title,
+.theme-light .menu-title,
+.theme-light .modal-title,
+.theme-light .filter-label,
+.theme-light .option-name,
+.theme-light .item-name,
+.theme-light .berry-name,
+.theme-light .move-name,
+.theme-light .ability-name,
+.theme-light .location-name,
+.theme-light .evo-name,
+.theme-light .matchup-title,
+.theme-light .radar-label,
+.theme-light h1, .theme-light h2, .theme-light h3, .theme-light h4 {
+  color: var(--text-primary) !important;
+  -webkit-text-fill-color: var(--text-primary);
+}
+
+.theme-light .hero-subtitle,
+.theme-light .card-subtitle,
+.theme-light .description,
+.theme-light .hint-text,
+.theme-light .stat-name,
+.theme-light .info-text,
+.theme-light .meta-text,
+.theme-light p {
+  color: var(--text-secondary) !important;
+}
+
+.theme-light .muted,
+.theme-light .card-id,
+.theme-light .pokemon-id,
+.theme-light .item-id {
+  color: var(--text-muted) !important;
+}
+
+/* Light theme - Fix buttons text */
+.theme-light .control-btn,
+.theme-light .filter-btn,
+.theme-light .sort-btn,
+.theme-light .view-btn,
+.theme-light .gen-btn,
+.theme-light .type-filter-btn,
+.theme-light .category-btn,
+.theme-light .tab-btn,
+.theme-light .mode-btn,
+.theme-light .difficulty-btn,
+.theme-light .game-type-btn,
+.theme-light .reset-btn,
+.theme-light .clear-btn {
+  color: var(--text-primary);
+}
+
+.theme-light .control-btn.active,
+.theme-light .filter-btn.active,
+.theme-light .sort-btn.active,
+.theme-light .view-btn.active,
+.theme-light .gen-btn.active,
+.theme-light .type-filter-btn.active,
+.theme-light .category-btn.active,
+.theme-light .tab-btn.active,
+.theme-light .mode-btn.active,
+.theme-light .difficulty-btn.active,
+.theme-light .game-type-btn.active {
+  color: white;
+}
+
+/* Light theme - Fix card content */
+.theme-light .pokedex-card .card-name,
+.theme-light .favorite-card .pokemon-name,
+.theme-light .team-member-card .member-name,
+.theme-light .item-card .item-name,
+.theme-light .berry-card .berry-name {
+  color: #1a202c !important;
+}
+
+/* Light theme - Fix showcase content */
+.theme-light .showcase-name,
+.theme-light .showcase-id,
+.theme-light .showcase-info,
+.theme-light .stat-ring-value,
+.theme-light .stat-ring-name {
+  color: var(--text-primary) !important;
+}
+
+/* Light theme - Fix game page */
+.theme-light .game-hero .page-title,
+.theme-light .game-over-title,
+.theme-light .score-number,
+.theme-light .score-message,
+.theme-light .result-text,
+.theme-light .streak-value,
+.theme-light .round-info {
+  color: var(--text-primary) !important;
+  -webkit-text-fill-color: var(--text-primary);
+}
+
+.theme-light .game-type-btn .type-name,
+.theme-light .game-type-btn .type-desc,
+.theme-light .mode-btn .mode-name,
+.theme-light .mode-btn .mode-desc,
+.theme-light .difficulty-btn .diff-name,
+.theme-light .difficulty-btn .diff-pokemon {
+  color: var(--text-primary);
+}
+
+.theme-light .game-type-btn.active .type-name,
+.theme-light .game-type-btn.active .type-desc,
+.theme-light .mode-btn.active .mode-name,
+.theme-light .mode-btn.active .mode-desc,
+.theme-light .difficulty-btn.active .diff-name,
+.theme-light .difficulty-btn.active .diff-pokemon {
+  color: white;
+}
+
+/* Light theme - Fix compare page */
+.theme-light .comparison-section .section-title,
+.theme-light .stat-compare-row .stat-value,
+.theme-light .stat-compare-row .stat-name,
+.theme-light .winner-badge {
+  color: var(--text-primary) !important;
+}
+
+.theme-light .legend-item,
+.theme-light .matchup-text {
+  color: var(--text-secondary) !important;
+}
+
+/* Light theme - Fix team page */
+.theme-light .team-hero .page-title,
+.theme-light .team-stats .stat-value,
+.theme-light .team-stats .stat-label,
+.theme-light .member-name,
+.theme-light .member-level,
+.theme-light .analysis-title,
+.theme-light .weakness-label,
+.theme-light .coverage-label {
+  color: var(--text-primary) !important;
+}
+
+/* Light theme - Fix favorites page */
+.theme-light .favorites-hero .page-title,
+.theme-light .stat-card .stat-value,
+.theme-light .stat-card .stat-label,
+.theme-light .favorite-card .pokemon-name,
+.theme-light .filter-title {
+  color: var(--text-primary) !important;
+}
+
+/* Light theme - Fix items page */
+.theme-light .items-hero .page-title,
+.theme-light .item-card .item-name,
+.theme-light .item-card .item-effect,
+.theme-light .berry-card .berry-name,
+.theme-light .berry-card .berry-flavor,
+.theme-light .modal-content h2,
+.theme-light .modal-content h3,
+.theme-light .detail-label,
+.theme-light .detail-value {
+  color: var(--text-primary) !important;
+}
+
+/* Light theme - Fix evolution chain */
+.theme-light .evo-pokemon-name,
+.theme-light .evo-method,
+.theme-light .evo-details {
+  color: var(--text-primary) !important;
+}
+
+/* Light theme - Fix moves section */
+.theme-light .move-row .move-name,
+.theme-light .move-row .move-power,
+.theme-light .move-row .move-accuracy,
+.theme-light .move-row .move-pp {
+  color: var(--text-primary) !important;
+}
+
+/* Light theme - Fix abilities section */
+.theme-light .ability-card .ability-name,
+.theme-light .ability-card .ability-desc {
+  color: var(--text-primary) !important;
+}
+
+/* Light theme - Fix locations section */
+.theme-light .location-item .location-name,
+.theme-light .location-item .location-game {
+  color: var(--text-primary) !important;
+}
+
+/* Light theme - Fix inputs */
+.theme-light input,
+.theme-light select,
+.theme-light textarea {
+  color: var(--text-primary) !important;
+  background: var(--input-bg);
+}
+
+.theme-light input::placeholder {
+  color: var(--text-muted) !important;
+}
+
+/* Light theme - Fix nav links */
+.theme-light .nav-link,
+.theme-light .nav-item {
+  color: var(--text-primary);
+}
+
+.theme-light .nav-link:hover,
+.theme-light .nav-link.active {
+  color: var(--accent-primary);
+}
+
+/* ============================================ */
+/* LIGHT THEME - CRITICAL COMPONENT FIXES      */
+/* ============================================ */
+
+/* Pokemon Showcase Modal (Homepage & Search) */
+.theme-light .pokemon-showcase {
+  background: linear-gradient(145deg, #ffffff 0%, #f7fafc 100%) !important;
+  border: 1px solid rgba(0, 0, 0, 0.1);
+}
+
+.theme-light .pokemon-showcase-name {
+  color: #1a202c !important;
+  -webkit-text-fill-color: #1a202c !important;
+}
+
+.theme-light .pokemon-header {
+  border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+}
+
+.theme-light .physical-stat {
+  background: rgba(0, 0, 0, 0.04);
+  border: 1px solid rgba(0, 0, 0, 0.08);
+}
+
+.theme-light .physical-value {
+  color: #1a202c !important;
+}
+
+.theme-light .physical-label {
+  color: #4a5568 !important;
+}
+
+.theme-light .section-label {
+  color: #4a5568 !important;
+}
+
+.theme-light .ability-tag {
+  color: #1a202c !important;
+  background: linear-gradient(135deg, rgba(102, 126, 234, 0.15) 0%, rgba(118, 75, 162, 0.15) 100%);
+  border: 1px solid rgba(102, 126, 234, 0.3);
+}
+
+.theme-light .stat-ring-bg {
+  stroke: rgba(0, 0, 0, 0.1);
+}
+
+.theme-light .stat-ring-value {
+  color: #1a202c !important;
+}
+
+.theme-light .stat-ring-name {
+  color: #4a5568 !important;
+}
+
+.theme-light .discover-btn {
+  color: white !important;
+}
+
+/* Search Page Showcase Specific */
+.theme-light .pokemon-genus-text {
+  color: #4a5568 !important;
+}
+
+.theme-light .flavor-text-box {
+  background: rgba(0, 0, 0, 0.04);
+}
+
+.theme-light .flavor-text {
+  color: #2d3748 !important;
+}
+
+.theme-light .showcase-type-effectiveness {
+  border-top: 1px solid rgba(0, 0, 0, 0.1);
+}
+
+.theme-light .evolution-section {
+  background: linear-gradient(145deg, #ffffff 0%, #f7fafc 100%) !important;
+  box-shadow: 0 15px 50px rgba(0, 0, 0, 0.1), 0 0 0 1px rgba(0, 0, 0, 0.08);
+}
+
+/* Search Suggestions Dropdown */
+.theme-light .pokemon-suggestions {
+  background: #ffffff !important;
+  border: 1px solid rgba(0, 0, 0, 0.15);
+  box-shadow: 0 10px 40px rgba(0, 0, 0, 0.15);
+}
+
+.theme-light .suggestion-item {
+  color: #1a202c;
+}
+
+.theme-light .suggestion-item:hover,
+.theme-light .suggestion-item.selected {
+  background: rgba(0, 0, 0, 0.06);
+}
+
+.theme-light .suggestion-item.selected {
+  background: linear-gradient(135deg, rgba(255, 203, 5, 0.2) 0%, rgba(255, 170, 0, 0.15) 100%);
+}
+
+.theme-light .suggestion-sprite {
+  background: rgba(0, 0, 0, 0.05);
+}
+
+.theme-light .suggestion-name {
+  color: #1a202c !important;
+}
+
+.theme-light .suggestion-id {
+  color: #718096 !important;
+}
+
+/* Theme Dropdown Menu */
+.theme-light .theme-dropdown {
+  background: #ffffff !important;
+  border: 1px solid rgba(0, 0, 0, 0.12);
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.15);
+}
+
+.theme-light .theme-option {
+  color: #1a202c;
+}
+
+.theme-light .theme-option:hover {
+  background: rgba(0, 0, 0, 0.06);
+}
+
+.theme-light .theme-option.active {
+  background: linear-gradient(135deg, rgba(229, 62, 62, 0.15) 0%, rgba(56, 178, 172, 0.15) 100%);
+}
+
+.theme-light .option-name {
+  color: #1a202c !important;
+}
+
+.theme-light .option-check {
+  color: var(--accent-primary);
+}
+
+.theme-light .dynamic-settings {
+  border-top: 1px solid rgba(0, 0, 0, 0.1);
+}
+
+.theme-light .settings-label {
+  color: #718096 !important;
+}
+
+.theme-light .dark-toggle {
+  background: rgba(0, 0, 0, 0.06);
+  border: 1px solid rgba(0, 0, 0, 0.12);
+  color: #1a202c;
+}
+
+/* Favorite Cards */
+.theme-light .favorite-card {
+  background: linear-gradient(145deg, #ffffff 0%, #f7fafc 100%) !important;
+  border: 1px solid rgba(0, 0, 0, 0.1);
+}
+
+.theme-light .favorite-card::before {
+  background: linear-gradient(135deg, var(--type-color, #888)08, transparent);
+}
+
+.theme-light .favorite-info .pokemon-id {
+  color: #718096 !important;
+}
+
+.theme-light .favorite-info .pokemon-name {
+  color: #1a202c !important;
+}
+
+.theme-light .favorite-card .team-btn.small {
+  background: rgba(0, 0, 0, 0.06);
+  border: 1px solid rgba(0, 0, 0, 0.1);
+  color: #1a202c;
+}
+
+.theme-light .favorite-card .team-btn.small:hover:not(:disabled) {
+  background: var(--accent-primary);
+  color: white;
+}
+
+.theme-light .card-shine {
+  background: linear-gradient(90deg, transparent, rgba(255, 255, 255, 0.4), transparent);
+}
+
+/* Filter Dropdowns */
+.theme-light .filter-dropdown select {
+  background: #ffffff;
+  border: 1px solid rgba(0, 0, 0, 0.15);
+  color: #1a202c;
+}
+
+.theme-light .type-filter {
+  background: rgba(0, 0, 0, 0.04);
+  border: 1px solid rgba(0, 0, 0, 0.1);
+  color: #1a202c;
+}
+
+.theme-light .type-filter.active {
+  color: white;
+}
+
+/* Pokedex Cards */
+.theme-light .pokedex-card {
+  background: linear-gradient(145deg, #ffffff 0%, #f7fafc 100%) !important;
+  border: 1px solid rgba(0, 0, 0, 0.1);
+}
+
+.theme-light .pokedex-card .card-name {
+  color: #1a202c !important;
+}
+
+.theme-light .pokedex-card .card-id {
+  color: #718096 !important;
+}
+
+.theme-light .mini-btn {
+  background: rgba(0, 0, 0, 0.05);
+  border: 1px solid rgba(0, 0, 0, 0.1);
+}
+
+.theme-light .mini-btn:hover {
+  background: rgba(0, 0, 0, 0.1);
+}
+
+/* Homepage Hero */
+.theme-light .homepage-hero .hero-subtitle {
+  color: #4a5568 !important;
+}
+
+.theme-light .featured-label {
+  color: #718096 !important;
+}
+
+/* Compare Page Selectors */
+.theme-light .pokemon-selector {
+  background: linear-gradient(145deg, #ffffff 0%, #f7fafc 100%);
+  border: 1px solid rgba(0, 0, 0, 0.1);
+}
+
+.theme-light .selector-search input {
+  background: #f7fafc;
+  border: 1px solid rgba(0, 0, 0, 0.12);
+  color: #1a202c;
+}
+
+.theme-light .selector-search input::placeholder {
+  color: #a0aec0;
+}
+
+/* Team Modal Search */
+.theme-light .modal-search-box input {
+  background: #f7fafc;
+  border: 1px solid rgba(0, 0, 0, 0.12);
+  color: #1a202c;
+}
+
+.theme-light .modal-search-box .pokemon-suggestions {
+  background: #ffffff !important;
+}
+
+/* ============================================ */
+/* LIGHT THEME - FAVORITES PAGE COMPLETE FIX   */
+/* ============================================ */
+
+/* Favorites Hero Section */
+.theme-light .favorites-hero {
+  background: linear-gradient(135deg, rgba(229, 62, 62, 0.1) 0%, rgba(236, 72, 153, 0.08) 50%, rgba(102, 126, 234, 0.1) 100%);
+}
+
+.theme-light .hero-subtitle {
+  color: #4a5568 !important;
+}
+
+/* Favorites Stats Cards */
+.theme-light .favorites-stats .stat-card {
+  background: rgba(0, 0, 0, 0.04) !important;
+  border: 1px solid rgba(0, 0, 0, 0.1);
+}
+
+.theme-light .favorites-stats .stat-card:hover {
+  background: rgba(0, 0, 0, 0.06) !important;
+  box-shadow: 0 8px 25px rgba(0, 0, 0, 0.1);
+}
+
+.theme-light .favorites-stats .stat-number {
+  color: #1a202c !important;
+}
+
+.theme-light .favorites-stats .stat-label {
+  color: #4a5568 !important;
+}
+
+/* Top Types */
+.theme-light .top-types-label {
+  color: #4a5568 !important;
+}
+
+/* Favorites Controls */
+.theme-light .favorites-controls {
+  background: rgba(0, 0, 0, 0.03);
+  border: 1px solid rgba(0, 0, 0, 0.08);
+}
+
+/* Search Input */
+.theme-light .favorites-search input {
+  background: #ffffff !important;
+  border: 2px solid rgba(0, 0, 0, 0.12) !important;
+  color: #1a202c !important;
+}
+
+.theme-light .favorites-search input::placeholder {
+  color: #a0aec0 !important;
+}
+
+.theme-light .favorites-search input:focus {
+  background: #ffffff !important;
+  border-color: rgba(229, 62, 62, 0.5) !important;
+  box-shadow: 0 0 0 3px rgba(229, 62, 62, 0.15);
+}
+
+.theme-light .favorites-search .search-icon {
+  color: #718096 !important;
+}
+
+.theme-light .clear-search {
+  background: rgba(0, 0, 0, 0.1);
+  color: #4a5568;
+}
+
+.theme-light .clear-search:hover {
+  background: rgba(229, 62, 62, 0.6);
+  color: white;
+}
+
+/* Filter Dropdowns */
+.theme-light .favorites-controls .filter-dropdown select,
+.theme-light .favorites-controls .type-filter {
+  background: #ffffff !important;
+  border: 2px solid rgba(0, 0, 0, 0.12) !important;
+  color: #1a202c !important;
+}
+
+.theme-light .favorites-controls .filter-dropdown select option {
+  background: #ffffff;
+  color: #1a202c;
+}
+
+/* Sort Controls */
+.theme-light .sort-label {
+  color: #4a5568 !important;
+}
+
+.theme-light .sort-btn {
+  background: rgba(0, 0, 0, 0.04);
+  border: 2px solid rgba(0, 0, 0, 0.1);
+  color: #4a5568;
+}
+
+.theme-light .sort-btn:hover {
+  background: rgba(0, 0, 0, 0.08);
+  border-color: rgba(0, 0, 0, 0.15);
+  color: #1a202c;
+}
+
+.theme-light .sort-btn.active {
+  background: linear-gradient(135deg, #e53e3e 0%, #ec4899 100%);
+  border-color: transparent;
+  color: white;
+}
+
+/* Filter Results Bar */
+.theme-light .filter-results {
+  background: rgba(229, 62, 62, 0.08);
+  color: #2d3748 !important;
+  border: 1px solid rgba(229, 62, 62, 0.15);
+}
+
+.theme-light .clear-filters {
+  background: rgba(0, 0, 0, 0.08);
+  color: #1a202c;
+}
+
+.theme-light .clear-filters:hover {
+  background: rgba(229, 62, 62, 0.2);
+}
+
+/* Favorite Cards - Complete Fix */
+.theme-light .favorite-card {
+  background: #ffffff !important;
+  border: 1px solid rgba(0, 0, 0, 0.1);
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.08);
+}
+
+.theme-light .favorite-card:hover {
+  box-shadow: 0 12px 35px rgba(0, 0, 0, 0.15);
+}
+
+.theme-light .favorite-card .favorite-header {
+  background: rgba(0, 0, 0, 0.02);
+}
+
+.theme-light .favorite-card .favorite-number {
+  color: #718096 !important;
+}
+
+.theme-light .favorite-card .remove-btn {
+  background: rgba(0, 0, 0, 0.05);
+  color: #a0aec0;
+}
+
+.theme-light .favorite-card .remove-btn:hover {
+  background: rgba(229, 62, 62, 0.1);
+  color: #e53e3e;
+}
+
+.theme-light .favorite-image-container {
+  background: linear-gradient(135deg, rgba(0, 0, 0, 0.02) 0%, rgba(0, 0, 0, 0.04) 100%);
+}
+
+.theme-light .pokemon-glow {
+  opacity: 0.3;
+}
+
+.theme-light .favorite-info .pokemon-id {
+  color: #718096 !important;
+}
+
+.theme-light .favorite-info .pokemon-name {
+  color: #1a202c !important;
+}
+
+.theme-light .favorite-card .team-btn.small {
+  background: rgba(0, 0, 0, 0.05);
+  border: 1px solid rgba(0, 0, 0, 0.1);
+  color: #4a5568;
+}
+
+.theme-light .favorite-card .team-btn.small:hover:not(:disabled) {
+  background: var(--accent-primary);
+  color: white;
+  border-color: var(--accent-primary);
+}
+
+.theme-light .favorite-card .team-btn.small.on-team {
+  background: linear-gradient(135deg, #ffd700, #ffaa00);
+  color: #1a202c;
+  border-color: transparent;
+}
+
+.theme-light .favorite-card .team-btn.small:disabled {
+  background: rgba(0, 0, 0, 0.03);
+  color: #cbd5e0;
+}
+
+/* Empty State */
+.theme-light .empty-favorites {
+  color: #1a202c;
+}
+
+.theme-light .empty-title {
+  color: #1a202c !important;
+}
+
+.theme-light .empty-favorites .empty-message {
+  color: #4a5568 !important;
+}
+
+.theme-light .empty-tips {
+  background: rgba(0, 0, 0, 0.03);
+  border: 1px solid rgba(0, 0, 0, 0.08);
+}
+
+.theme-light .tip {
+  color: #2d3748 !important;
+}
+
+.theme-light .explore-btn {
+  color: white !important;
+}
+
+/* Light theme - Additional comprehensive fixes */
+
+/* Hero subtitles and descriptions */
+.theme-light .hero-subtitle,
+.theme-light .game-hero .hero-subtitle,
+.theme-light .team-hero .hero-subtitle,
+.theme-light .favorites-hero .hero-subtitle,
+.theme-light .items-hero .hero-subtitle,
+.theme-light .pokedex-header .page-subtitle {
+  color: var(--text-secondary) !important;
+}
+
+/* Stat cards and values */
+.theme-light .stat-icon,
+.theme-light .stat-content,
+.theme-light .stat-max,
+.theme-light .stat-unit {
+  color: var(--text-primary) !important;
+}
+
+/* Game page specific */
+.theme-light .game-menu,
+.theme-light .game-settings,
+.theme-light .setting-group label,
+.theme-light .game-type-section h3,
+.theme-light .setting-group h3 {
+  color: var(--text-primary) !important;
+}
+
+.theme-light .type-desc,
+.theme-light .mode-desc,
+.theme-light .diff-pokemon {
+  color: var(--text-secondary) !important;
+}
+
+.theme-light .game-input,
+.theme-light .guess-input {
+  color: var(--text-primary) !important;
+  background: var(--input-bg) !important;
+}
+
+.theme-light .timer-display,
+.theme-light .score-display,
+.theme-light .round-display {
+  color: var(--text-primary) !important;
+}
+
+.theme-light .hint-text,
+.theme-light .hint-content {
+  color: var(--text-secondary) !important;
+}
+
+.theme-light .option-btn {
+  color: var(--text-primary);
+  background: var(--bg-tertiary);
+  border-color: var(--card-border);
+}
+
+.theme-light .result-correct,
+.theme-light .result-incorrect {
+  color: var(--text-primary) !important;
+}
+
+/* Search page specific */
+.theme-light .search-hero .hero-subtitle,
+.theme-light .search-suggestions,
+.theme-light .suggestion-text {
+  color: var(--text-secondary) !important;
+}
+
+.theme-light .search-bar,
+.theme-light .search-box {
+  background: var(--input-bg);
+  color: var(--text-primary);
+}
+
+.theme-light .search-icon {
+  color: var(--text-muted) !important;
+}
+
+/* Showcase specific */
+.theme-light .showcase-content,
+.theme-light .showcase-info-grid,
+.theme-light .info-item,
+.theme-light .info-label,
+.theme-light .info-value {
+  color: var(--text-primary) !important;
+}
+
+.theme-light .showcase-subtitle,
+.theme-light .pokemon-genus {
+  color: var(--text-secondary) !important;
+}
+
+/* Team page specific */
+.theme-light .team-slot,
+.theme-light .empty-slot-text,
+.theme-light .slot-number {
+  color: var(--text-muted) !important;
+}
+
+.theme-light .team-member-card .member-types,
+.theme-light .team-member-card .type-badge {
+  color: white !important;
+}
+
+.theme-light .analysis-section,
+.theme-light .type-coverage,
+.theme-light .weakness-chart {
+  color: var(--text-primary) !important;
+}
+
+.theme-light .coverage-type,
+.theme-light .weakness-type {
+  color: var(--text-primary) !important;
+}
+
+/* Favorites page specific */
+.theme-light .favorites-empty,
+.theme-light .empty-message,
+.theme-light .empty-suggestion {
+  color: var(--text-secondary) !important;
+}
+
+.theme-light .filter-section,
+.theme-light .sort-section {
+  color: var(--text-primary) !important;
+}
+
+.theme-light .favorites-search input {
+  color: var(--text-primary) !important;
+  background: var(--input-bg) !important;
+}
+
+/* Pokedex page specific */
+.theme-light .pokedex-controls,
+.theme-light .filters-panel,
+.theme-light .filter-section-title {
+  color: var(--text-primary) !important;
+}
+
+.theme-light .search-bar .search-input {
+  color: var(--text-primary) !important;
+}
+
+.theme-light .search-bar .search-input::placeholder {
+  color: var(--text-muted) !important;
+}
+
+.theme-light .card-stats-preview,
+.theme-light .stat-total {
+  color: var(--text-secondary) !important;
+}
+
+.theme-light .load-more-btn,
+.theme-light .reset-filters-btn {
+  color: var(--text-primary);
+}
+
+/* Items page specific */
+.theme-light .items-tabs,
+.theme-light .tab-btn {
+  color: var(--text-primary);
+}
+
+.theme-light .items-filters,
+.theme-light .category-filters {
+  color: var(--text-primary) !important;
+}
+
+.theme-light .item-description,
+.theme-light .berry-effect,
+.theme-light .item-category {
+  color: var(--text-secondary) !important;
+}
+
+/* Compare page specific */
+.theme-light .pokemon-selector,
+.theme-light .selector-label {
+  color: var(--text-primary) !important;
+}
+
+.theme-light .selector-empty,
+.theme-light .selector-hint {
+  color: var(--text-muted) !important;
+}
+
+.theme-light .vs-badge {
+  color: var(--text-primary) !important;
+  background: var(--bg-tertiary);
+}
+
+/* Evolution chain specific */
+.theme-light .evolution-section,
+.theme-light .section-header {
+  color: var(--text-primary) !important;
+}
+
+.theme-light .evo-arrow,
+.theme-light .evo-trigger {
+  color: var(--text-secondary) !important;
+}
+
+.theme-light .evo-card {
+  background: var(--card-bg);
+  border-color: var(--card-border);
+}
+
+/* Moves section specific */
+.theme-light .moves-section,
+.theme-light .moves-header,
+.theme-light .move-category {
+  color: var(--text-primary) !important;
+}
+
+.theme-light .move-description {
+  color: var(--text-secondary) !important;
+}
+
+/* Type effectiveness specific */
+.theme-light .effectiveness-section,
+.theme-light .effectiveness-title,
+.theme-light .multiplier-label {
+  color: var(--text-primary) !important;
+}
+
+/* Modals and overlays */
+.theme-light .modal-overlay {
+  background: rgba(0, 0, 0, 0.5);
+}
+
+.theme-light .modal-content {
+  background: var(--card-bg);
+  color: var(--text-primary);
+}
+
+.theme-light .modal-header,
+.theme-light .modal-body,
+.theme-light .modal-footer {
+  color: var(--text-primary) !important;
+}
+
+.theme-light .close-btn {
+  color: var(--text-muted);
+}
+
+.theme-light .close-btn:hover {
+  color: var(--text-primary);
+}
+
+/* Footer */
+.theme-light .modern-footer {
+  color: var(--text-secondary);
+  background: var(--bg-secondary);
+  border-top: 1px solid var(--card-border);
+}
+
+.theme-light .footer-link {
+  color: var(--text-secondary);
+}
+
+.theme-light .footer-link:hover {
+  color: var(--accent-primary);
+}
+
+/* ================================== */
+/* Pokemon Showcase Action Buttons    */
+/* (Home page & Search/Info page)     */
+/* ================================== */
+
+/* Quick actions container */
+.theme-light .quick-actions {
+  gap: 0.75rem;
+}
+
+/* Action buttons - base style */
+.theme-light .action-btn {
+  background: rgba(0, 0, 0, 0.08) !important;
+  color: #1a202c !important;
+  border: 1px solid rgba(0, 0, 0, 0.15) !important;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+}
+
+.theme-light .action-btn:hover:not(:disabled) {
+  background: rgba(0, 0, 0, 0.12) !important;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.15);
+}
+
+/* Favorite action button - active state */
+.theme-light .action-btn.favorite-action.active {
+  background: linear-gradient(135deg, #ff6b6b 0%, #ee5a24 100%) !important;
+  color: white !important;
+  border-color: transparent !important;
+}
+
+/* Team action button - active state */
+.theme-light .action-btn.team-action.active {
+  background: linear-gradient(135deg, #f093fb 0%, #f5576c 100%) !important;
+  color: white !important;
+  border-color: transparent !important;
+}
+
+/* Action icon inside buttons */
+.theme-light .action-icon {
+  color: inherit !important;
+}
+
+/* Disabled action button */
+.theme-light .action-btn:disabled {
+  background: rgba(0, 0, 0, 0.04) !important;
+  color: #a0aec0 !important;
+  border-color: rgba(0, 0, 0, 0.08) !important;
+}
+
+/* Pokemon showcase card - ensure visibility */
+.theme-light .pokemon-showcase {
+  background: linear-gradient(145deg, #ffffff 0%, #f7fafc 100%);
+}
+
+.theme-light .pokemon-showcase-name {
+  color: #1a202c !important;
+  -webkit-text-fill-color: #1a202c !important;
+}
+
+.theme-light .pokemon-showcase .pokemon-number,
+.theme-light .pokemon-showcase .showcase-id {
+  color: #718096 !important;
+}
+
+/* Showcase info section */
+.theme-light .showcase-info .pokemon-header {
+  border-bottom-color: rgba(0, 0, 0, 0.1);
+}
+
+/* Stats in showcase */
+.theme-light .showcase-stats .stat-name,
+.theme-light .showcase-stats .stat-label {
+  color: #4a5568 !important;
+}
+
+.theme-light .showcase-stats .stat-value,
+.theme-light .showcase-stats .stat-number {
+  color: #1a202c !important;
+}
+
+/* Search showcase specific fixes */
+.theme-light .pokemon-showcase.search-showcase .action-btn {
+  background: rgba(0, 0, 0, 0.08) !important;
+  color: #1a202c !important;
+  border: 1px solid rgba(0, 0, 0, 0.15) !important;
+}
+
+.theme-light .pokemon-showcase.search-showcase .action-btn.favorite-action.active,
+.theme-light .pokemon-showcase.search-showcase .action-btn.team-action.active {
+  color: white !important;
 }
 
 /* Red/Blue theme special effects */
+.theme-red-blue {
+  background-image: 
+    radial-gradient(ellipse at top left, rgba(255, 34, 34, 0.15) 0%, transparent 50%),
+    radial-gradient(ellipse at bottom right, rgba(34, 102, 255, 0.15) 0%, transparent 50%),
+    linear-gradient(135deg, #0d0518 0%, #1a0a2e 100%);
+}
+
 .theme-red-blue .pokemon-showcase {
-  border: 1px solid rgba(255, 51, 51, 0.3);
+  border: 1px solid rgba(255, 34, 34, 0.4);
+  box-shadow: 
+    0 0 30px rgba(255, 34, 34, 0.2),
+    0 0 60px rgba(34, 102, 255, 0.1);
+}
+
+.theme-red-blue .modern-header {
+  background: linear-gradient(180deg, rgba(13, 5, 24, 0.98) 0%, rgba(26, 10, 46, 0.95) 100%);
+  border-bottom: 1px solid rgba(255, 34, 34, 0.3);
 }
 
 .theme-red-blue .pokeball-watermark {
-  background: linear-gradient(135deg, #ff3333 50%, #3366ff 50%);
+  background: linear-gradient(135deg, #ff2222 50%, #2266ff 50%);
+}
+
+.theme-red-blue .page-title {
+  background: linear-gradient(135deg, #ff2222 0%, #ff6666 50%, #2266ff 100%);
+  -webkit-background-clip: text;
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+  text-shadow: 0 0 40px rgba(255, 34, 34, 0.5);
+}
+
+.theme-red-blue .pokedex-card,
+.theme-red-blue .team-member-card,
+.theme-red-blue .favorite-card,
+.theme-red-blue .stat-card {
+  border: 1px solid rgba(255, 34, 34, 0.25);
+  box-shadow: 
+    0 4px 20px rgba(255, 34, 34, 0.15),
+    0 4px 20px rgba(34, 102, 255, 0.1);
+}
+
+.theme-red-blue .pokedex-card:hover,
+.theme-red-blue .team-member-card:hover,
+.theme-red-blue .favorite-card:hover {
+  border-color: rgba(34, 102, 255, 0.5);
+  box-shadow: 
+    0 8px 30px rgba(255, 34, 34, 0.25),
+    0 8px 30px rgba(34, 102, 255, 0.2);
+}
+
+.theme-red-blue .type-badge {
+  box-shadow: 0 0 10px rgba(255, 34, 34, 0.3);
+}
+
+.theme-red-blue .stat-ring-fill {
+  filter: drop-shadow(0 0 6px rgba(255, 34, 34, 0.5));
 }
 
 /* Emerald theme special effects */
+.theme-emerald {
+  background-image: 
+    radial-gradient(ellipse at top, rgba(0, 255, 127, 0.1) 0%, transparent 60%),
+    radial-gradient(ellipse at bottom, rgba(0, 204, 102, 0.08) 0%, transparent 60%),
+    linear-gradient(135deg, #021a0f 0%, #042d1a 100%);
+}
+
 .theme-emerald .pokemon-showcase {
-  border: 1px solid rgba(0, 255, 136, 0.2);
+  border: 1px solid rgba(0, 255, 127, 0.4);
+  box-shadow: 0 0 40px rgba(0, 255, 127, 0.2);
+}
+
+.theme-emerald .modern-header {
+  background: linear-gradient(180deg, rgba(2, 26, 15, 0.98) 0%, rgba(4, 45, 26, 0.95) 100%);
+  border-bottom: 1px solid rgba(0, 255, 127, 0.3);
+}
+
+.theme-emerald .page-title {
+  background: linear-gradient(135deg, #00ff7f 0%, #00cc66 50%, #00ff7f 100%);
+  -webkit-background-clip: text;
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+  text-shadow: 0 0 40px rgba(0, 255, 127, 0.5);
+}
+
+.theme-emerald .pokedex-card,
+.theme-emerald .team-member-card,
+.theme-emerald .favorite-card,
+.theme-emerald .stat-card {
+  border: 1px solid rgba(0, 255, 127, 0.25);
+  box-shadow: 0 4px 20px rgba(0, 255, 127, 0.15);
+}
+
+.theme-emerald .pokedex-card:hover,
+.theme-emerald .team-member-card:hover,
+.theme-emerald .favorite-card:hover {
+  border-color: rgba(0, 255, 127, 0.5);
+  box-shadow: 0 8px 30px rgba(0, 255, 127, 0.25);
 }
 
 .theme-emerald .stat-ring-fill {
-  filter: drop-shadow(0 0 4px var(--accent-primary));
+  filter: drop-shadow(0 0 6px rgba(0, 255, 127, 0.6));
+}
+
+.theme-emerald .type-badge {
+  box-shadow: 0 0 10px rgba(0, 255, 127, 0.3);
+}
+
+/* Dark theme enhancements */
+.theme-dark {
+  background-image: 
+    radial-gradient(ellipse at top, rgba(102, 126, 234, 0.08) 0%, transparent 50%),
+    linear-gradient(135deg, #0a0a12 0%, #12121f 100%);
+}
+
+.theme-dark .modern-header {
+  background: linear-gradient(180deg, rgba(10, 10, 18, 0.98) 0%, rgba(18, 18, 31, 0.95) 100%);
+  border-bottom: 1px solid rgba(255, 255, 255, 0.05);
+}
+
+.theme-dark .pokemon-showcase {
+  box-shadow: 0 8px 32px rgba(0, 0, 0, 0.4);
+}
+
+.theme-dark .pokedex-card:hover,
+.theme-dark .team-member-card:hover,
+.theme-dark .favorite-card:hover {
+  box-shadow: 0 12px 40px rgba(0, 0, 0, 0.5);
 }
 
 /* Dynamic theme glow effects */
+.theme-dynamic {
+  background-image: 
+    radial-gradient(ellipse at top, var(--type-glow)15 0%, transparent 50%),
+    linear-gradient(135deg, #0a0a12 0%, #12121f 100%);
+}
+
 .theme-dynamic .pokemon-showcase {
-  border: 1px solid var(--type-glow)33;
+  border: 1px solid var(--type-glow)55;
+  box-shadow: 0 0 40px var(--type-glow)25;
+}
+
+.theme-dynamic .modern-header {
+  border-bottom: 1px solid var(--type-glow)30;
 }
 
 .theme-dynamic .pokemon-image-showcase img {
-  filter: drop-shadow(0 0 20px var(--type-glow)66);
+  filter: drop-shadow(0 0 25px var(--type-glow)80);
 }
 
 .theme-dynamic .type-pill {
-  box-shadow: 0 0 10px var(--type-glow)44;
+  box-shadow: 0 0 15px var(--type-glow)50;
+}
+
+.theme-dynamic .page-title {
+  background: linear-gradient(135deg, var(--accent-primary) 0%, var(--accent-secondary) 100%);
+  -webkit-background-clip: text;
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.theme-dynamic .pokedex-card,
+.theme-dynamic .team-member-card,
+.theme-dynamic .favorite-card {
+  border: 1px solid var(--type-glow)20;
+}
+
+.theme-dynamic .pokedex-card:hover,
+.theme-dynamic .team-member-card:hover,
+.theme-dynamic .favorite-card:hover {
+  border-color: var(--type-glow)50;
+  box-shadow: 0 8px 30px var(--type-glow)25;
+}
+
+.theme-dynamic .stat-ring-fill {
+  filter: drop-shadow(0 0 6px var(--type-glow));
 }
 
 /* Shiny Toggle Button */
@@ -371,4 +1603,297 @@ textarea:focus {
 
 ::-webkit-scrollbar-thumb:hover {
   background: var(--accent-secondary);
+}
+
+/* ================================== */
+/* THEME - RESPONSIVE STYLES          */
+/* Super-responsive for all devices   */
+/* ================================== */
+
+/* Large Screens (1200px+) */
+@media (min-width: 1200px) {
+  .theme-current-btn {
+    padding: 0.6rem 1.1rem;
+  }
+  
+  .theme-dropdown {
+    min-width: 200px;
+  }
+}
+
+/* Tablets (768px - 991px) */
+@media (min-width: 768px) and (max-width: 991px) {
+  .theme-current-btn {
+    padding: 0.45rem 0.85rem;
+    gap: 0.4rem;
+  }
+  
+  .theme-icon {
+    font-size: 1rem;
+  }
+  
+  .theme-name {
+    font-size: 0.85rem;
+  }
+  
+  .theme-dropdown {
+    min-width: 165px;
+    padding: 0.4rem;
+    border-radius: 0.625rem;
+  }
+  
+  .theme-option {
+    padding: 0.5rem 0.65rem;
+  }
+  
+  .theme-option .option-icon {
+    font-size: 1rem;
+  }
+  
+  .theme-option .option-name {
+    font-size: 0.85rem;
+  }
+}
+
+/* Large Phones / Small Tablets (600px - 767px) */
+@media (min-width: 600px) and (max-width: 767px) {
+  .theme-current-btn {
+    padding: 0.4rem 0.75rem;
+    gap: 0.35rem;
+    border-radius: 0.4rem;
+  }
+  
+  .theme-icon {
+    font-size: 0.95rem;
+  }
+  
+  .theme-name {
+    font-size: 0.8rem;
+  }
+  
+  .theme-arrow {
+    font-size: 0.6rem;
+  }
+  
+  .theme-dropdown {
+    min-width: 155px;
+    padding: 0.35rem;
+    border-radius: 0.5rem;
+  }
+  
+  .theme-option {
+    padding: 0.45rem 0.6rem;
+    border-radius: 0.35rem;
+    gap: 0.5rem;
+  }
+  
+  .theme-option .option-icon {
+    font-size: 0.95rem;
+  }
+  
+  .theme-option .option-name {
+    font-size: 0.8rem;
+  }
+}
+
+/* Standard Phones (480px - 599px) */
+@media (min-width: 480px) and (max-width: 599px) {
+  .theme-switcher {
+    position: relative;
+  }
+  
+  .theme-current-btn {
+    padding: 0.35rem 0.65rem;
+    gap: 0.3rem;
+    border-radius: 0.375rem;
+  }
+  
+  .theme-icon {
+    font-size: 0.9rem;
+  }
+  
+  .theme-name {
+    font-size: 0.75rem;
+  }
+  
+  .theme-arrow {
+    font-size: 0.55rem;
+  }
+  
+  .theme-dropdown {
+    min-width: 140px;
+    padding: 0.3rem;
+    border-radius: 0.45rem;
+    right: 0;
+  }
+  
+  .theme-option {
+    padding: 0.4rem 0.55rem;
+    border-radius: 0.3rem;
+    gap: 0.45rem;
+  }
+  
+  .theme-option .option-icon {
+    font-size: 0.88rem;
+  }
+  
+  .theme-option .option-name {
+    font-size: 0.75rem;
+  }
+  
+  .theme-option .active-indicator {
+    width: 6px;
+    height: 6px;
+  }
+}
+
+/* Small Phones (360px - 479px) */
+@media (min-width: 360px) and (max-width: 479px) {
+  .theme-current-btn {
+    padding: 0.3rem 0.55rem;
+    gap: 0.25rem;
+    border-radius: 0.35rem;
+  }
+  
+  .theme-icon {
+    font-size: 0.85rem;
+  }
+  
+  .theme-name {
+    font-size: 0.7rem;
+  }
+  
+  .theme-arrow {
+    font-size: 0.5rem;
+  }
+  
+  .theme-dropdown {
+    min-width: 130px;
+    padding: 0.25rem;
+    border-radius: 0.4rem;
+    right: 0;
+  }
+  
+  .theme-option {
+    padding: 0.35rem 0.5rem;
+    gap: 0.4rem;
+  }
+  
+  .theme-option .option-icon {
+    font-size: 0.82rem;
+  }
+  
+  .theme-option .option-name {
+    font-size: 0.7rem;
+  }
+  
+  .theme-option .active-indicator {
+    width: 5px;
+    height: 5px;
+  }
+}
+
+/* Extra Small Phones (below 360px) */
+@media (max-width: 359px) {
+  .theme-current-btn {
+    padding: 0.25rem 0.45rem;
+    gap: 0.2rem;
+    border-radius: 0.3rem;
+  }
+  
+  .theme-icon {
+    font-size: 0.8rem;
+  }
+  
+  .theme-name {
+    font-size: 0.65rem;
+  }
+  
+  .theme-arrow {
+    font-size: 0.45rem;
+  }
+  
+  .theme-dropdown {
+    min-width: 115px;
+    padding: 0.2rem;
+    border-radius: 0.35rem;
+  }
+  
+  .theme-option {
+    padding: 0.3rem 0.4rem;
+    gap: 0.35rem;
+  }
+  
+  .theme-option .option-icon {
+    font-size: 0.75rem;
+  }
+  
+  .theme-option .option-name {
+    font-size: 0.65rem;
+  }
+  
+  .theme-option .active-indicator {
+    width: 4px;
+    height: 4px;
+  }
+}
+
+/* Scrollbar - Responsive */
+@media (max-width: 600px) {
+  ::-webkit-scrollbar {
+    width: 6px;
+    height: 6px;
+  }
+  
+  ::-webkit-scrollbar-thumb {
+    border-radius: 3px;
+  }
+}
+
+@media (max-width: 360px) {
+  ::-webkit-scrollbar {
+    width: 4px;
+    height: 4px;
+  }
+}
+
+/* Touch Device Optimizations */
+@media (hover: none) and (pointer: coarse) {
+  .theme-current-btn:hover {
+    transform: none;
+  }
+  
+  .theme-current-btn:active {
+    transform: scale(0.97);
+  }
+  
+  .theme-option:hover {
+    background: transparent;
+  }
+  
+  .theme-option:active {
+    background: var(--bg-tertiary);
+  }
+  
+  .theme-current-btn,
+  .theme-option {
+    min-height: 44px;
+  }
+}
+
+/* Reduced Motion */
+@media (prefers-reduced-motion: reduce) {
+  body {
+    transition: none;
+  }
+  
+  .theme-dropdown {
+    animation: none;
+  }
+  
+  .theme-current-btn,
+  .theme-option,
+  .theme-arrow {
+    transition: none;
+  }
 }

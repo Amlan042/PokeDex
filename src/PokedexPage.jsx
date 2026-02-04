@@ -402,9 +402,9 @@ const PokedexPage = () => {
     return count;
   }, [searchQuery, selectedTypes, selectedGeneration, hpRange, attackRange, defenseRange, speedRange, totalRange]);
 
-  // Handle Pokemon click
+  // Handle Pokemon click - navigate to info page with pokemon name
   const handlePokemonClick = (pokemon) => {
-    navigate(`/info?query=${pokemon.name}`);
+    navigate(`/info?pokemon=${encodeURIComponent(pokemon.name)}`);
   };
 
   // Load more
