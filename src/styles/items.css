@@ -403,6 +403,7 @@
 
 .modal-header {
   display: flex;
+  flex-direction: column;
   align-items: center;
   gap: 1.5rem;
   padding: 2rem 2rem 1.5rem;
@@ -445,7 +446,7 @@
 }
 
 .modal-content {
-  padding: 0 2rem 2rem;
+  padding: 1.5rem 2rem 2rem;
 }
 
 .modal-section {
@@ -813,7 +814,7 @@
   }
   
   .modal-content {
-    padding: 0 1.5rem 1.5rem;
+    padding: 1.25rem 1.5rem 1.5rem;
   }
   
   .berry-stats-grid {
@@ -1003,7 +1004,7 @@
   }
   
   .modal-content {
-    padding: 0 1.25rem 1.25rem;
+    padding:1.25rem;
   }
   
   .modal-section {
@@ -1286,7 +1287,7 @@
   }
   
   .modal-content {
-    padding: 0 1rem 1rem;
+    padding: 1rem;
   }
   
   .modal-section {
@@ -1577,7 +1578,7 @@
   }
   
   .modal-content {
-    padding: 0 0.875rem 0.875rem;
+    padding: 0.875rem;
   }
   
   .modal-section {

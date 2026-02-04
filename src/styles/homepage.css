@@ -265,6 +265,7 @@
 }
 
 .pokemon-showcase-name {
+  text-align: center;
   font-size: 2.5rem;
   font-weight: 800;
   color: white;
@@ -274,6 +275,7 @@
 }
 
 .pokemon-types-row {
+  justify-content: center;
   display: flex;
   gap: 0.6rem;
 }
